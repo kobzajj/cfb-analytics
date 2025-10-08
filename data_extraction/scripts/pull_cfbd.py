@@ -97,7 +97,7 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                                 d["passer_player_name"] = ps.athlete_name
                                 d["passer_player_id"] = ps.athlete_id
                                 if ps.stat_type.lower() == "completion":
-                                    d["completion"] = True
+                                    d["complete"] = True
                             # add rusher details
                             elif ps.stat_type.lower() == "rush":
                                 d["rusher_player_name"] = ps.athlete_name
@@ -106,45 +106,35 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                             elif ps.stat_type.lower() in ("target", "reception"):
                                 d["receiver_player_name"] = ps.athlete_name
                                 d["receiver_played_id"] = ps.athlete_id
-                            # sack
+                            # sack - TODO check if half sacks are recorded for multiple players
                             elif ps.stat_type.lower() = "sack":
-                                #TODO
-                            # interception
-                            elif ps.stat_type.lower() in (""):
-                                #TODO
+                                d["sacker_name"] = ps.athlete_name
+                                d["sacker_id"] = ps.athlete_id
+                                d["sack"] = 1
+                            # primary pass defender: pass breakup, interception
+                            elif ps.stat_type.lower() in ("pass breakup", "interception"):
+                                d["primary_pass_defender_name"] = ps.athlete_name
+                                d["primary_pass_defender_id"] = ps.athlete_id
+                                if ps.stat_type.lower() == "pass breakup":
+                                    d["pass_breakup"] = 1
+                                if ps.stat_type.lower() == "interception":
+                                    d["interception"] = 1
                             # forced fumble
-                            elif ps.stat_type.lower() in (""):
-                                #TODO
+                            elif ps.stat_type.lower() == "fumble forced":
+                                d["fumble_forced_name"] = ps.athlete_name
+                                d["fumble_forced_id"] = ps.athlete_id
+                                d["fumble"] = 1
                             # fumble recovery
-                            elif ps.stat_type.lower() in (""):
-                                #TODO
-
-                        # PLAY STAT TYPE NAMES
-                        # 1 Incompletion
-                        # 2 Target
-                        # 3 Pass Breakup
-                        # 4 Completion
-                        # 5 Reception
-                        # 6 Tackle
-                        # 7 Rush
-                        # 8 Fumble
-                        # 9 Fumble Forced
-                        # 10 Fumble Recovered
-                        # 11 Sack Taken
-                        # 12 Sack
-                        # 13 Kickoff
-                        # 14 Onside Kick
-                        # 15 Kickoff Return
-                        # 16 Punt
-                        # 17 Punt Block
-                        # 18 FG Attempt Blocked
-                        # 19 Field Goal Block
-                        # 20 Interception Thrown
-                        # 21 Interception
-                        # 22 Touchdown
-                        # 23 Field Goal Attempt
-                        # 24 Field Goal Made
-                        # 25 Field Goal Missed
+                            elif ps.stat_type.lower() == "fumble recovered":
+                                d["fumble_recovery_name"] = ps.athlete_name
+                                d["fumble_recovery_id"] = ps.athlete_id
+                            # tackle
+                            elif ps.stat_type.lower() == "tackle":
+                                d["tackler_name"] = ps.athlete_name
+                                d["tackler_id"] = ps.athlete_id
+                            # touchdown
+                            elif ps.stat_type.lower() == "touchdown":
+                                d["touchdown"] = True
 
                 # if the needed player stats are already available, search through all stats to find relevant ones
                 else:
