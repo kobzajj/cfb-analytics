@@ -1,0 +1,29 @@
+# virtual environments
+venv/
+.venv/
+
+# python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# build/dist
+build/
+dist/
+*.egg-info/
+
+# tools & caches
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# OS/editor junk
+.DS_Store
+
+# secrets & env
+.env
+.env.*
