@@ -99,7 +99,7 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                                 if ps.stat_type.lower() == "completion":
                                     d["completion"] = True
                             # add rusher details
-                            elif ps.stat_type.lower() in ("rush"):
+                            elif ps.stat_type.lower() == "rush":
                                 d["rusher_player_name"] = ps.athlete_name
                                 d["rusher_played_id"] = ps.athlete_id
                             # add receiver details
@@ -107,7 +107,7 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                                 d["receiver_player_name"] = ps.athlete_name
                                 d["receiver_played_id"] = ps.athlete_id
                             # sack
-                            elif ps.stat_type.lower() in (""):
+                            elif ps.stat_type.lower() = "sack":
                                 #TODO
                             # interception
                             elif ps.stat_type.lower() in (""):
@@ -118,6 +118,33 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                             # fumble recovery
                             elif ps.stat_type.lower() in (""):
                                 #TODO
+
+                        # PLAY STAT TYPE NAMES
+                        # 1 Incompletion
+                        # 2 Target
+                        # 3 Pass Breakup
+                        # 4 Completion
+                        # 5 Reception
+                        # 6 Tackle
+                        # 7 Rush
+                        # 8 Fumble
+                        # 9 Fumble Forced
+                        # 10 Fumble Recovered
+                        # 11 Sack Taken
+                        # 12 Sack
+                        # 13 Kickoff
+                        # 14 Onside Kick
+                        # 15 Kickoff Return
+                        # 16 Punt
+                        # 17 Punt Block
+                        # 18 FG Attempt Blocked
+                        # 19 Field Goal Block
+                        # 20 Interception Thrown
+                        # 21 Interception
+                        # 22 Touchdown
+                        # 23 Field Goal Attempt
+                        # 24 Field Goal Made
+                        # 25 Field Goal Missed
 
                 # if the needed player stats are already available, search through all stats to find relevant ones
                 else:

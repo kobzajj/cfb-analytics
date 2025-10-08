@@ -1,6 +1,7 @@
 # virtual environments
 venv/
 .venv/
+data_extraction/.venv/
 
 # python artifacts
 __pycache__/
