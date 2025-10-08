@@ -1,0 +1,39 @@
+Category,Field,Type,Definition,Formula/Notes
+identifiers,season,int,"Season year (e.g., 2019).",
+identifiers,player_id,string,Stable unique player identifier.,
+identifiers,player_name,string,Player full name.,
+identifiers,team_id,string,Stable unique team identifier.,
+identifiers,team_name,string,Team name.,
+identifiers,conference,string,Conference in that season.,
+identifiers,position_group,string,DL/EDGE/LB/CB/S (normalized).,
+usage,games,int,Games played.,
+usage,starts,int,Games started.,
+usage,def_snaps,int,Defensive snaps.,
+counting,total_tackles,int,Total tackles.,
+counting,solo_tackles,int,Solo tackles.,
+counting,assists,int,Assisted tackles.,
+counting,missed_tackles,int,Missed tackles.,
+counting,pressures,int,Total quarterback pressures.,
+counting,sacks,int,Sacks.,
+counting,targets,int,Coverage targets faced.,
+counting,receptions_allowed,int,Receptions allowed in coverage.,
+counting,yards_allowed,int,Yards allowed in coverage.,
+counting,td_allowed,int,Touchdowns allowed in coverage.,
+counting,interceptions,int,Interceptions made.,
+counting,pass_breakups,int,Passes broken up (PBUs).,
+counting,stops,int,Run/short-pass tackles that constitute a failure for the offense.,
+counting,tackles_for_loss,int,Tackles for loss.,
+counting,forced_fumbles,int,Forced fumbles.,
+counting,fumble_recoveries,int,Fumble recoveries.,
+counting,defensive_tds,int,Defensive touchdowns.,
+rates,pressure_rate,float,Pressures / pass-rush snaps.,pressures / pass_rush_snaps
+rates,win_rate,float,Pass-rush win rate (if charted).,pass_rush_wins / pass_rush_snaps
+rates,completion_pct_allowed,float,Receptions allowed / Targets.,receptions_allowed / targets
+rates,yards_per_target_allowed,float,Yards allowed / Targets.,yards_allowed / targets
+rates,passer_rating_allowed,float,QB rating when targeted.,(100 * completions_rate * 5 + 100 * yards_per_att * 0.25 + 100 * td_rate * 20 - 100 * int_rate * 25) / 6
+rates,missed_tackle_rate,float,Missed tackles / (Solo + Assisted + Missed).,missed_tackles / (solo_tackles + assists + missed_tackles)
+rates,stop_rate,float,Stops / run-defense snaps.,stops / run_defense_snaps
+advanced,def_epa_saved_total,float,Total defensive EPA saved (primary defender attribution).,
+advanced,def_epa_saved_per_snap,float,EPA saved per defensive snap.,def_epa_saved_total / def_snaps
+advanced,coverage_success_rate_allowed,float,Share of targets that failed (EPA ≤ 0).,mean(epa_allowed <= 0) over coverage targets
+advanced,explosive_allowed_rate,float,Explosive plays allowed per target (≥20 pass / ≥10 rush).,explosive_plays_allowed / targets

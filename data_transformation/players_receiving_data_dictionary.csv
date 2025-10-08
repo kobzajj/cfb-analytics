@@ -1,0 +1,44 @@
+Category,Field,Type,Definition,Formula/Notes
+identifiers,season,int,"Season year (e.g., 2019).",
+identifiers,player_id,string,Stable unique player identifier.,
+identifiers,player_name,string,Player full name.,
+identifiers,team_id,string,Stable unique team identifier.,
+identifiers,team_name,string,Team name.,
+identifiers,conference,string,Conference in that season.,
+identifiers,position,string,Roster position (WR/TE/RB etc.).,
+usage,games,int,Games played.,
+usage,snaps,int,Offensive snaps.,
+usage,routes,int,Pass routes run.,
+usage,targets,int,Targets.,
+counting,receptions,int,Receptions.,
+counting,rec_yards,int,Receiving yards.,
+counting,rec_td,int,Receiving touchdowns.,
+counting,drops,int,Credited drops.,
+counting,fumbles,int,Fumbles after catch.,
+counting,air_yards,int,Air yards on targets.,
+counting,yac,int,Yards after catch.,
+rates,tgt_per_route,float,Targets per route run (TPRR).,targets / routes
+rates,adot,float,Average depth of target (air yards per target).,air_yards / targets
+rates,yards_per_route_run,float,Yards per route run (YPRR).,rec_yards / routes
+rates,targets_per_game,float,Targets per game.,targets / games
+rates,catch_pct,float,Receptions / Targets.,receptions / targets
+rates,drop_rate,float,Drops / Targets.,drops / targets
+rates,yds_per_target,float,Yards per target.,rec_yards / targets
+rates,tds_per_target,float,TDs per target.,rec_td / targets
+rates,yac_per_rec,float,YAC per reception.,yac / receptions
+rates,air_yards_share,float,Player air yards / team air yards.,air_yards / team_air_yards
+rates,target_share,float,Player targets / team pass attempts.,targets / team_pass_attempts
+advanced,epa_total_recv,float,Total EPA on targets.,
+advanced,epa_per_target,float,EPA per target.,epa_total_recv / targets
+advanced,success_rate,float,Share of targets with EPA > 0.,mean(epa > 0) over targets
+advanced,explosive_rec_rate,float,Share of receptions ≥20 yards.,mean(reception_yards >= 20)
+advanced,slot_rate,float,Share of snaps aligned in slot.,alignment_snaps_slot / snaps
+advanced,wide_rate,float,Share of snaps aligned wide.,alignment_snaps_wide / snaps
+advanced,inline_te_rate,float,Share of snaps aligned inline (TE).,alignment_snaps_inline / snaps
+advanced,man_tgt_rate,float,Targets vs man coverage.,targets_vs_man / targets
+advanced,zone_tgt_rate,float,Targets vs zone coverage.,targets_vs_zone / targets
+advanced,epa_vs_man,float,EPA per target vs man.,sum(epa on targets vs man) / targets_vs_man
+advanced,epa_vs_zone,float,EPA per target vs zone.,sum(epa on targets vs zone) / targets_vs_zone
+advanced,separation_avg_yards,float,Average target separation (yards).,
+splits,epa_per_target_deep,float,EPA per target on deep targets (≥20 air).,sum(epa on targets with air_yards ≥ 20) / deep_targets
+splits,epa_per_target_short,float,EPA per target on short/intermediate targets.,sum(epa on targets with air_yards < 20) / short_targets

@@ -1,0 +1,32 @@
+Category,Field,Type,Definition,Formula/Notes
+identifiers,season,int,"Season year (e.g., 2019).",
+identifiers,player_id,string,Stable unique player identifier.,
+identifiers,player_name,string,Player full name.,
+identifiers,team_id,string,Stable unique team identifier.,
+identifiers,team_name,string,Team name.,
+identifiers,conference,string,Conference in that season.,
+identifiers,position,string,Roster position (RB/QB/WR etc.).,
+usage,games,int,Games played.,
+usage,snaps,int,Offensive snaps played.,
+usage,rush_att,int,Rushing attempts.,
+counting,rush_yards,int,Rushing yards.,
+counting,rush_td,int,Rushing touchdowns.,
+counting,fumbles,int,Total fumbles on rushing plays.,
+counting,yards_before_contact,int,Yards before first contact.,
+counting,broken_tackles,int,Broken tackles credited.,
+counting,forced_missed_tackles,int,Forced missed tackles credited.,
+rates,yards_per_carry,float,Rushing yards per attempt.,rush_yards / rush_att
+rates,td_rate,float,Rushing TDs per attempt.,rush_td / rush_att
+rates,fumble_rate,float,Fumbles per attempt.,fumbles / rush_att
+advanced,epa_total_rush,float,Total expected points added on designed rushes.,
+advanced,epa_per_rush,float,EPA per rushing attempt.,epa_total_rush / rush_att
+advanced,success_rate,float,Share of rushes with EPA > 0 (down-adjusted).,mean(epa > 0) over rushing attempts
+advanced,explosive_rush_rate,float,Share of rushes gaining ≥10 yards.,mean(play_gained_yards >= 10) over rushing attempts
+advanced,rpo_carry_rate,float,Share of carries within RPOs.,mean(rpo_carry_flag)
+advanced,read_option_rate,float,Share of carries on read-option.,mean(read_option_flag)
+advanced,yards_over_expected_per_att,float,Runner xYPC residual per attempt (model-based).,(rush_yards - expected_rush_yards) / rush_att
+splits,epa_rush_early,float,EPA per rush on early downs (1st-2nd).,
+splits,epa_rush_short,float,EPA per rush in short-yardage (≤2 to go).,
+splits,epa_rush_red_zone,float,EPA per rush in red zone (≤20).,
+splits,att_light_box_rate,float,Share of carries vs light boxes (≤6 defenders).,attempts meeting box criterion / rush_att
+splits,att_heavy_box_rate,float,Share of carries vs heavy boxes (≥7/8 defenders).,attempts meeting box criterion / rush_att

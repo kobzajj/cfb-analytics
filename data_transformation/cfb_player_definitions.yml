@@ -1,0 +1,460 @@
+meta:
+  project: "CFB Analytics \u2014 Player Season Files"
+  version: v1.0
+  created_utc: '2025-10-02T07:02:10Z'
+  grain: player-season (FBS only)
+  primary_key:
+  - season
+  - player_id
+  nulls: Leave blank for unavailable; do not use sentinel values.
+  rounding: Rates to 4 decimals; percentages also stored as decimals (e.g., 0.375).
+  explosive_cutoffs:
+    rush_yards: 10
+    rec_yards: 20
+    pass_yards: 20
+  red_zone_yardline_max: 20
+  early_downs:
+  - 1
+  - 2
+  late_downs:
+  - 3
+  - 4
+  box_thresholds:
+    light_max: 6
+    heavy_min: 7
+  epa_model: Down-distance- and field-position-aware expected points model fit on
+    FBS play-by-play for the given season (or a pooled multi-year model with season
+    fixed effects). EPA/play = EP_after - EP_before - points_scored_on_play.
+shared_identifiers:
+  season:
+    type: int
+    desc: Season year (e.g., 2019)
+  player_id:
+    type: string
+    desc: Stable unique player identifier
+  player_name:
+    type: string
+    desc: Player full name
+  team_id:
+    type: string
+    desc: Stable unique team identifier for season
+  team_name:
+    type: string
+    desc: Team name in that season
+  conference:
+    type: string
+    desc: Conference in that season
+  position:
+    type: string
+    desc: Roster position (role-specific where applicable)
+  position_group:
+    type: string
+    desc: DL/EDGE/LB/CB/S (defense)
+calculation_conventions:
+  division_by_zero: Return null when denominator is 0 or null.
+  attempt_eligibility: QB passing rates require pass_attempts >= 1; rushing rates
+    require rush_att >= 1; receiving rates require targets >= 1.
+  snap_eligibility: If a rate uses snaps in denominator, require snaps >= 1.
+  success_rate: Indicator(epa > 0) with EPA computed via season EP model.
+  epa_aggregation: Totals are sum over qualifying plays; per-play rates divide by
+    attempts/targets/dropbacks as defined.
+  stint_handling: v1 uses one row per player-season (no team splits). If a player
+    transferred mid-season, aggregate stats across teams.
+passing:
+  usage:
+    games:
+      type: int
+      desc: Games played
+    starts:
+      type: int
+      desc: Games started
+    dropbacks:
+      type: int
+      desc: Pass attempts + sacks + scrambles
+    pass_attempts:
+      type: int
+      desc: Forward pass attempts
+    sacks_taken:
+      type: int
+      desc: Sacks against QB
+    pressures_faced:
+      type: int
+      desc: Pressures on dropbacks
+  counting:
+    completions:
+      type: int
+      desc: Completed passes
+    pass_yards:
+      type: int
+      desc: Gross passing yards
+    pass_td:
+      type: int
+      desc: Passing touchdowns
+    interceptions:
+      type: int
+      desc: Intercepted passes
+    sacks_yards_lost:
+      type: int
+      desc: Sack yardage lost (negative)
+    air_yards:
+      type: int
+      desc: Air yards on completed passes/targets
+    yac:
+      type: int
+      desc: Yards after catch on completions
+  rates:
+    completion_pct:
+      type: float
+      formula: completions / pass_attempts
+    yards_per_att:
+      type: float
+      formula: pass_yards / pass_attempts
+    adj_yards_per_att:
+      type: float
+      formula: (pass_yards + 20*pass_td - 45*interceptions) / pass_attempts
+    yards_per_dropback:
+      type: float
+      formula: pass_yards / dropbacks
+    td_rate:
+      type: float
+      formula: pass_td / pass_attempts
+    int_rate:
+      type: float
+      formula: interceptions / pass_attempts
+    air_yards_per_att:
+      type: float
+      formula: air_yards / pass_attempts
+    yac_per_comp:
+      type: float
+      formula: yac / completions
+    pressure_rate:
+      type: float
+      formula: pressures_faced / dropbacks
+    sack_rate:
+      type: float
+      formula: sacks_taken / dropbacks
+    scramble_rate:
+      type: float
+      formula: scrambles / dropbacks
+      notes: Requires scramble tags; null if unavailable
+  advanced:
+    epa_total_pass:
+      type: float
+      desc: Sum EPA on pass/dropback plays
+    epa_per_dropback:
+      type: float
+      formula: epa_total_pass / dropbacks
+    success_rate:
+      type: float
+      formula: mean(epa > 0) over dropbacks
+    explosive_pass_rate:
+      type: float
+      formula: mean(gained_yards >= 20) over pass plays
+    cpoe:
+      type: float
+      formula: completion_pct - expected_completion_pct
+      notes: Expected completion from logistic model using air yards, sideline/middle,
+        pressure, TTT, etc.
+    adot:
+      type: float
+      formula: air_yards / targets
+      notes: Team target-weighted at QB level
+    play_action_rate:
+      type: float
+      formula: mean(play_action_flag) over dropbacks
+    rpo_rate:
+      type: float
+      formula: mean(rpo_flag) over dropbacks
+    screen_rate:
+      type: float
+      formula: mean(screen_pass_flag) over attempts
+    time_to_throw_sec:
+      type: float
+      formula: avg(time_to_throw_seconds)
+      notes: Requires charting/tracking
+    throwaway_rate:
+      type: float
+      formula: mean(throwaway_flag) over dropbacks
+  splits:
+    epa_per_db_clean:
+      type: float
+      formula: mean(epa) on dropbacks with pressure==0
+    epa_per_db_under_pressure:
+      type: float
+      formula: mean(epa) on dropbacks with pressure==1
+    epa_per_db_vs_blitz:
+      type: float
+      formula: mean(epa) on dropbacks vs blitz
+    epa_per_db_no_blitz:
+      type: float
+      formula: mean(epa) on dropbacks without blitz
+    epa_per_db_early:
+      type: float
+      formula: mean(epa) on downs in [1,2]
+    epa_per_db_late:
+      type: float
+      formula: mean(epa) on downs in [3,4]
+rushing:
+  usage:
+    games:
+      type: int
+    snaps:
+      type: int
+    rush_att:
+      type: int
+  counting:
+    rush_yards:
+      type: int
+    rush_td:
+      type: int
+    fumbles:
+      type: int
+    yards_before_contact:
+      type: int
+    broken_tackles:
+      type: int
+    forced_missed_tackles:
+      type: int
+  rates:
+    yards_per_carry:
+      type: float
+      formula: rush_yards / rush_att
+    td_rate:
+      type: float
+      formula: rush_td / rush_att
+    fumble_rate:
+      type: float
+      formula: fumbles / rush_att
+  advanced:
+    epa_total_rush:
+      type: float
+    epa_per_rush:
+      type: float
+      formula: epa_total_rush / rush_att
+    success_rate:
+      type: float
+      formula: mean(epa > 0) over rushing attempts
+    explosive_rush_rate:
+      type: float
+      formula: mean(gained_yards >= 10) over rushing attempts
+    rpo_carry_rate:
+      type: float
+      formula: mean(rpo_flag) over rushing attempts
+    read_option_rate:
+      type: float
+      formula: mean(read_option_flag) over rushing attempts
+    yards_over_expected_per_att:
+      type: float
+      formula: (rush_yards - expected_rush_yards) / rush_att
+      notes: xYPC model with box count, spacing, hash, personnel, front, etc.
+  splits:
+    epa_rush_early:
+      type: float
+      formula: mean(epa) on rushes, downs in [1,2]
+    epa_rush_short:
+      type: float
+      formula: mean(epa) on rushes with yards_to_go <= 2
+    epa_rush_red_zone:
+      type: float
+      formula: mean(epa) on rushes where yardline_100 <= 20
+    att_light_box_rate:
+      type: float
+      formula: rushes vs box_count <= 6 / rush_att
+    att_heavy_box_rate:
+      type: float
+      formula: rushes vs box_count >= 7 / rush_att
+receiving:
+  usage:
+    games:
+      type: int
+    snaps:
+      type: int
+    routes:
+      type: int
+    targets:
+      type: int
+  counting:
+    receptions:
+      type: int
+    rec_yards:
+      type: int
+    rec_td:
+      type: int
+    drops:
+      type: int
+    fumbles:
+      type: int
+    air_yards:
+      type: int
+    yac:
+      type: int
+  rates:
+    tgt_per_route:
+      type: float
+      formula: targets / routes
+    adot:
+      type: float
+      formula: air_yards / targets
+    yards_per_route_run:
+      type: float
+      formula: rec_yards / routes
+    targets_per_game:
+      type: float
+      formula: targets / games
+    catch_pct:
+      type: float
+      formula: receptions / targets
+    drop_rate:
+      type: float
+      formula: drops / targets
+    yds_per_target:
+      type: float
+      formula: rec_yards / targets
+    tds_per_target:
+      type: float
+      formula: rec_td / targets
+    yac_per_rec:
+      type: float
+      formula: yac / receptions
+    air_yards_share:
+      type: float
+      formula: air_yards / team_air_yards
+      notes: team_air_yards from team-season table
+    target_share:
+      type: float
+      formula: targets / team_pass_attempts
+      notes: team_pass_attempts from team-season table
+  advanced:
+    epa_total_recv:
+      type: float
+    epa_per_target:
+      type: float
+      formula: epa_total_recv / targets
+    success_rate:
+      type: float
+      formula: mean(epa > 0) over targets
+    explosive_rec_rate:
+      type: float
+      formula: mean(reception_yards >= 20)
+    slot_rate:
+      type: float
+      formula: slot_snaps / snaps
+    wide_rate:
+      type: float
+      formula: wide_snaps / snaps
+    inline_te_rate:
+      type: float
+      formula: inline_snaps / snaps
+    man_tgt_rate:
+      type: float
+      formula: targets_vs_man / targets
+    zone_tgt_rate:
+      type: float
+      formula: targets_vs_zone / targets
+    epa_vs_man:
+      type: float
+      formula: sum(epa on man targets) / targets_vs_man
+    epa_vs_zone:
+      type: float
+      formula: sum(epa on zone targets) / targets_vs_zone
+    separation_avg_yards:
+      type: float
+      desc: Average target separation (yards); requires tracking/charting
+  splits:
+    epa_per_target_deep:
+      type: float
+      formula: sum(epa on targets with air_yards >= 20) / deep_targets
+    epa_per_target_short:
+      type: float
+      formula: sum(epa on targets with air_yards < 20) / short_targets
+defense:
+  usage:
+    games:
+      type: int
+    starts:
+      type: int
+    def_snaps:
+      type: int
+  counting:
+    total_tackles:
+      type: int
+    solo_tackles:
+      type: int
+    assists:
+      type: int
+    missed_tackles:
+      type: int
+    pressures:
+      type: int
+    sacks:
+      type: int
+    targets:
+      type: int
+    receptions_allowed:
+      type: int
+    yards_allowed:
+      type: int
+    td_allowed:
+      type: int
+    interceptions:
+      type: int
+    pass_breakups:
+      type: int
+    stops:
+      type: int
+    tackles_for_loss:
+      type: int
+    forced_fumbles:
+      type: int
+    fumble_recoveries:
+      type: int
+    defensive_tds:
+      type: int
+  rates:
+    pressure_rate:
+      type: float
+      formula: pressures / pass_rush_snaps
+      notes: Needs pass_rush_snaps per player
+    win_rate:
+      type: float
+      formula: pass_rush_wins / pass_rush_snaps
+      notes: Requires charting (quick wins)
+    completion_pct_allowed:
+      type: float
+      formula: receptions_allowed / targets
+    yards_per_target_allowed:
+      type: float
+      formula: yards_allowed / targets
+    passer_rating_allowed:
+      type: float
+      formula: NCAA passer rating variant using targets as attempts; document exact
+        implementation
+    missed_tackle_rate:
+      type: float
+      formula: missed_tackles / (solo_tackles + assists + missed_tackles)
+    stop_rate:
+      type: float
+      formula: stops / run_defense_snaps
+      notes: Needs run_defense_snaps per player
+  advanced:
+    def_epa_saved_total:
+      type: float
+      desc: Total defensive EPA saved when player is primary defender
+    def_epa_saved_per_snap:
+      type: float
+      formula: def_epa_saved_total / def_snaps
+    coverage_success_rate_allowed:
+      type: float
+      formula: mean(epa_allowed <= 0) over coverage targets
+    explosive_allowed_rate:
+      type: float
+      formula: explosive_plays_allowed / targets
+validation_rules:
+- completions <= pass_attempts
+- routes >= targets
+- pressures_faced >= sacks_taken
+- rush_yards >= -1000 and pass_yards >= -1000
+- solo_tackles + assists >= total_tackles - 2
+- receptions_allowed <= targets
+- "epa_total_pass \u2248 epa_per_dropback * dropbacks (within rounding)"
+- "epa_total_rush \u2248 epa_per_rush * rush_att (within rounding)"

@@ -1,0 +1,49 @@
+Category,Field,Type,Definition,Formula/Notes
+identifiers,season,int,"Season year (e.g., 2019).",
+identifiers,player_id,string,Stable unique player identifier.,
+identifiers,player_name,string,Player full name.,
+identifiers,team_id,string,Stable unique team identifier.,
+identifiers,team_name,string,Team name.,
+identifiers,conference,string,Conference in that season.,
+identifiers,position,string,Roster position (QB/ATH etc.).,
+usage,games,int,Games played.,
+usage,starts,int,Games started.,
+usage,dropbacks,int,Pass attempts + sacks + scrambles.,
+usage,pass_attempts,int,Forward pass attempts.,
+usage,sacks_taken,int,Sacks charged to the QB.,
+usage,pressures_faced,int,Total pressures on dropbacks.,
+counting,completions,int,Completed passes.,
+counting,pass_yards,int,Gross passing yards.,
+counting,pass_td,int,Passing touchdowns.,
+counting,interceptions,int,Intercepted passes.,
+counting,sacks_yards_lost,int,Yards lost on sacks.,
+counting,air_yards,int,Ball-in-the-air yards on completed passes/targets.,
+counting,yac,int,Yards after catch on completions.,
+rates,completion_pct,float,Completions / Attempts.,completions / pass_attempts
+rates,yards_per_att,float,Passing yards per attempt (Y/A).,pass_yards / pass_attempts
+rates,adj_yards_per_att,float,AYA = (Yds + 20*TD – 45*INT) / Att.,(pass_yards + 20*pass_td - 45*interceptions) / pass_attempts
+rates,yards_per_dropback,float,Yards per dropback (incl. sacks).,pass_yards / dropbacks
+rates,td_rate,float,TD / Attempts.,td / pass_attempts
+rates,int_rate,float,INT / Attempts.,int / pass_attempts
+rates,air_yards_per_att,float,Air yards per attempt.,air_yards / pass_attempts
+rates,yac_per_comp,float,YAC per completion.,yac / completions
+rates,pressure_rate,float,Pressures / Dropbacks.,pressures_faced / dropbacks
+rates,sack_rate,float,Sacks / Dropbacks.,sacks_taken / dropbacks
+rates,scramble_rate,float,Scrambles / Dropbacks.,scrambles / dropbacks
+advanced,epa_total_pass,float,Total expected points added on pass plays.,
+advanced,epa_per_dropback,float,EPA per dropback.,epa_total_pass / dropbacks
+advanced,success_rate,float,Share of plays with EPA > 0 (down-adjusted).,mean(epa > 0) over dropbacks
+advanced,explosive_pass_rate,float,Share of pass plays gaining ≥20 yards.,mean(play_gained_yards >= 20) over pass plays
+advanced,cpoe,float,Completion % Over Expected (model-based).,completion_pct - expected_completion_pct
+advanced,adot,float,Average depth of target (air yards per target).,air_yards / targets
+advanced,play_action_rate,float,Share of dropbacks with play action.,mean(play_action_flag) over dropbacks
+advanced,rpo_rate,float,Share of dropbacks with RPO tag.,mean(rpo_flag) over dropbacks
+advanced,screen_rate,float,Share of attempts to screens.,mean(screen_pass_flag) over attempts
+advanced,time_to_throw_sec,float,Average time from snap to pass (seconds).,avg(time_to_throw_seconds)
+advanced,throwaway_rate,float,Throwaways / Dropbacks.,mean(throwaway_flag) over dropbacks
+splits,epa_per_db_clean,float,EPA per dropback when not pressured.,mean(epa) over subset of dropbacks
+splits,epa_per_db_under_pressure,float,EPA per dropback when pressured.,mean(epa) over subset of dropbacks
+splits,epa_per_db_vs_blitz,float,EPA per dropback vs blitz.,mean(epa) over subset of dropbacks
+splits,epa_per_db_no_blitz,float,EPA per dropback vs no blitz.,mean(epa) over subset of dropbacks
+splits,epa_per_db_early,float,EPA per dropback on 1st-2nd downs.,mean(epa) over subset of dropbacks
+splits,epa_per_db_late,float,EPA per dropback on 3rd-4th downs.,mean(epa) over subset of dropbacks
