@@ -88,7 +88,7 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                 # then search through stats from the appropriate game to find stats for the correct play
                 # then add the stats and game ID to the list so they don't get requested again
                 if pl.game_id not in play_stats_game_ids:
-                    new_play_stats = get_play_stats(pl.id) # check if this is the correct way to reference play ID
+                    new_play_stats = get_play_stats(pl.game_id)
                     for ps in new_play_stats:
                         # add stats if the current stats are for the correct play
                         if ps.play_id == pl.id:
@@ -97,7 +97,9 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                                 d["passer_player_name"] = ps.athlete_name
                                 d["passer_player_id"] = ps.athlete_id
                                 if ps.stat_type.lower() == "completion":
-                                    d["complete"] = True
+                                    d["completion"] = 1
+                                if ps.stat_type.lower() == "sack taken":
+                                    d["sack_yards"] = ps.stat
                             # add rusher details
                             elif ps.stat_type.lower() == "rush":
                                 d["rusher_player_name"] = ps.athlete_name
@@ -107,7 +109,7 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                                 d["receiver_player_name"] = ps.athlete_name
                                 d["receiver_played_id"] = ps.athlete_id
                             # sack - TODO check if half sacks are recorded for multiple players
-                            elif ps.stat_type.lower() = "sack":
+                            elif ps.stat_type.lower() == "sack":
                                 d["sacker_name"] = ps.athlete_name
                                 d["sacker_id"] = ps.athlete_id
                                 d["sack"] = 1
@@ -134,15 +136,61 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                                 d["tackler_id"] = ps.athlete_id
                             # touchdown
                             elif ps.stat_type.lower() == "touchdown":
-                                d["touchdown"] = True
+                                d["touchdown"] = 1
+
+                    play_stats.extend(new_play_stats)
+                    play_stats_game_ids.append(pl.game_id)
 
                 # if the needed player stats are already available, search through all stats to find relevant ones
                 else:
                     for ps in play_stats:
                         if ps.play_id == pl.id:
-
-                
-
+                            # add passer details
+                            if ps.stat_type.lower() in ("incompletion", "completion", "sack taken",
+                                                        "interception thrown"):
+                                d["passer_player_name"] = ps.athlete_name
+                                d["passer_player_id"] = ps.athlete_id
+                                if ps.stat_type.lower() == "completion":
+                                    d["completion"] = 1
+                                if ps.stat_type.lower() == "sack taken":
+                                    d["sack_yards"] = ps.stat
+                            # add rusher details
+                            elif ps.stat_type.lower() == "rush":
+                                d["rusher_player_name"] = ps.athlete_name
+                                d["rusher_played_id"] = ps.athlete_id
+                            # add receiver details
+                            elif ps.stat_type.lower() in ("target", "reception"):
+                                d["receiver_player_name"] = ps.athlete_name
+                                d["receiver_played_id"] = ps.athlete_id
+                            # sack - TODO check if half sacks are recorded for multiple players
+                            elif ps.stat_type.lower() == "sack":
+                                d["sacker_name"] = ps.athlete_name
+                                d["sacker_id"] = ps.athlete_id
+                                d["sack"] = 1
+                            # primary pass defender: pass breakup, interception
+                            elif ps.stat_type.lower() in ("pass breakup", "interception"):
+                                d["primary_pass_defender_name"] = ps.athlete_name
+                                d["primary_pass_defender_id"] = ps.athlete_id
+                                if ps.stat_type.lower() == "pass breakup":
+                                    d["pass_breakup"] = 1
+                                if ps.stat_type.lower() == "interception":
+                                    d["interception"] = 1
+                            # forced fumble
+                            elif ps.stat_type.lower() == "fumble forced":
+                                d["fumble_forced_name"] = ps.athlete_name
+                                d["fumble_forced_id"] = ps.athlete_id
+                                d["fumble"] = 1
+                            # fumble recovery
+                            elif ps.stat_type.lower() == "fumble recovered":
+                                d["fumble_recovery_name"] = ps.athlete_name
+                                d["fumble_recovery_id"] = ps.athlete_id
+                            # tackle
+                            elif ps.stat_type.lower() == "tackle":
+                                d["tackler_name"] = ps.athlete_name
+                                d["tackler_id"] = ps.athlete_id
+                            # touchdown
+                            elif ps.stat_type.lower() == "touchdown":
+                                d["touchdown"] = 1
 
                 recs.append(d)
 

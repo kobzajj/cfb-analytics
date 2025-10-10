@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from __future__ import annotations
 from pathlib import Path
-import pandas as pd, pyarrow.parquet as pq, pyarrow as pa
+import pandas as pd, numpy as np, pyarrow.parquet as pq, pyarrow as pa
 
 def map_cfbd_to_standard(df: pd.DataFrame) -> pd.DataFrame:
     
@@ -97,7 +97,6 @@ def map_cfbd_to_standard(df: pd.DataFrame) -> pd.DataFrame:
     out['distance'] = df.get('distance') # from play data
     out['yardline_100'] = df.get('yardsToGoal', df.get('yardline')) # from play data
     out['yards_gained'] = df.get('yardsGained') # from play data
-    out['points_scored'] = df.get('points', 0) #TODO
 
     # Participants
     out['passer_player_id'] = df.get('passer_player_name') # from play stat data
@@ -106,23 +105,24 @@ def map_cfbd_to_standard(df: pd.DataFrame) -> pd.DataFrame:
 
     # Outcomes
     pt = (df.get('playType')).astype(str).str.lower() # from play data
-    out['is_pass'] = pt.str.contains('pass|sack|interception|incomplet').astype('int64') # from play data
-    out['is_rush'] = pt.str.contains('rush|run|kneel|draw').astype('int64') & (~out['is_pass'].astype(bool)) # from play data
-    out['complete'] = df.get('completion', 0)
-    out['touchdown'] = df.get('touchdown', 0)
-    out['interception'] = df.get('interception', 0)
-    out['sack'] = df.get('sack', 0)
-    out['sack_yards'] = df.get('sack_yards', 0)
-    out['scramble'] = df.get('scramble', 0)
+    out['is_pass'] = pt.str.contains('pass|sack|interception|incomplet').astype('int64') # from play data (play type)
+    out['is_rush'] = pt.str.contains('rush|run|kneel|draw').astype('int64') & (~out['is_pass'].astype(bool)) # from play data (play type)
+    out['complete'] = df.get('completion', 0) # from play stat data
+    out['touchdown'] = df.get('touchdown', 0) # from play stat data
+    out['points_scored'] = np.where(out['touchdown'] > 0, 7, 0) # from play stat data (td)
+    out['interception'] = df.get('interception', 0) # from play stat data
+    out['sack'] = df.get('sack', 0) # from play stat data
+    out['sack_yards'] = df.get('sack_yards', 0) # from play stat data
+    # out['scramble'] = df.get('scramble', 0) # TODO
 
     # Air/YAC if present
-    out['air_yards'] = df.get('air_yards')
-    out['yac'] = df.get('yards_after_catch')
+    out['air_yards'] = df.get('air_yards') # TODO
+    out['yac'] = df.get('yards_after_catch') # TODO
 
-    # Next state (not available -> NaN)
-    out['next_down'] = df.get('next_down')
-    out['next_distance'] = df.get('next_distance')
-    out['next_yardline_100'] = df.get('next_yardline_100')
+    # Next state (not available -> NaN) - commented out for now
+    # out['next_down'] = df.get('next_down')
+    # out['next_distance'] = df.get('next_distance')
+    # out['next_yardline_100'] = df.get('next_yardline_100')
 
     return out
 
