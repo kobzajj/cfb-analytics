@@ -3,6 +3,7 @@ from __future__ import annotations
 import os, sys
 from pathlib import Path
 import pandas as pd, pyarrow as pa, pyarrow.parquet as pq
+import random
 
 try:
     import cfbd
@@ -17,72 +18,75 @@ def get_client():
     cfg = cfbd.Configuration(access_token=token)
     return cfbd.ApiClient(cfg)
 
+# fetch rosters for a given year from CFBD API
 def fetch_rosters(year: int) -> pd.DataFrame:
     with get_client() as api:
         teams_api = cfbd.TeamsApi(api)
         # players_api = cfbd.PlayersApi(api)
         rows = []
         teams = teams_api.get_teams(year=year)
-        
-        # for t in teams:
-        #     print(t.school)
-        # look at Nebraska as an example
-        # try:
-        #     roster = teams_api.get_roster(year=year, team='Nebraska')
-        # except Exception as e:
-        #     print(f"[warn] roster Nebraska {year}: {e}", file=sys.stderr)
-        # for p in roster:
-        #     print(p.id, p.first_name, p.last_name, p.position)
-        #     rows.append({
-        #         "season": year, "player_id": p.id,
-        #         "player_name": f"{(p.first_name or '').strip()} {(p.last_name or '').strip()}".strip(),
-        #         "team_id": 12345, "team_name": 'Nebraska', "conference": 'Big Ten',
-        #         "position": p.position
-        #     })
 
+        # loop through list of teams returned by get_teams API call
         for t in teams:
             print(t.school, t.conference)
             try:
                 roster = teams_api.get_roster(year=year, team=t.school)
             except Exception as e:
                 print(f"[warn] roster {t.school} {year}: {e}", file=sys.stderr); continue
+            # loop through players in the current roster
             for p in roster:
+                # for each player, add their details to the master list
                 rows.append({
                     "season": year, "player_id": p.id,
                     "player_name": f"{(p.first_name or '').strip()} {(p.last_name or '').strip()}".strip(),
                     "team_id": t.id, "team_name": t.school, "conference": t.conference,
                     "position": p.position
                 })
+        # convert list of players to dataframe and return
         return pd.DataFrame(rows)
 
-def get_play_stats(game_id: int) -> pd.DataFrame:
+# for a given game ID, get play stats (used in combination with play by play to construct play details)
+def get_play_stats(game_id: int) -> list:
     with get_client() as api:
         plays_api = cfbd.PlaysApi(api)
         try:
+            # get play stats based on the requested game ID
             play_stats = plays_api.get_play_stats(game_id=game_id)
         except Exception as e:
             print(f"[warn] play stats game={game_id}: {e}", file=sys.stderr)
+        # return the list of PlayStat objects
         return play_stats
 
+# fetch all play by play details for a given year
 def fetch_pbp(year: int) -> pd.DataFrame:
     with get_client() as api:
         games_api = cfbd.GamesApi(api); plays_api = cfbd.PlaysApi(api)
         recs = []
 
+        # loop through 14 weeks in CFB regular season
         for i in range(1, 15):
             print('play by play week: ', i)
+
+            # counters for logging
+            play_count = 0
+            play_stat_count = 0
             
             # initialize stats lists for the current week
             play_stats = []
             play_stats_game_ids = []
             
             try:
+                # get all plays for the current week
                 plays_i = plays_api.get_plays(year, i)
             except Exception as e:
                 print(f"[warn] plays week={i} {year}: {e}", file=sys.stderr); continue
 
+            # loop through plays to add stats
             for pl in plays_i:
                 d = pl.to_dict(); d["season"] = year; d["game_id"] = pl.game_id
+
+                # increment play counter
+                play_count += 1
 
                 # if the needed player stats aren't already available, fetch them from cfbd api
                 # then search through stats from the appropriate game to find stats for the correct play
@@ -90,6 +94,10 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                 if pl.game_id not in play_stats_game_ids:
                     new_play_stats = get_play_stats(pl.game_id)
                     for ps in new_play_stats:
+
+                        # increment play stat counter
+                        play_stat_count += 1
+
                         # add stats if the current stats are for the correct play
                         if ps.play_id == pl.id:
                             # add passer details
@@ -138,12 +146,15 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                             elif ps.stat_type.lower() == "touchdown":
                                 d["touchdown"] = 1
 
+                    # add all new play_stats objects to the list
                     play_stats.extend(new_play_stats)
+                    # add new game_id to the list
                     play_stats_game_ids.append(pl.game_id)
 
                 # if the needed player stats are already available, search through all stats to find relevant ones
                 else:
                     for ps in play_stats:
+                        # if current play stat is linked to the current play, add details to the play object
                         if ps.play_id == pl.id:
                             # add passer details
                             if ps.stat_type.lower() in ("incompletion", "completion", "sack taken",
@@ -194,6 +205,10 @@ def fetch_pbp(year: int) -> pd.DataFrame:
 
                 recs.append(d)
 
+            # display game count, play count, and play stat count for the week
+            print('week ', i, 'games: ', len(play_stats_game_ids))
+            print('week ', i, 'plays: ', play_count)
+            print('week ', i, 'play stats: ', play_stat_count)
         
         # for g in games:
         #     print(g.id, g.season, g.week, g.home_team, g.home_points, g.away_team, g.away_points)
@@ -211,6 +226,8 @@ def fetch_pbp(year: int) -> pd.DataFrame:
     #         for pl in plays:
     #             d = pl.to_dict(); d["season"] = year; d["game_id"] = g.id
     #             recs.append(d)
+        print(random.choice(recs))
+        print(random.choice(recs))
         return pd.json_normalize(recs, max_level=1)
 
 def main():
