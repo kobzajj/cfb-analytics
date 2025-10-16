@@ -99,9 +99,12 @@ def map_cfbd_to_standard(df: pd.DataFrame) -> pd.DataFrame:
     out['yards_gained'] = df.get('yardsGained') # from play data
 
     # Participants
-    out['passer_player_id'] = df.get('passer_player_name') # from play stat data
-    out['rusher_player_id'] = df.get('rusher_player_name') # from play stat data
-    out['receiver_player_id'] = df.get('receiver_player_name') # from play stat data
+    out['passer_player_id'] = df.get('passer_player_id') # from play stat data
+    out['passer_player_name'] = df.get('passer_player_name')
+    out['rusher_player_id'] = df.get('rusher_player_id') # from play stat data
+    out['rusher_player_name'] = df.get('rusher_player_name')
+    out['receiver_player_id'] = df.get('receiver_player_id') # from play stat data
+    out['receiver_player_name'] = df.get('receiver_player_name')
 
     # Outcomes
     pt = (df.get('playType')).astype(str).str.lower() # from play data
@@ -116,8 +119,8 @@ def map_cfbd_to_standard(df: pd.DataFrame) -> pd.DataFrame:
     # out['scramble'] = df.get('scramble', 0) # TODO
 
     # Air/YAC if present
-    out['air_yards'] = df.get('air_yards') # TODO
-    out['yac'] = df.get('yards_after_catch') # TODO
+    # out['air_yards'] = df.get('air_yards') # TODO
+    # out['yac'] = df.get('yards_after_catch') # TODO
 
     # Next state (not available -> NaN) - commented out for now
     # out['next_down'] = df.get('next_down')
@@ -136,13 +139,21 @@ def main():
     df = pd.read_parquet(p)
     
 
-    print(list(df.columns))
-    print(df.head(10))
-    for i in range(10):
-        print(df['playText'][i])
+    # print(list(df.columns))
+    # print(df.head(10))
+    # for i in range(10):
+    #     print(df['playText'][i])
     
 
     mapped = map_cfbd_to_standard(df)
+
+    print(list(mapped.columns))
+    print('Number of plays in dataset: ', len(mapped))
+
+    # print random plays for debugging
+    for i in range(10):
+        print(mapped.sample(n=1))
+
     outp = Path(args.rawdir)/str(args.year)/'pbp.parquet'
     pq.write_table(pa.Table.from_pandas(mapped, preserve_index=False), outp)
     print('Wrote', outp)
