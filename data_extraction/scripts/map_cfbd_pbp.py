@@ -3,6 +3,48 @@ from __future__ import annotations
 from pathlib import Path
 import pandas as pd, numpy as np, pyarrow.parquet as pq, pyarrow as pa
 
+def calculate_next_possession(play):
+    if play['interception'] == 1:
+        return -1
+    elif play['fumble_recovery_name']:
+        return -1
+    elif play['down'] == 4 and (play['is_rush'] == 1 or play['is_pass'] == 1) and play['yards_gained'] < play['distance']:
+        return -1
+    else:
+        return 1
+
+def calculate_next_down(play):
+    next_down = 0
+    if play['touchdown'] == 1 or play['safety'] == 1 or play['fg_attempt'] == 1:
+        next_down = np.nan
+    elif play['next_possession'] == -1:
+        next_down = 1
+    elif play['down'] == 4:
+        next_down = 1
+    elif play['down'] in [1,2,3]:
+        if play['yards_gained'] >= play['distance']:
+            next_down = 1
+        else:
+            next_down = play['down'] + 1
+    return next_down
+
+def calculate_next_distance(play):
+    if play['touchdown'] == 1 or play['safety'] == 1 or play['fg_attempt'] == 1:
+        return np.nan
+    elif play['next_down'] == 1:
+        if play['yardline_100'] - play['yards_gained'] < 10:
+            return play['yardline_100'] - play['yards_gained']
+        else:
+            return 10
+    else:
+        return play['distance'] - play['yards_gained']
+
+def calculate_next_yl(play):
+    if play['touchdown'] == 1 or play['safety'] == 1 or play['fg_attempt'] == 1:
+        return np.nan
+    else:
+        return play['yardline_100'] - play['yards_gained']
+
 def map_cfbd_to_standard(df: pd.DataFrame) -> pd.DataFrame:
     
     # COLUMNS OF DATAFRAME BEING PROCESSED
@@ -105,27 +147,60 @@ def map_cfbd_to_standard(df: pd.DataFrame) -> pd.DataFrame:
     out['rusher_player_name'] = df.get('rusher_player_name')
     out['receiver_player_id'] = df.get('receiver_player_id') # from play stat data
     out['receiver_player_name'] = df.get('receiver_player_name')
+    out['fumble_recovery_id'] = df.get('fumble_recovery_id')
+    out['fumble_recovery_name'] = df.get('fumble_recovery_name')
 
     # Outcomes
     pt = (df.get('playType')).astype(str).str.lower() # from play data
     out['is_pass'] = pt.str.contains('pass|sack|interception|incomplet').astype('int64') # from play data (play type)
-    out['is_rush'] = pt.str.contains('rush|run|kneel|draw').astype('int64') & (~out['is_pass'].astype(bool)) # from play data (play type)
+    out['is_rush'] = pt.str.contains('rush|run|kneel|draw').astype('int64') & (~out['is_pass'].astype('int64')) # from play data (play type)
     out['complete'] = df.get('completion', 0) # from play stat data
     out['touchdown'] = df.get('touchdown', 0) # from play stat data
-    out['points_scored'] = np.where(out['touchdown'] > 0, 7, 0) # from play stat data (td)
+    out['safety'] = pt.str.contains('safety').astype('int64')
+    out['points_scored'] = np.where(out['touchdown'] > 0, 7, np.where(out['safety'] > 0, -2, 0)) # from play stat data (td and safety)
     out['interception'] = df.get('interception', 0) # from play stat data
     out['sack'] = df.get('sack', 0) # from play stat data
     out['sack_yards'] = df.get('sack_yards', 0) # from play stat data
+    out['fumble'] = df.get('fumble', 0)
+    out['fg_attempt'] = pt.str.contains('field goal').astype('int64')
     # out['scramble'] = df.get('scramble', 0) # TODO
 
     # Air/YAC if present
     # out['air_yards'] = df.get('air_yards') # TODO
     # out['yac'] = df.get('yards_after_catch') # TODO
 
+
+    # next down, distance, and yardline calculation are needed for EPA calculation
+    # next state scenarios:
+    # 1) base case: next down = 1 if yards_gained > distance, else if down<4 down+1, else 1 (if down = 4)
+    # 2) touchdown: next down, next distance, next_yardline_100 = NaN, points scored = 7
+    # 3) safety: next down, next distance, next_yardline_100 = NaN, points scored = -2
+    # 4) turnover on downs: down and distance is 1st and 10, from resulting yardline, with flipped possession flag
+    # 5) interception: down and distance is 1st and 10, from resulting yardline, with flipped possession flag
+    # 6) fumbles: resulting down if recovered by offense (fumble recovery player is nan) otherwise first and 10 at new spot
+    # 7) FG made: resulting down and distance = NaN, points scored = 3
+    # 8) Penalty:
+    # 9) No Play:
+    # note: need a turnover flag that can be passed to the EPA model to subtract the EP after value
+
+    # points scored for touchdowns and safeties already set above, so need to do the following:
+    # 1) check if play is a passing or running play (don't worry about others)
+    # 2) if a turnover (downs, fumble, or int) flip the possession and set to 1st and 10
+    # 3) update yardline based on yards gained and current yardline
+    # 4) update down and distance based on yards gained and previous down and distance
+    # 5) check for goal to go
+
+    out['next_possession'] = out.apply(calculate_next_possession, axis=1)
+    out['next_down'] = out.apply(calculate_next_down, axis=1)
+    out['next_distance'] = out.apply(calculate_next_distance, axis=1)
+    out['next_yardline_100'] = out.apply(calculate_next_yl, axis=1)
+
     # Next state (not available -> NaN) - commented out for now
     # out['next_down'] = df.get('next_down')
     # out['next_distance'] = df.get('next_distance')
     # out['next_yardline_100'] = df.get('next_yardline_100')
+
+    out['ppa_connelly'] = df['ppa']
 
     return out
 

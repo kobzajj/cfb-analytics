@@ -111,7 +111,7 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                             # add rusher details
                             elif ps.stat_type.lower() == "rush":
                                 d["rusher_player_name"] = ps.athlete_name
-                                d["rusher_played_id"] = ps.athlete_id
+                                d["rusher_player_id"] = ps.athlete_id
                             # add receiver details
                             elif ps.stat_type.lower() in ("target", "reception"):
                                 d["receiver_player_name"] = ps.athlete_name
@@ -138,6 +138,7 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                             elif ps.stat_type.lower() == "fumble recovered":
                                 d["fumble_recovery_name"] = ps.athlete_name
                                 d["fumble_recovery_id"] = ps.athlete_id
+                                d["fumble"] = 1
                             # tackle
                             elif ps.stat_type.lower() == "tackle":
                                 d["tackler_name"] = ps.athlete_name

@@ -24,8 +24,6 @@ def assemble_passing(pbp, rosters, parts, season):
         # 'pressures_faced': g['pressure'].sum(min_count=1) if 'pressure' in df.columns else 0, NEED TO ADD PRESSURES
     }).fillna(0)
 
-    # CONTINUE FROM HERE
-
     dropbacks = g['is_pass'].sum()
     if 'sack' in df.columns:
         dropbacks = dropbacks.add((df['sack']==1).groupby(df['passer_player_id']).sum(), fill_value=0)
@@ -44,9 +42,9 @@ def assemble_passing(pbp, rosters, parts, season):
     out['yards_per_dropback'] = out['pass_yards'].div(out['dropbacks'].replace({0: np.nan}))
     out['td_rate'] = out['pass_td'].div(out['pass_attempts'].replace({0: np.nan}))
     out['int_rate'] = out['interceptions'].div(out['pass_attempts'].replace({0: np.nan}))
-    out['air_yards_per_att'] = out['air_yards'].div(out['pass_attempts'].replace({0: np.nan})) if 'air_yards' in out.columns else np.nan
-    out['yac_per_comp'] = out['yac'].div(out['completions'].replace({0: np.nan})) if 'yac' in out.columns else np.nan
-    out['pressure_rate'] = out['pressures_faced'].div(out['dropbacks'].replace({0: np.nan}))
+    # out['air_yards_per_att'] = out['air_yards'].div(out['pass_attempts'].replace({0: np.nan})) if 'air_yards' in out.columns else np.nan
+    # out['yac_per_comp'] = out['yac'].div(out['completions'].replace({0: np.nan})) if 'yac' in out.columns else np.nan
+    # out['pressure_rate'] = out['pressures_faced'].div(out['dropbacks'].replace({0: np.nan}))
     out['sack_rate'] = out['sacks_taken'].div(out['dropbacks'].replace({0: np.nan}))
 
     out['success_rate'] = (df['epa']>0).groupby(df['passer_player_id']).mean()
