@@ -23,9 +23,9 @@ class EPModelStub:
 # missing columns that need to be added for epa calculation: next_down, next_distance, next_yardline_100
 def compute_epa(df, model, down_col='down', dist_col='distance', yl_col='yardline_100',
                 points_col='points_scored', next_down_col='next_down',
-                next_dist_col='next_distance', next_yl_col='next_yardline_100'):
+                next_dist_col='next_distance', next_yl_col='next_yardline_100', next_possession_col='next_possession'):
     """EPA = EP_after - EP_before - points_scored_on_play (placeholder)."""
     ep_before = model.expected_points(df[down_col], df[dist_col], df[yl_col])
     ep_after  = model.expected_points(df[next_down_col], df[next_dist_col], df[next_yl_col])
     points = df.get(points_col, pd.Series(0, index=df.index)).fillna(0)
-    return points + ep_after - ep_before
+    return df[next_possession_col] * points + df[next_possession_col] * ep_after - ep_before

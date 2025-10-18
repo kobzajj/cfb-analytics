@@ -15,7 +15,7 @@ def calculate_next_possession(play):
 
 def calculate_next_down(play):
     next_down = 0
-    if play['touchdown'] == 1 or play['safety'] == 1 or play['fg_attempt'] == 1:
+    if play['touchdown'] == 1 or play['safety'] == 1 or play['fg_attempt'] == 1 or play['punt_attempt'] == 1:
         next_down = np.nan
     elif play['next_possession'] == -1:
         next_down = 1
@@ -29,7 +29,7 @@ def calculate_next_down(play):
     return next_down
 
 def calculate_next_distance(play):
-    if play['touchdown'] == 1 or play['safety'] == 1 or play['fg_attempt'] == 1:
+    if play['touchdown'] == 1 or play['safety'] == 1 or play['fg_attempt'] == 1 or play['punt_attempt'] == 1:
         return np.nan
     elif play['next_down'] == 1:
         if play['yardline_100'] - play['yards_gained'] < 10:
@@ -40,7 +40,7 @@ def calculate_next_distance(play):
         return play['distance'] - play['yards_gained']
 
 def calculate_next_yl(play):
-    if play['touchdown'] == 1 or play['safety'] == 1 or play['fg_attempt'] == 1:
+    if play['touchdown'] == 1 or play['safety'] == 1 or play['fg_attempt'] == 1 or play['punt_attempt'] == 1:
         return np.nan
     else:
         return play['yardline_100'] - play['yards_gained']
@@ -163,6 +163,7 @@ def map_cfbd_to_standard(df: pd.DataFrame) -> pd.DataFrame:
     out['sack_yards'] = df.get('sack_yards', 0) # from play stat data
     out['fumble'] = df.get('fumble', 0)
     out['fg_attempt'] = pt.str.contains('field goal').astype('int64')
+    out['punt_attempt'] = pt.str.contains('punt').astype('int64')
     # out['scramble'] = df.get('scramble', 0) # TODO
 
     # Air/YAC if present

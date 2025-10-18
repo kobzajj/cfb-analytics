@@ -50,14 +50,17 @@ def assemble_passing(pbp, rosters, parts, season):
     out['success_rate'] = (df['epa']>0).groupby(df['passer_player_id']).mean()
     out['explosive_pass_rate'] = (df['yards_gained']>=20).groupby(df['passer_player_id']).mean()
 
-    idx = rosters[rosters['season']==season].set_index('player_id')[['player_name','team_id','team_name','conference','position']]
-    out = out.join(idx, how='left')
+    idx = rosters[rosters['season']==season].set_index('player_id')[['player_name','team_id','team_name','conference','position']].reset_index()
+    out = out.reset_index().rename(columns={'passer_player_id': 'player_id'})
+    out = out.dropna(subset=['player_id'])
+    out.loc[:, 'player_id'] = out['player_id'].astype(int)
+    idx.loc[:, 'player_id'] = idx['player_id'].astype(int)
+    out = pd.merge(out, idx, how='left', left_on='player_id', right_on='player_id')
     out['season'] = season
-    out = out.reset_index().rename(columns={'passer_player_id':'player_id'})
 
-    if not parts.empty:
-        psub = parts[['player_id','games','starts']].drop_duplicates('player_id')
-        out = out.merge(psub, on='player_id', how='left')
+    # if not parts.empty:
+    #     psub = parts[['player_id','games','starts']].drop_duplicates('player_id')
+    #     out = out.merge(psub, on='player_id', how='left')
 
     cols = ['season','player_id','player_name','team_id','team_name','conference','position',
             'games','starts','dropbacks','pass_attempts','sacks_taken','pressures_faced',
