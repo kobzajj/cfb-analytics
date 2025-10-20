@@ -50,6 +50,7 @@ def assemble_rushing(pbp, rosters, parts, season):
     out['epa_rush_short'] = df.loc[df['distance']<=2].groupby('rusher_player_id')['epa'].mean()
     out['epa_rush_red_zone'] = df.loc[df['yardline_100']<=20].groupby('rusher_player_id')['epa'].mean()
 
+    # not currently available
     if 'defenders_in_box' in df.columns:
         out['att_light_box_rate'] = (df['defenders_in_box']<=6).groupby(df['rusher_player_id']).mean()
         out['att_heavy_box_rate'] = (df['defenders_in_box']>=7).groupby(df['rusher_player_id']).mean()
