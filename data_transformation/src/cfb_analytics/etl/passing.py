@@ -7,6 +7,17 @@ from ..ep_model import compute_epa, EPModelStub
 # 'complete', 'touchdown', 'points_scored', 'interception', 'sack', 'sack_yards']
 
 def assemble_passing(pbp, rosters, parts, season):
+    # stats missing to be added later:
+    # 1 Air yards (need a source for this)
+    # 2 Yard after catch (yac) (need a source for this)
+    # 3 Pressures faced (need a source for this)
+    # 4 Air yards per attempt (based on air yards data)
+    # 5 YAC per completion (based on yac data)
+    # 6 Pressure rate (based on pressures faced)
+    # 7 Average expected completion % (based on expected completion %)
+    # 8 Completion percentage over expectation (CPOE) (based on expected completion %)
+    # 9 More sophisticated EPA model (currently have naive model and PPA from CFBD)
+
     df = pbp.copy()
     df = df[df.get('is_pass', 0)==1].copy()
     g = df.groupby('passer_player_id', dropna=False)
@@ -19,6 +30,7 @@ def assemble_passing(pbp, rosters, parts, season):
         'interceptions': g['interception'].sum(),
         'sacks_taken': (df.get('sack',0)==1).groupby(df['passer_player_id']).sum(),
         'sacks_yards_lost': (df.get('sack_yards',0)).groupby(df['passer_player_id']).sum() if 'sack_yards' in df.columns else 0,
+        'ppa_total_pass': g['ppa_connelly'].sum()
         # 'air_yards': g['air_yards'].sum(min_count=1) if 'air_yards' in df.columns else 0, NEED TO ADD AIR YARDS
         # 'yac': g['yac'].sum(min_count=1) if 'yac' in df.columns else 0, NEED TO ADD YAC
         # 'pressures_faced': g['pressure'].sum(min_count=1) if 'pressure' in df.columns else 0, NEED TO ADD PRESSURES
@@ -35,6 +47,7 @@ def assemble_passing(pbp, rosters, parts, season):
     df['epa'] = compute_epa(df, model)
     out = out.join(df.groupby('passer_player_id')['epa'].sum().rename('epa_total_pass'), how='left').fillna(0)
     out['epa_per_dropback'] = out['epa_total_pass'].div(out['dropbacks'].replace({0: np.nan}))
+    out['ppa_per_dropback'] = out['ppa_total_pass'].div(out['dropbacks'].replace({0: np.nan}))
 
     out['completion_pct'] = out['completions'].div(out['pass_attempts'].replace({0: np.nan}))
     out['yards_per_att'] = out['pass_yards'].div(out['pass_attempts'].replace({0: np.nan}))
@@ -67,5 +80,5 @@ def assemble_passing(pbp, rosters, parts, season):
             'completions','pass_yards','pass_td','interceptions','sacks_yards_lost','air_yards','yac',
             'completion_pct','yards_per_att','adj_yards_per_att','yards_per_dropback','td_rate','int_rate',
             'air_yards_per_att','yac_per_comp','pressure_rate','sack_rate',
-            'epa_total_pass','epa_per_dropback','success_rate','explosive_pass_rate']
+            'epa_total_pass','epa_per_dropback', 'ppa_total_pass', 'ppa_per_dropback', 'success_rate','explosive_pass_rate']
     return out.reindex(columns=cols)

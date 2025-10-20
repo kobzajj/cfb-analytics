@@ -162,6 +162,7 @@ def map_cfbd_to_standard(df: pd.DataFrame) -> pd.DataFrame:
     out['sack'] = df.get('sack', 0) # from play stat data
     out['sack_yards'] = df.get('sack_yards', 0) # from play stat data
     out['fumble'] = df.get('fumble', 0)
+    out['fumble_lost'] = out['fumble_recovery_name'].notna().astype('int64') # NEED TO MAKE SURE THIS WORKS
     out['fg_attempt'] = pt.str.contains('field goal').astype('int64')
     out['punt_attempt'] = pt.str.contains('punt').astype('int64')
     # out['scramble'] = df.get('scramble', 0) # TODO

@@ -6,6 +6,7 @@ def assemble_receiving(pbp, rosters, parts, season):
     df = df[df.get('is_pass',0)==1].copy()
     df = df[~df['receiver_player_id'].isna()].copy()
     g = df.groupby('receiver_player_id', dropna=False)
+
     out = pd.DataFrame({
         'targets': g['is_pass'].sum(),
         'receptions': g['complete'].sum() if 'complete' in df.columns else 0,

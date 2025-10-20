@@ -115,7 +115,7 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                             # add receiver details
                             elif ps.stat_type.lower() in ("target", "reception"):
                                 d["receiver_player_name"] = ps.athlete_name
-                                d["receiver_played_id"] = ps.athlete_id
+                                d["receiver_player_id"] = ps.athlete_id
                             # sack - TODO check if half sacks are recorded for multiple players
                             elif ps.stat_type.lower() == "sack":
                                 d["sacker_name"] = ps.athlete_name
@@ -169,11 +169,11 @@ def fetch_pbp(year: int) -> pd.DataFrame:
                             # add rusher details
                             elif ps.stat_type.lower() == "rush":
                                 d["rusher_player_name"] = ps.athlete_name
-                                d["rusher_played_id"] = ps.athlete_id
+                                d["rusher_player_id"] = ps.athlete_id
                             # add receiver details
                             elif ps.stat_type.lower() in ("target", "reception"):
                                 d["receiver_player_name"] = ps.athlete_name
-                                d["receiver_played_id"] = ps.athlete_id
+                                d["receiver_player_id"] = ps.athlete_id
                             # sack - TODO check if half sacks are recorded for multiple players
                             elif ps.stat_type.lower() == "sack":
                                 d["sacker_name"] = ps.athlete_name
