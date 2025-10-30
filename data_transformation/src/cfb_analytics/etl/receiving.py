@@ -15,7 +15,7 @@ def assemble_receiving(pbp, rosters, parts, season):
     # 9 EPA per short / deep target (requires air yards data)
     # 10 Targets by position on the field (wide / slot / inline) (need a source for this)
     # 11 Targets by defensive scheme (man vs zone) (need a source for this)
-    # 12 Separation in yards from closest defender (need a source for this)
+    # 12 Separation in  yards from closest defender (need a source for this)
     # 13 Air yards and target shares (requires team-level passing stats)
 
     df = pbp.copy()
@@ -102,9 +102,9 @@ def assemble_receiving(pbp, rosters, parts, season):
     # out['target_share'] = np.nan     # requires team pass attempts
 
     cols = ['season','player_id','player_name','team_id','team_name','conference','position',
-            'games','snaps','routes','targets','receptions','rec_yards','yds_per_reception', 'rec_td','drops','fumbles','air_yards','yac',
-            'tgt_per_route','adot','yards_per_route_run','targets_per_game','catch_pct','drop_rate','yds_per_target','tds_per_target','yac_per_rec',
-            'air_yards_share','target_share',
+            'games','snaps','routes','targets','receptions','rec_yards','yds_per_reception', 'rec_td','drops','fumbles', 'fumbles_lost',
+            'air_yards','yac','tgt_per_route','adot','yards_per_route_run','targets_per_game','catch_pct','drop_rate','yds_per_target',
+            'tds_per_target','yac_per_rec','air_yards_share','target_share',
             'epa_total_recv','epa_per_target','ppa_total_recv', 'ppa_per_target', 'success_rate','explosive_rec_rate',
             'slot_rate','wide_rate','inline_te_rate','man_tgt_rate','zone_tgt_rate','epa_vs_man','epa_vs_zone','separation_avg_yards',
             'epa_per_target_deep','epa_per_target_short']

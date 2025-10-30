@@ -71,7 +71,7 @@ def assemble_rushing(pbp, rosters, parts, season):
     #     out = out.merge(psub, on='player_id', how='left')
 
     cols = ['season','player_id','player_name','team_id','team_name','conference','position',
-            'games','snaps','rush_att','rush_yards','rush_td','fumbles','yards_before_contact',
+            'games','snaps','rush_att','rush_yards','rush_td','fumbles', 'fumbles_lost', 'yards_before_contact',
             'broken_tackles','forced_missed_tackles',
             'yards_per_carry','td_rate','fumble_rate', 'lost_fumble_rate',
             'epa_total_rush','epa_per_rush', 'ppa_total_rush', 'ppa_per_rush',
