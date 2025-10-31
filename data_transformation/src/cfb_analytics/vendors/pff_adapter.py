@@ -11,26 +11,26 @@ import pandas as pd
 # Left = standardized column name (what we output); Right = column name in your PFF CSVs.
 PFF_COLMAP_DEFAULT: Dict[str, str] = {
     "season": "season",
-    "pff_team_name": "team",            # e.g., "Alabama"
-    "pff_team_code": "team_code",       # optional, e.g., "ALA"
+    "pff_team_name": "team_name",            # e.g., "Alabama"
+    # "pff_team_code": "team_code",       # optional, e.g., "ALA"
     "player_name": "player",
-    "jersey": "jersey",                 # optional in some feeds
+    # "jersey": "jersey",                 # optional in some feeds
     "position": "position",             # e.g., "QB", "RB", "WR", "TE", "CB", etc.
-    "position_group": "position_group", # optional, e.g., "DL", "LB", "DB", "OL", "WR", etc.
-    "height": "height",                 # optional
-    "weight": "weight",                 # optional
-    "dob": "dob",                       # optional date of birth
-    "class_year": "class",              # optional ("FR","SO","JR","SR","GR")
+    # "position_group": "position_group", # optional, e.g., "DL", "LB", "DB", "OL", "WR", etc.
+    # "height": "height",                 # optional
+    # "weight": "weight",                 # optional
+    # "dob": "dob",                       # optional date of birth
+    # "class_year": "class",              # optional ("FR","SO","JR","SR","GR")
     "pff_player_id": "player_id",       # if present in your export
 }
 
 # Any additional stats you want to carry forward can be listed here and will be prefixed with "pff_"
-PFF_PASSTHRU_STATS: List[str] = [
-    # examples—adjust to your files
-    "dropbacks", "pass_attempts", "completions", "passing_yards", "passing_tds",
-    "interceptions", "sacks", "pressures", "targets", "receptions", "receiving_yards",
-    "receiving_tds", "rush_attempts", "rushing_yards", "rushing_tds",
-]
+# PFF_PASSTHRU_STATS: List[str] = [
+#     # examples—adjust to your files
+#     "dropbacks", "pass_attempts", "completions", "passing_yards", "passing_tds",
+#     "interceptions", "sacks", "pressures", "targets", "receptions", "receiving_yards",
+#     "receiving_tds", "rush_attempts", "rushing_yards", "rushing_tds",
+# ]
 
 def _norm_cols(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
