@@ -80,15 +80,15 @@ def build_team_xref(pff_df: pd.DataFrame, cfbd_rosters: pd.DataFrame, seasons: l
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--seasons", type=int, nargs="+", required=True, help="e.g., 2019 2020 2021 2022 2023 2024")
-    ap.add_argument("--pff", type=str, default="data/vendor/pff", help="dir containing season subfolders of PFF CSVs")
-    ap.add_argument("--cfbd_rosters_root", type=str, default="data/raw", help="dir with data/raw/{season}/rosters.csv")
+    ap.add_argument("--pff", type=str, default="../data_extraction/data/pff", help="dir containing season subfolders of PFF CSVs")
+    ap.add_argument("--cfbd_rosters_root", type=str, default="../data_extraction/data/raw", help="dir with data/raw/{season}/rosters.csv")
     ap.add_argument("--out", type=str, default="data/xref/teams_pff_cfbd.csv")
     args = ap.parse_args()
 
     # Load PFF player-season rows (all seasons requested)
     frames = []
     for yr in args.seasons:
-        frames.append(load_pff_player_seasons(f"{args.pff}/{yr}"))
+        frames.append(load_pff_player_seasons(f"{args.pff}/{yr}"), include_stats = False)
     pff_df = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=["season","pff_team_name"])
 
     # Load CFBD rosters for team list

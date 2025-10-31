@@ -25,12 +25,12 @@ PFF_COLMAP_DEFAULT: Dict[str, str] = {
 }
 
 # Any additional stats you want to carry forward can be listed here and will be prefixed with "pff_"
-# PFF_PASSTHRU_STATS: List[str] = [
-#     # examples—adjust to your files
-#     "dropbacks", "pass_attempts", "completions", "passing_yards", "passing_tds",
-#     "interceptions", "sacks", "pressures", "targets", "receptions", "receiving_yards",
-#     "receiving_tds", "rush_attempts", "rushing_yards", "rushing_tds",
-# ]
+PFF_PASSTHRU_STATS: List[str] = [
+    # examples—adjust to your files
+    "dropbacks", "pass_attempts", "completions", "passing_yards", "passing_tds",
+    "interceptions", "sacks", "pressures", "targets", "receptions", "receiving_yards",
+    "receiving_tds", "rush_attempts", "rushing_yards", "rushing_tds",
+]
 
 def _norm_cols(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
@@ -52,6 +52,7 @@ def load_pff_player_seasons(
     path_or_glob: str,
     colmap: Optional[Dict[str, str]] = None,
     passthru_stats: Optional[List[str]] = None,
+    include_stats: bool = False
 ) -> pd.DataFrame:
     """
     Load one or many PFF player-season CSV files and return a standardized DataFrame.
@@ -61,6 +62,8 @@ def load_pff_player_seasons(
 
     Args:
         path_or_glob: directory or glob to CSV files (e.g., 'data/vendor/pff/2021/*.csv')
+        colmap: dictionary translating input column names from PFF files to output column names
+        passthru_stats: optional list of columns to pass through from PFF files to crosswalk output
     """
     colmap = colmap or PFF_COLMAP_DEFAULT
     passthru_stats = passthru_stats or PFF_PASSTHRU_STATS
@@ -79,9 +82,10 @@ def load_pff_player_seasons(
         df = _rename_apply_map(df, colmap)
 
         # Pass-through stats (optional)
-        for c in passthru_stats:
-            if c in df.columns:
-                df[f"pff_{c}"] = df[c]
+        if include_stats and passthru_stats:
+            for c in passthru_stats:
+                if c in df.columns:
+                    df[f"pff_{c}"] = df[c]
 
         frames.append(df)
 
