@@ -2,8 +2,15 @@
 # scripts/xref_build_teams_pff_cfbd.py
 from __future__ import annotations
 import argparse
-from pathlib import Path
 import pandas as pd
+import unidecode, re
+
+import sys
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 try:
     from rapidfuzz import fuzz, process   # better fuzzy matching
@@ -15,7 +22,7 @@ except Exception:
 from cfb_analytics.vendors.pff_adapter import load_pff_player_seasons
 
 def norm_name(s: str) -> str:
-    import unidecode, re
+    # import unidecode, re
     s = unidecode.unidecode((s or "").lower())
     s = s.replace("&", "and")
     s = re.sub(r"[^\w\s]", " ", s)
@@ -30,12 +37,17 @@ def build_team_xref(pff_df: pd.DataFrame, cfbd_rosters: pd.DataFrame, seasons: l
         .assign(team_name_norm=lambda d: d["team_name"].map(norm_name))
     )
 
+    print(cfbd_teams.head(10))
+
     # PFF team list present in your PFF player seasons
     pff_teams = (
         pff_df.query("season in @seasons")[["season", "pff_team_name"]]
         .drop_duplicates()
         .assign(pff_team_name_norm=lambda d: d["pff_team_name"].map(norm_name))
     )
+
+    print(pff_df.head(10))
+    print(pff_teams.head(10))
 
     rows = []
     for yr in sorted(pff_teams["season"].dropna().unique()):
@@ -73,6 +85,8 @@ def build_team_xref(pff_df: pd.DataFrame, cfbd_rosters: pd.DataFrame, seasons: l
                 "match_score": score,
                 "override": False
             })
+            print(cand)
+            print(cf_row["team_name"])
 
     out = pd.DataFrame(rows).drop_duplicates(["season","pff_team_name"])
     return out
@@ -80,28 +94,38 @@ def build_team_xref(pff_df: pd.DataFrame, cfbd_rosters: pd.DataFrame, seasons: l
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--seasons", type=int, nargs="+", required=True, help="e.g., 2019 2020 2021 2022 2023 2024")
-    ap.add_argument("--pff", type=str, default="../data_extraction/data/pff", help="dir containing season subfolders of PFF CSVs")
-    ap.add_argument("--cfbd_rosters_root", type=str, default="../data_extraction/data/raw", help="dir with data/raw/{season}/rosters.csv")
-    ap.add_argument("--out", type=str, default="data/xref/teams_pff_cfbd.csv")
+    ap.add_argument("--pff", type=str, default="../../data_extraction/data/pff", help="dir containing season subfolders of PFF CSVs")
+    ap.add_argument("--cfbd_rosters_root", type=str, default="../../data_extraction/data/raw", help="dir with data/raw/{season}/rosters.csv")
+    ap.add_argument("--out", type=str, default="../data/xref/teams_pff_cfbd.csv")
     args = ap.parse_args()
 
     # Load PFF player-season rows (all seasons requested)
     frames = []
     for yr in args.seasons:
-        frames.append(load_pff_player_seasons(f"{args.pff}/{yr}"), include_stats = False)
+        frames.append(load_pff_player_seasons(f"{args.pff}/{yr}", yr, include_stats = False))
     pff_df = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=["season","pff_team_name"])
+
+    print(pff_df.shape)
 
     # Load CFBD rosters for team list
     rost_frames = []
     for yr in args.seasons:
         p = Path(args.cfbd_rosters_root) / str(yr) / "rosters.csv"
+        print(p)
+        print(f"Root: {args.cfbd_rosters_root}")
+        print(f"Full path: {p.resolve()}")
         if p.exists():
             rost_frames.append(pd.read_csv(p))
     if not rost_frames:
         raise SystemExit("No CFBD rosters found. Expected data/raw/{season}/rosters.csv")
     cfbd_rosters = pd.concat(rost_frames, ignore_index=True)
 
+    print(cfbd_rosters.shape)
+
     out = build_team_xref(pff_df, cfbd_rosters, args.seasons)
+
+    print(out.shape)
+
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     out.to_csv(args.out, index=False)
     print(f"[ok] wrote {args.out}")

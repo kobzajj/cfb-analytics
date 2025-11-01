@@ -8,12 +8,12 @@ import pandas as pd
 # Minimal, configurable adapter
 # ------------------------------
 # Edit these mappings to match your PFF export headers.
-# Left = standardized column name (what we output); Right = column name in your PFF CSVs.
+# Left = column name in your PFF CSVs; Right = standardized column name (what we output).
 PFF_COLMAP_DEFAULT: Dict[str, str] = {
     "season": "season",
-    "pff_team_name": "team_name",            # e.g., "Alabama"
+    "team_name": "pff_team_name",            # e.g., "Alabama"
     # "pff_team_code": "team_code",       # optional, e.g., "ALA"
-    "player_name": "player",
+    "player": "player_name",
     # "jersey": "jersey",                 # optional in some feeds
     "position": "position",             # e.g., "QB", "RB", "WR", "TE", "CB", etc.
     # "position_group": "position_group", # optional, e.g., "DL", "LB", "DB", "OL", "WR", etc.
@@ -21,7 +21,7 @@ PFF_COLMAP_DEFAULT: Dict[str, str] = {
     # "weight": "weight",                 # optional
     # "dob": "dob",                       # optional date of birth
     # "class_year": "class",              # optional ("FR","SO","JR","SR","GR")
-    "pff_player_id": "player_id",       # if present in your export
+    "player_id": "pff_player_id",       # if present in your export
 }
 
 # Any additional stats you want to carry forward can be listed here and will be prefixed with "pff_"
@@ -40,16 +40,14 @@ def _norm_cols(df: pd.DataFrame) -> pd.DataFrame:
 
 def _rename_apply_map(df: pd.DataFrame, colmap: Dict[str, str]) -> pd.DataFrame:
     # Keep only columns we know, but don’t error if missing; we’ll fill later.
-    keep = {std: src for std, src in colmap.items() if src in df.columns}
-    out = df.rename(columns=keep)
-    # Ensure all standardized columns exist
-    for std in colmap.keys():
-        if std not in out.columns:
-            out[std] = pd.NA
+    # keep = {std: src for std, src in colmap.items() if src in df.columns}
+    keep = df[list(colmap.keys())]
+    out = keep.rename(columns=colmap)
     return out
 
 def load_pff_player_seasons(
     path_or_glob: str,
+    season: str,
     colmap: Optional[Dict[str, str]] = None,
     passthru_stats: Optional[List[str]] = None,
     include_stats: bool = False
@@ -66,6 +64,9 @@ def load_pff_player_seasons(
         passthru_stats: optional list of columns to pass through from PFF files to crosswalk output
     """
     colmap = colmap or PFF_COLMAP_DEFAULT
+
+    print(colmap)
+
     passthru_stats = passthru_stats or PFF_PASSTHRU_STATS
 
     files: List[Path] = []
@@ -78,8 +79,11 @@ def load_pff_player_seasons(
     frames: List[pd.DataFrame] = []
     for f in files:
         df = pd.read_csv(f)
+        df["season"] = season
         df = _norm_cols(df)
+        print(df.shape)
         df = _rename_apply_map(df, colmap)
+        print(df.shape)
 
         # Pass-through stats (optional)
         if include_stats and passthru_stats:

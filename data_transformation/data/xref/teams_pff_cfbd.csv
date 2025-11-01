@@ -1,0 +1,128 @@
+season,pff_team_name,cfbd_team_id,cfbd_team_name,match_method,match_score,override
+2019,SMU,2567,SMU,difflib,100,False
+2019,HAWAII,62,Hawai'i,difflib,80,False
+2019,TEMPLE,218,Temple,difflib,100,False
+2019,ARK STATE,2032,Arkansas State,difflib,80,False
+2019,LSU,99,LSU,difflib,100,False
+2019,USC,30,USC,difflib,100,False
+2019,TEXAS,251,Texas,difflib,100,False
+2019,UCF,2116,UCF,difflib,100,False
+2019,PURDUE,2509,Purdue,difflib,100,False
+2019,W KENTUCKY,96,Kentucky,difflib,80,False
+2019,MEMPHIS,235,Memphis,difflib,100,False
+2019,C MICHIGAN,130,Michigan,difflib,80,False
+2019,PITTSBURGH,221,Pittsburgh,difflib,100,False
+2019,COLO STATE,36,Colorado State,difflib,80,False
+2019,NEVADA,2440,Nevada,difflib,100,False
+2019,MINNESOTA,135,Minnesota,difflib,100,False
+2019,OREGON ST,204,Oregon State,difflib,80,False
+2019,S JOSE ST,23,San José State,difflib,80,False
+2019,OLE MISS,145,Ole Miss,difflib,100,False
+2019,BAYLOR,239,Baylor,difflib,100,False
+2019,W VIRGINIA,258,Virginia,difflib,80,False
+2019,GA STATE,2026,App State,difflib,80,False
+2019,KANSAS,2305,Kansas,difflib,100,False
+2019,VIRGINIA,258,Virginia,difflib,100,False
+2019,ALABAMA,333,Alabama,difflib,100,False
+2019,NOTRE DAME,87,Notre Dame,difflib,100,False
+2019,AUBURN,2,Auburn,difflib,100,False
+2019,N TEXAS,251,Texas,difflib,80,False
+2019,S CAROLINA,151,East Carolina,difflib,80,False
+2019,SYRACUSE,183,Syracuse,difflib,100,False
+2019,NC STATE,152,NC State,difflib,100,False
+2019,RICE,242,Rice,difflib,100,False
+2019,CLEMSON,228,Clemson,difflib,100,False
+2019,LOUISVILLE,97,Louisville,difflib,100,False
+2019,MICH STATE,127,Michigan State,difflib,80,False
+2019,WAKE,2681,Wagner,difflib,80,False
+2019,WASH STATE,328,Utah State,difflib,80,False
+2019,FLORIDA ST,52,Florida State,difflib,80,False
+2019,SO MISS,145,Ole Miss,difflib,80,False
+2019,TROY,2653,Troy,difflib,100,False
+2019,INDIANA,84,Indiana,difflib,100,False
+2019,UTAH ST,328,Utah State,difflib,80,False
+2019,ARIZONA ST,9,Arizona State,difflib,80,False
+2019,N CAROLINA,153,North Carolina,difflib,80,False
+2019,TULSA,202,Tulsa,difflib,100,False
+2019,TEXAS A&M,245,Texas A&M,difflib,100,False
+2019,E CAROLINA,151,East Carolina,difflib,80,False
+2019,IOWA STATE,66,Iowa State,difflib,100,False
+2019,BOISE ST,68,Boise State,difflib,80,False
+2019,FAU,231,Furman,difflib,80,False
+2019,UAB,5,UAB,difflib,100,False
+2019,TEXAS ST,326,Texas State,difflib,80,False
+2019,BOWL GREEN,189,Bowling Green,difflib,80,False
+2019,W MICHIGAN,130,Michigan,difflib,80,False
+2019,TENNESSEE,2633,Tennessee,difflib,100,False
+2019,PENN STATE,213,Penn State,difflib,100,False
+2019,WASHINGTON,264,Washington,difflib,100,False
+2019,FIU,231,Furman,difflib,80,False
+2019,WISCONSIN,275,Wisconsin,difflib,100,False
+2019,S DIEGO ST,21,San Diego State,difflib,80,False
+2019,UCONN,41,UConn,difflib,100,False
+2019,HOUSTON,248,Houston,difflib,100,False
+2019,APP STATE,2026,App State,difflib,100,False
+2019,BALL ST,2050,Ball State,difflib,80,False
+2019,TCU,2628,TCU,difflib,100,False
+2019,OKLAHOMA,201,Oklahoma,difflib,100,False
+2019,OREGON,2483,Oregon,difflib,100,False
+2019,TULANE,2655,Tulane,difflib,100,False
+2019,BUFFALO,2084,Buffalo,difflib,100,False
+2019,CHARLOTTE,2429,Charlotte,difflib,100,False
+2019,STANFORD,24,Stanford,difflib,100,False
+2019,OKLA STATE,197,Oklahoma State,difflib,80,False
+2019,UCLA,26,UCLA,difflib,100,False
+2019,LA LAFAYET,399,UAlbany,difflib,80,False
+2019,UNLV,2439,UNLV,difflib,100,False
+2019,E MICHIGAN,130,Michigan,difflib,80,False
+2019,MICHIGAN,130,Michigan,difflib,100,False
+2019,TEXAS TECH,2641,Texas Tech,difflib,100,False
+2019,MIAMI FL,2390,Miami,difflib,80,False
+2019,VANDERBILT,238,Vanderbilt,difflib,100,False
+2019,COLORADO,38,Colorado,difflib,100,False
+2019,FLORIDA,57,Florida,difflib,100,False
+2019,KENT STATE,2309,Kent State,difflib,100,False
+2019,NWESTERN,77,Northwestern,difflib,80,False
+2019,GEORGIA,61,Georgia,difflib,100,False
+2019,AKRON,2006,Akron,difflib,100,False
+2019,LA TECH,2641,Texas Tech,difflib,80,False
+2019,OHIO STATE,194,Ohio State,difflib,100,False
+2019,IOWA,2294,Iowa,difflib,100,False
+2019,NEBRASKA,158,Nebraska,difflib,100,False
+2019,MARYLAND,120,Maryland,difflib,100,False
+2019,CINCINNATI,2132,Cincinnati,difflib,100,False
+2019,COAST CAR,324,Coastal Carolina,difflib,80,False
+2019,MIDDLE TN,2393,Middle Tennessee,difflib,80,False
+2019,MIAMI OH,193,Miami (OH),difflib,100,False
+2019,DUKE,150,Duke,difflib,100,False
+2019,LA MONROE,2433,UL Monroe,difflib,80,False
+2019,UTSA,2636,UTSA,difflib,100,False
+2019,S ALABAMA,333,Alabama,difflib,80,False
+2019,UTEP,2638,UTEP,difflib,100,False
+2019,VA TECH,2641,Texas Tech,difflib,80,False
+2019,MARSHALL,276,Marshall,difflib,100,False
+2019,TOLEDO,2649,Toledo,difflib,100,False
+2019,ARKANSAS,8,Arkansas,difflib,100,False
+2019,FRESNO ST,278,Fresno State,difflib,80,False
+2019,OHIO,195,Ohio,difflib,100,False
+2019,CAL,26,UCLA,difflib,80,False
+2019,NEW MEXICO,167,New Mexico,difflib,100,False
+2019,UMASS,231,Furman,difflib,80,False
+2019,N ILLINOIS,356,Illinois,difflib,80,False
+2019,KANSAS ST,2306,Kansas State,difflib,80,False
+2019,BOSTON COL,103,Boston College,difflib,80,False
+2019,ILLINOIS,356,Illinois,difflib,100,False
+2019,KENTUCKY,96,Kentucky,difflib,100,False
+2019,ARIZONA,12,Arizona,difflib,100,False
+2019,MISSOURI,142,Missouri,difflib,100,False
+2019,AIR FORCE,2005,Air Force,difflib,100,False
+2019,MISS STATE,2623,Missouri State,difflib,80,False
+2019,GA TECH,59,Georgia Tech,difflib,80,False
+2019,USF,30,USC,difflib,80,False
+2019,RUTGERS,164,Rutgers,difflib,100,False
+2019,WYOMING,2751,Wyoming,difflib,100,False
+2019,DOMINION,295,Old Dominion,difflib,80,False
+2019,UTAH,254,Utah,difflib,100,False
+2019,ARMY,349,Army,difflib,100,False
+2019,GA SOUTHRN,2582,Southern,difflib,80,False
+2019,NAVY,2426,Navy,difflib,100,False

@@ -2,8 +2,15 @@
 # scripts/xref_build_players_pff_cfbd.py
 from __future__ import annotations
 import argparse
-from pathlib import Path
 import pandas as pd
+import unidecode, re
+
+import sys
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
 
 try:
     from rapidfuzz import fuzz, process
@@ -15,7 +22,7 @@ except Exception:
 from cfb_analytics.vendors.pff_adapter import load_pff_player_seasons
 
 def norm_name(s: str) -> str:
-    import unidecode, re
+    # import unidecode, re
     s = unidecode.unidecode((s or "").lower())
     # Remove suffixes and punctuation
     s = re.sub(r"\b(jr|sr|ii|iii|iv)\b", "", s)
@@ -149,16 +156,16 @@ def build_player_xref(
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--seasons", type=int, nargs="+", required=True, help="e.g., 2019 2020 2021 2022 2023 2024")
-    ap.add_argument("--pff", type=str, default="../data_extraction/data/pff", help="dir with season subfolders")
-    ap.add_argument("--cfbd_rosters_root", type=str, default="../data_extraction/data/raw", help="dir with data/raw/{season}/rosters.csv")
-    ap.add_argument("--team_xref", type=str, default="data/xref/teams_pff_cfbd.csv")
-    ap.add_argument("--out", type=str, default="data/xref/players_pff_cfbd.csv")
+    ap.add_argument("--pff", type=str, default="../../data_extraction/data/pff", help="dir with season subfolders")
+    ap.add_argument("--cfbd_rosters_root", type=str, default="../../data_extraction/data/raw", help="dir with data/raw/{season}/rosters.csv")
+    ap.add_argument("--team_xref", type=str, default="../data/xref/teams_pff_cfbd.csv")
+    ap.add_argument("--out", type=str, default="../data/xref/players_pff_cfbd.csv")
     args = ap.parse_args()
 
     # Load PFF player-seasons
     pff_frames = []
     for yr in args.seasons:
-        pff_frames.append(load_pff_player_seasons(f"{args.pff}/{yr}"), include_stats = False)
+        pff_frames.append(load_pff_player_seasons(f"{args.pff}/{yr}", yr, include_stats = False))
     pff_df = pd.concat(pff_frames, ignore_index=True) if pff_frames else pd.DataFrame()
 
     # Load CFBD rosters
