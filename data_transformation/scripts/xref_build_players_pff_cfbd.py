@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import pandas as pd
 import unidecode, re
+import numpy as np
 
 import sys
 from pathlib import Path
@@ -42,6 +43,7 @@ _POS_MAP = {
 
 def _pos_group(x: str) -> str:
     if not x: return ""
+    elif pd.isna(x): return ""
     return _POS_MAP.get(x.strip().lower(), x.strip().upper())
 
 def _body_match_score(h1, w1, h2, w2) -> float:
@@ -69,6 +71,10 @@ def match_block_without_jersey(pf_t: pd.DataFrame, cf_t: pd.DataFrame) -> tuple[
     cf["name_key"] = cf["player_name"].map(norm_name)
 
     # NEED TO UPDATE - START FROM HERE
+
+    print(pf["position"].unique())
+    print(cf["position_cfbd"].unique())
+
     pf["pos_group"] = pf.get("position", "").map(_pos_group)
     cf["pos_group"] = cf.get("position_cfbd", cf.get("position", "")).map(_pos_group)
 

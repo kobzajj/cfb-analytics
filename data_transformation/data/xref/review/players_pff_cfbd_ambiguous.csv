@@ -1,0 +1,1317 @@
+season,pff_player_id,pff_team_name,name_pff,cfbd_player_id_candidate,name_cfbd,score,name_sim,pos_bonus,body_score
+2019,84457,UAB,Austin Watkins,-1037487,Austin Watkins Jr.,0.95,100.0,1.0,0.0
+2019,84457,UAB,Austin Watkins,4363409,Austin Watkins,0.95,100.0,1.0,0.0
+2019,55732,UAB,Dy'jonn Turner,-1037483,Dy'jonn Turner,0.95,100.0,1.0,0.0
+2019,55732,UAB,Dy'jonn Turner,4239827,Dy'jonn Turner,0.95,100.0,1.0,0.0
+2019,83097,UAB,CD Daniels,-1037404,CD Daniels,0.95,100.0,1.0,0.0
+2019,83097,UAB,CD Daniels,4363407,CD Daniels,0.95,100.0,1.0,0.0
+2019,84457,UAB,Austin Watkins,-1037487,Austin Watkins Jr.,0.95,100.0,1.0,0.0
+2019,84457,UAB,Austin Watkins,4363409,Austin Watkins,0.95,100.0,1.0,0.0
+2019,55732,UAB,Dy'jonn Turner,-1037483,Dy'jonn Turner,0.95,100.0,1.0,0.0
+2019,55732,UAB,Dy'jonn Turner,4239827,Dy'jonn Turner,0.95,100.0,1.0,0.0
+2019,83097,UAB,CD Daniels,-1037404,CD Daniels,0.95,100.0,1.0,0.0
+2019,83097,UAB,CD Daniels,4363407,CD Daniels,0.95,100.0,1.0,0.0
+2019,55732,UAB,Dy'jonn Turner,-1037483,Dy'jonn Turner,0.95,100.0,1.0,0.0
+2019,55732,UAB,Dy'jonn Turner,4239827,Dy'jonn Turner,0.95,100.0,1.0,0.0
+2019,83097,UAB,CD Daniels,-1037404,CD Daniels,0.95,100.0,1.0,0.0
+2019,83097,UAB,CD Daniels,4363407,CD Daniels,0.95,100.0,1.0,0.0
+2019,55732,UAB,Dy'jonn Turner,-1037483,Dy'jonn Turner,0.95,100.0,1.0,0.0
+2019,55732,UAB,Dy'jonn Turner,4239827,Dy'jonn Turner,0.95,100.0,1.0,0.0
+2019,83097,UAB,CD Daniels,-1037404,CD Daniels,0.95,100.0,1.0,0.0
+2019,83097,UAB,CD Daniels,4363407,CD Daniels,0.95,100.0,1.0,0.0
+2019,36344,ARKANSAS,Cheyenne O'Grady,-1002149,Cheyenne O’Grady,0.95,100.0,1.0,0.0
+2019,36344,ARKANSAS,Cheyenne O'Grady,4035593,Cheyenne O'Grady,0.95,100.0,1.0,0.0
+2019,61141,ARKANSAS,De'Vion Warren,-1002174,De’Vion Warren,0.95,100.0,1.0,0.0
+2019,61141,ARKANSAS,De'Vion Warren,4242178,De'Vion Warren,0.95,100.0,1.0,0.0
+2019,99151,ARKANSAS,A'Montae Spivey,-1002166,A’Montae Spivey,0.95,100.0,1.0,0.0
+2019,99151,ARKANSAS,A'Montae Spivey,4567160,A'Montae Spivey,0.95,100.0,1.0,0.0
+2019,99151,ARKANSAS,A'Montae Spivey,-1002166,A’Montae Spivey,0.95,100.0,1.0,0.0
+2019,99151,ARKANSAS,A'Montae Spivey,4567160,A'Montae Spivey,0.95,100.0,1.0,0.0
+2019,61141,ARKANSAS,De'Vion Warren,-1002174,De’Vion Warren,0.95,100.0,1.0,0.0
+2019,61141,ARKANSAS,De'Vion Warren,4242178,De'Vion Warren,0.95,100.0,1.0,0.0
+2019,36344,ARKANSAS,Cheyenne O'Grady,-1002149,Cheyenne O’Grady,0.95,100.0,1.0,0.0
+2019,36344,ARKANSAS,Cheyenne O'Grady,4035593,Cheyenne O'Grady,0.95,100.0,1.0,0.0
+2019,40982,ARKANSAS,D'Vone McClure,-1002137,D’Vone McClure,0.95,100.0,1.0,0.0
+2019,40982,ARKANSAS,D'Vone McClure,3724702,D'Vone McClure,0.95,100.0,1.0,0.0
+2019,43858,ARKANSAS,De'Jon Harris,-1002109,De’Jon Harris,0.95,100.0,1.0,0.0
+2019,43858,ARKANSAS,De'Jon Harris,4035577,De'Jon Harris,0.95,100.0,1.0,0.0
+2019,83141,ARKANSAS,Joe Foucha,-1002099,Joe Foucha,0.95,100.0,1.0,0.0
+2019,83141,ARKANSAS,Joe Foucha,4371995,Joe Foucha,0.95,100.0,1.0,0.0
+2019,36344,ARKANSAS,Cheyenne O'Grady,-1002149,Cheyenne O’Grady,0.95,100.0,1.0,0.0
+2019,36344,ARKANSAS,Cheyenne O'Grady,4035593,Cheyenne O'Grady,0.95,100.0,1.0,0.0
+2019,61141,ARKANSAS,De'Vion Warren,-1002174,De’Vion Warren,0.95,100.0,1.0,0.0
+2019,61141,ARKANSAS,De'Vion Warren,4242178,De'Vion Warren,0.95,100.0,1.0,0.0
+2019,99151,ARKANSAS,A'Montae Spivey,-1002166,A’Montae Spivey,0.95,100.0,1.0,0.0
+2019,99151,ARKANSAS,A'Montae Spivey,4567160,A'Montae Spivey,0.95,100.0,1.0,0.0
+2019,40982,ARKANSAS,D'Vone McClure,-1002137,D’Vone McClure,0.95,100.0,1.0,0.0
+2019,40982,ARKANSAS,D'Vone McClure,3724702,D'Vone McClure,0.95,100.0,1.0,0.0
+2019,43858,ARKANSAS,De'Jon Harris,-1002109,De’Jon Harris,0.95,100.0,1.0,0.0
+2019,43858,ARKANSAS,De'Jon Harris,4035577,De'Jon Harris,0.95,100.0,1.0,0.0
+2019,65084,ARKANSAS,Brenden Young,4242180,Brenden Young,0.95,100.0,1.0,0.0
+2019,65084,ARKANSAS,Brenden Young,4276275,Brenden Young,0.95,100.0,1.0,0.0
+2019,83141,ARKANSAS,Joe Foucha,-1002099,Joe Foucha,0.95,100.0,1.0,0.0
+2019,83141,ARKANSAS,Joe Foucha,4371995,Joe Foucha,0.95,100.0,1.0,0.0
+2019,40982,ARKANSAS,D'Vone McClure,-1002137,D’Vone McClure,0.95,100.0,1.0,0.0
+2019,40982,ARKANSAS,D'Vone McClure,3724702,D'Vone McClure,0.95,100.0,1.0,0.0
+2019,43858,ARKANSAS,De'Jon Harris,-1002109,De’Jon Harris,0.95,100.0,1.0,0.0
+2019,43858,ARKANSAS,De'Jon Harris,4035577,De'Jon Harris,0.95,100.0,1.0,0.0
+2019,65084,ARKANSAS,Brenden Young,4242180,Brenden Young,0.95,100.0,1.0,0.0
+2019,65084,ARKANSAS,Brenden Young,4276275,Brenden Young,0.95,100.0,1.0,0.0
+2019,83141,ARKANSAS,Joe Foucha,-1002099,Joe Foucha,0.95,100.0,1.0,0.0
+2019,83141,ARKANSAS,Joe Foucha,4371995,Joe Foucha,0.95,100.0,1.0,0.0
+2019,40982,ARKANSAS,D'Vone McClure,-1002137,D’Vone McClure,0.95,100.0,1.0,0.0
+2019,40982,ARKANSAS,D'Vone McClure,3724702,D'Vone McClure,0.95,100.0,1.0,0.0
+2019,43858,ARKANSAS,De'Jon Harris,-1002109,De’Jon Harris,0.95,100.0,1.0,0.0
+2019,43858,ARKANSAS,De'Jon Harris,4035577,De'Jon Harris,0.95,100.0,1.0,0.0
+2019,65084,ARKANSAS,Brenden Young,4242180,Brenden Young,0.95,100.0,1.0,0.0
+2019,65084,ARKANSAS,Brenden Young,4276275,Brenden Young,0.95,100.0,1.0,0.0
+2019,83141,ARKANSAS,Joe Foucha,-1002099,Joe Foucha,0.95,100.0,1.0,0.0
+2019,83141,ARKANSAS,Joe Foucha,4371995,Joe Foucha,0.95,100.0,1.0,0.0
+2019,42191,ARIZONA ST,Kyle Williams,183335,Kyle Williams,0.95,100.0,1.0,0.0
+2019,42191,ARIZONA ST,Kyle Williams,4252364,Kyle Williams,0.95,100.0,1.0,0.0
+2019,42191,ARIZONA ST,Kyle Williams,183335,Kyle Williams,0.95,100.0,1.0,0.0
+2019,42191,ARIZONA ST,Kyle Williams,4252364,Kyle Williams,0.95,100.0,1.0,0.0
+2019,81172,ARIZONA ST,Khaylan Kearse-Thomas,3675959,Khaylan Kearse-Thomas,0.95,100.0,1.0,0.0
+2019,81172,ARIZONA ST,Khaylan Kearse-Thomas,4579209,Khaylan Kearse-Thomas,0.95,100.0,1.0,0.0
+2019,42191,ARIZONA ST,Kyle Williams,183335,Kyle Williams,0.95,100.0,1.0,0.0
+2019,42191,ARIZONA ST,Kyle Williams,4252364,Kyle Williams,0.95,100.0,1.0,0.0
+2019,81172,ARIZONA ST,Khaylan Kearse-Thomas,3675959,Khaylan Kearse-Thomas,0.95,100.0,1.0,0.0
+2019,81172,ARIZONA ST,Khaylan Kearse-Thomas,4579209,Khaylan Kearse-Thomas,0.95,100.0,1.0,0.0
+2019,83135,ARIZONA ST,Alijah Gammage,4372650,Alijah Gammage,0.95,100.0,1.0,0.0
+2019,83135,ARIZONA ST,Alijah Gammage,4590015,Alijah Gammage,0.95,100.0,1.0,0.0
+2019,81172,ARIZONA ST,Khaylan Kearse-Thomas,3675959,Khaylan Kearse-Thomas,0.95,100.0,1.0,0.0
+2019,81172,ARIZONA ST,Khaylan Kearse-Thomas,4579209,Khaylan Kearse-Thomas,0.95,100.0,1.0,0.0
+2019,83135,ARIZONA ST,Alijah Gammage,4372650,Alijah Gammage,0.95,100.0,1.0,0.0
+2019,83135,ARIZONA ST,Alijah Gammage,4590015,Alijah Gammage,0.95,100.0,1.0,0.0
+2019,81172,ARIZONA ST,Khaylan Kearse-Thomas,3675959,Khaylan Kearse-Thomas,0.95,100.0,1.0,0.0
+2019,81172,ARIZONA ST,Khaylan Kearse-Thomas,4579209,Khaylan Kearse-Thomas,0.95,100.0,1.0,0.0
+2019,83135,ARIZONA ST,Alijah Gammage,4372650,Alijah Gammage,0.95,100.0,1.0,0.0
+2019,83135,ARIZONA ST,Alijah Gammage,4590015,Alijah Gammage,0.95,100.0,1.0,0.0
+2019,83079,S DIEGO ST,Luq Barcoo,-1030907,Luq Barcoo,0.95,100.0,1.0,0.0
+2019,83079,S DIEGO ST,Luq Barcoo,4361499,Luq Barcoo,0.95,100.0,1.0,0.0
+2019,84042,S DIEGO ST,Nic McTear,-1030966,Nic McTear,0.95,100.0,1.0,0.0
+2019,84042,S DIEGO ST,Nic McTear,4361517,Nic McTear,0.95,100.0,1.0,0.0
+2019,83079,S DIEGO ST,Luq Barcoo,-1030907,Luq Barcoo,0.95,100.0,1.0,0.0
+2019,83079,S DIEGO ST,Luq Barcoo,4361499,Luq Barcoo,0.95,100.0,1.0,0.0
+2019,83079,S DIEGO ST,Luq Barcoo,-1030907,Luq Barcoo,0.95,100.0,1.0,0.0
+2019,83079,S DIEGO ST,Luq Barcoo,4361499,Luq Barcoo,0.95,100.0,1.0,0.0
+2019,83079,S DIEGO ST,Luq Barcoo,-1030907,Luq Barcoo,0.95,100.0,1.0,0.0
+2019,83079,S DIEGO ST,Luq Barcoo,4361499,Luq Barcoo,0.95,100.0,1.0,0.0
+2019,84043,S JOSE ST,Derrick Deese Jr.,-1031263,"Derrick Deese, Jr.",0.95,100.0,1.0,0.0
+2019,84043,S JOSE ST,Derrick Deese Jr.,4374147,Derrick Deese Jr.,0.95,100.0,1.0,0.0
+2019,84402,S JOSE ST,Sitaleki Nunn,-1031300,Sitaleki Nunn,0.95,100.0,1.0,0.0
+2019,84402,S JOSE ST,Sitaleki Nunn,4361540,Sitaleki Nunn,0.95,100.0,1.0,0.0
+2019,42492,S JOSE ST,Jay Lenard,-1031288,Jay Lenard,0.95,100.0,1.0,0.0
+2019,42492,S JOSE ST,Jay Lenard,4036867,Jay Lenard,0.95,100.0,1.0,0.0
+2019,81376,S JOSE ST,Viliami Fehoko Jr.,4374148,Viliami Fehoko,0.95,100.0,1.0,0.0
+2019,81376,S JOSE ST,Viliami Fehoko Jr.,4570235,Viliami Fehoko,0.95,100.0,1.0,0.0
+2019,81380,S JOSE ST,Isa'ako Togia,-1031324,Isa'ako Togia,0.95,100.0,1.0,0.0
+2019,81380,S JOSE ST,Isa'ako Togia,4374162,Isa'ako Togia,0.95,100.0,1.0,0.0
+2019,83885,S JOSE ST,Bobby Brown II,-1031253,"Bobby Brown, II",0.95,100.0,1.0,0.0
+2019,83885,S JOSE ST,Bobby Brown II,4361532,Bobby Brown II,0.95,100.0,1.0,0.0
+2019,84043,S JOSE ST,Derrick Deese Jr.,-1031263,"Derrick Deese, Jr.",0.95,100.0,1.0,0.0
+2019,84043,S JOSE ST,Derrick Deese Jr.,4374147,Derrick Deese Jr.,0.95,100.0,1.0,0.0
+2019,42492,S JOSE ST,Jay Lenard,-1031288,Jay Lenard,0.95,100.0,1.0,0.0
+2019,42492,S JOSE ST,Jay Lenard,4036867,Jay Lenard,0.95,100.0,1.0,0.0
+2019,81376,S JOSE ST,Viliami Fehoko Jr.,4374148,Viliami Fehoko,0.95,100.0,1.0,0.0
+2019,81376,S JOSE ST,Viliami Fehoko Jr.,4570235,Viliami Fehoko,0.95,100.0,1.0,0.0
+2019,81380,S JOSE ST,Isa'ako Togia,-1031324,Isa'ako Togia,0.95,100.0,1.0,0.0
+2019,81380,S JOSE ST,Isa'ako Togia,4374162,Isa'ako Togia,0.95,100.0,1.0,0.0
+2019,83885,S JOSE ST,Bobby Brown II,-1031253,"Bobby Brown, II",0.95,100.0,1.0,0.0
+2019,83885,S JOSE ST,Bobby Brown II,4361532,Bobby Brown II,0.95,100.0,1.0,0.0
+2019,42492,S JOSE ST,Jay Lenard,-1031288,Jay Lenard,0.95,100.0,1.0,0.0
+2019,42492,S JOSE ST,Jay Lenard,4036867,Jay Lenard,0.95,100.0,1.0,0.0
+2019,81376,S JOSE ST,Viliami Fehoko Jr.,4374148,Viliami Fehoko,0.95,100.0,1.0,0.0
+2019,81376,S JOSE ST,Viliami Fehoko Jr.,4570235,Viliami Fehoko,0.95,100.0,1.0,0.0
+2019,81380,S JOSE ST,Isa'ako Togia,-1031324,Isa'ako Togia,0.95,100.0,1.0,0.0
+2019,81380,S JOSE ST,Isa'ako Togia,4374162,Isa'ako Togia,0.95,100.0,1.0,0.0
+2019,83885,S JOSE ST,Bobby Brown II,-1031253,"Bobby Brown, II",0.95,100.0,1.0,0.0
+2019,83885,S JOSE ST,Bobby Brown II,4361532,Bobby Brown II,0.95,100.0,1.0,0.0
+2019,84043,S JOSE ST,Derrick Deese Jr.,-1031263,"Derrick Deese, Jr.",0.95,100.0,1.0,0.0
+2019,84043,S JOSE ST,Derrick Deese Jr.,4374147,Derrick Deese Jr.,0.95,100.0,1.0,0.0
+2019,42492,S JOSE ST,Jay Lenard,-1031288,Jay Lenard,0.95,100.0,1.0,0.0
+2019,42492,S JOSE ST,Jay Lenard,4036867,Jay Lenard,0.95,100.0,1.0,0.0
+2019,81376,S JOSE ST,Viliami Fehoko Jr.,4374148,Viliami Fehoko,0.95,100.0,1.0,0.0
+2019,81376,S JOSE ST,Viliami Fehoko Jr.,4570235,Viliami Fehoko,0.95,100.0,1.0,0.0
+2019,81380,S JOSE ST,Isa'ako Togia,-1031324,Isa'ako Togia,0.95,100.0,1.0,0.0
+2019,81380,S JOSE ST,Isa'ako Togia,4374162,Isa'ako Togia,0.95,100.0,1.0,0.0
+2019,83885,S JOSE ST,Bobby Brown II,-1031253,"Bobby Brown, II",0.95,100.0,1.0,0.0
+2019,83885,S JOSE ST,Bobby Brown II,4361532,Bobby Brown II,0.95,100.0,1.0,0.0
+2019,84043,S JOSE ST,Derrick Deese Jr.,-1031263,"Derrick Deese, Jr.",0.95,100.0,1.0,0.0
+2019,84043,S JOSE ST,Derrick Deese Jr.,4374147,Derrick Deese Jr.,0.95,100.0,1.0,0.0
+2019,83420,UCLA,Patrick Jolly Jr.,-1038141,"Patrick Jolly, Jr.",0.95,100.0,1.0,0.0
+2019,83420,UCLA,Patrick Jolly Jr.,4367188,Patrick Jolly,0.95,100.0,1.0,0.0
+2019,83420,UCLA,Patrick Jolly Jr.,-1038141,"Patrick Jolly, Jr.",0.95,100.0,1.0,0.0
+2019,83420,UCLA,Patrick Jolly Jr.,4367188,Patrick Jolly,0.95,100.0,1.0,0.0
+2019,83420,UCLA,Patrick Jolly Jr.,-1038141,"Patrick Jolly, Jr.",0.95,100.0,1.0,0.0
+2019,83420,UCLA,Patrick Jolly Jr.,4367188,Patrick Jolly,0.95,100.0,1.0,0.0
+2019,56335,USC,Nick Figueroa,-1038802,Nick Figueroa,0.95,100.0,1.0,0.0
+2019,56335,USC,Nick Figueroa,4247182,Nick Figueroa,0.95,100.0,1.0,0.0
+2019,56335,USC,Nick Figueroa,-1038802,Nick Figueroa,0.95,100.0,1.0,0.0
+2019,56335,USC,Nick Figueroa,4247182,Nick Figueroa,0.95,100.0,1.0,0.0
+2019,56335,USC,Nick Figueroa,-1038802,Nick Figueroa,0.95,100.0,1.0,0.0
+2019,56335,USC,Nick Figueroa,4247182,Nick Figueroa,0.95,100.0,1.0,0.0
+2019,56335,USC,Nick Figueroa,-1038802,Nick Figueroa,0.95,100.0,1.0,0.0
+2019,56335,USC,Nick Figueroa,4247182,Nick Figueroa,0.95,100.0,1.0,0.0
+2019,91079,UCONN,Dominico Moncion,-1008396,Dominico Moncion,0.95,100.0,1.0,0.0
+2019,91079,UCONN,Dominico Moncion,4404491,Dominico Moncion,0.95,100.0,1.0,0.0
+2019,55104,UCONN,Ian Swenson,4239137,Ian Swenson,0.95,100.0,1.0,0.0
+2019,55104,UCONN,Ian Swenson,4269944,Ian Swenson,0.95,100.0,1.0,0.0
+2019,55111,UCONN,Stanley Hubbard,-1008374,Stanley Hubbard III,0.95,100.0,1.0,0.0
+2019,55111,UCONN,Stanley Hubbard,4239129,Stanley Hubbard III,0.95,100.0,1.0,0.0
+2019,91079,UCONN,Dominico Moncion,-1008396,Dominico Moncion,0.95,100.0,1.0,0.0
+2019,91079,UCONN,Dominico Moncion,4404491,Dominico Moncion,0.95,100.0,1.0,0.0
+2019,55104,UCONN,Ian Swenson,4239137,Ian Swenson,0.95,100.0,1.0,0.0
+2019,55104,UCONN,Ian Swenson,4269944,Ian Swenson,0.95,100.0,1.0,0.0
+2019,55104,UCONN,Ian Swenson,4239137,Ian Swenson,0.95,100.0,1.0,0.0
+2019,55104,UCONN,Ian Swenson,4269944,Ian Swenson,0.95,100.0,1.0,0.0
+2019,55104,UCONN,Ian Swenson,4239137,Ian Swenson,0.95,100.0,1.0,0.0
+2019,55104,UCONN,Ian Swenson,4269944,Ian Swenson,0.95,100.0,1.0,0.0
+2019,77958,FLORIDA ST,Tre'Shaun Harrison,-1010780,TrE’shaun Harrison,0.95,100.0,1.0,0.0
+2019,77958,FLORIDA ST,Tre'Shaun Harrison,4363046,Tre'Shaun Harrison,0.95,100.0,1.0,0.0
+2019,60896,FLORIDA ST,Tre' McKitty,-1010799,Tré McKitty,0.95,100.0,1.0,0.0
+2019,60896,FLORIDA ST,Tre' McKitty,4240023,Tre' McKitty,0.95,100.0,1.0,0.0
+2019,77871,FLORIDA ST,Camren McDonald,-1010796,Camren McDonald,0.95,100.0,1.0,0.0
+2019,77871,FLORIDA ST,Camren McDonald,4363045,Camren McDonald,0.95,100.0,1.0,0.0
+2019,57203,FLORIDA ST,Deonte Sheffield,-1010820,Deonté Sheffield,0.95,100.0,1.0,0.0
+2019,57203,FLORIDA ST,Deonte Sheffield,4240035,Deonte Sheffield,0.95,100.0,1.0,0.0
+2019,57203,FLORIDA ST,Deonte Sheffield,-1010820,Deonté Sheffield,0.95,100.0,1.0,0.0
+2019,57203,FLORIDA ST,Deonte Sheffield,4240035,Deonte Sheffield,0.95,100.0,1.0,0.0
+2019,77958,FLORIDA ST,Tre'Shaun Harrison,-1010780,TrE’shaun Harrison,0.95,100.0,1.0,0.0
+2019,77958,FLORIDA ST,Tre'Shaun Harrison,4363046,Tre'Shaun Harrison,0.95,100.0,1.0,0.0
+2019,76625,FLORIDA ST,Asante Samuel Jr.,-1010816,"Asante Samuel, Jr.",0.95,100.0,1.0,0.0
+2019,76625,FLORIDA ST,Asante Samuel Jr.,4363034,Asante Samuel Jr.,0.95,100.0,1.0,0.0
+2019,76792,FLORIDA ST,Dennis Briggs Jr.,-1010750,"Dennis Briggs, Jr.",0.95,100.0,1.0,0.0
+2019,76792,FLORIDA ST,Dennis Briggs Jr.,4363040,Dennis Briggs Jr.,0.95,100.0,1.0,0.0
+2019,60896,FLORIDA ST,Tre' McKitty,-1010799,Tré McKitty,0.95,100.0,1.0,0.0
+2019,60896,FLORIDA ST,Tre' McKitty,4240023,Tre' McKitty,0.95,100.0,1.0,0.0
+2019,77871,FLORIDA ST,Camren McDonald,-1010796,Camren McDonald,0.95,100.0,1.0,0.0
+2019,77871,FLORIDA ST,Camren McDonald,4363045,Camren McDonald,0.95,100.0,1.0,0.0
+2019,77958,FLORIDA ST,Tre'Shaun Harrison,-1010780,TrE’shaun Harrison,0.95,100.0,1.0,0.0
+2019,77958,FLORIDA ST,Tre'Shaun Harrison,4363046,Tre'Shaun Harrison,0.95,100.0,1.0,0.0
+2019,57203,FLORIDA ST,Deonte Sheffield,-1010820,Deonté Sheffield,0.95,100.0,1.0,0.0
+2019,57203,FLORIDA ST,Deonte Sheffield,4240035,Deonte Sheffield,0.95,100.0,1.0,0.0
+2019,76625,FLORIDA ST,Asante Samuel Jr.,-1010816,"Asante Samuel, Jr.",0.95,100.0,1.0,0.0
+2019,76625,FLORIDA ST,Asante Samuel Jr.,4363034,Asante Samuel Jr.,0.95,100.0,1.0,0.0
+2019,76792,FLORIDA ST,Dennis Briggs Jr.,-1010750,"Dennis Briggs, Jr.",0.95,100.0,1.0,0.0
+2019,76792,FLORIDA ST,Dennis Briggs Jr.,4363040,Dennis Briggs Jr.,0.95,100.0,1.0,0.0
+2019,77871,FLORIDA ST,Camren McDonald,-1010796,Camren McDonald,0.95,100.0,1.0,0.0
+2019,77871,FLORIDA ST,Camren McDonald,4363045,Camren McDonald,0.95,100.0,1.0,0.0
+2019,76625,FLORIDA ST,Asante Samuel Jr.,-1010816,"Asante Samuel, Jr.",0.95,100.0,1.0,0.0
+2019,76625,FLORIDA ST,Asante Samuel Jr.,4363034,Asante Samuel Jr.,0.95,100.0,1.0,0.0
+2019,76625,FLORIDA ST,Asante Samuel Jr.,-1010816,"Asante Samuel, Jr.",0.95,100.0,1.0,0.0
+2019,76625,FLORIDA ST,Asante Samuel Jr.,4363034,Asante Samuel Jr.,0.95,100.0,1.0,0.0
+2019,76792,FLORIDA ST,Dennis Briggs Jr.,-1010750,"Dennis Briggs, Jr.",0.95,100.0,1.0,0.0
+2019,76792,FLORIDA ST,Dennis Briggs Jr.,4363040,Dennis Briggs Jr.,0.95,100.0,1.0,0.0
+2019,77871,FLORIDA ST,Camren McDonald,-1010796,Camren McDonald,0.95,100.0,1.0,0.0
+2019,77871,FLORIDA ST,Camren McDonald,4363045,Camren McDonald,0.95,100.0,1.0,0.0
+2019,26454,FLORIDA,David Reese II,-1009670,David Reese II,0.95,100.0,1.0,0.0
+2019,26454,FLORIDA,David Reese II,4034956,David Reese II,0.95,100.0,1.0,0.0
+2019,55881,FLORIDA,Brad Stewart Jr.,-1009677,Brad Stewart Jr.,0.95,100.0,1.0,0.0
+2019,55881,FLORIDA,Brad Stewart Jr.,4240594,Brad Stewart Jr.,0.95,100.0,1.0,0.0
+2019,55881,FLORIDA,Brad Stewart Jr.,-1009677,Brad Stewart Jr.,0.95,100.0,1.0,0.0
+2019,55881,FLORIDA,Brad Stewart Jr.,4240594,Brad Stewart Jr.,0.95,100.0,1.0,0.0
+2019,26454,FLORIDA,David Reese II,-1009670,David Reese II,0.95,100.0,1.0,0.0
+2019,26454,FLORIDA,David Reese II,4034956,David Reese II,0.95,100.0,1.0,0.0
+2019,55881,FLORIDA,Brad Stewart Jr.,-1009677,Brad Stewart Jr.,0.95,100.0,1.0,0.0
+2019,55881,FLORIDA,Brad Stewart Jr.,4240594,Brad Stewart Jr.,0.95,100.0,1.0,0.0
+2019,26454,FLORIDA,David Reese II,-1009670,David Reese II,0.95,100.0,1.0,0.0
+2019,26454,FLORIDA,David Reese II,4034956,David Reese II,0.95,100.0,1.0,0.0
+2019,55881,FLORIDA,Brad Stewart Jr.,-1009677,Brad Stewart Jr.,0.95,100.0,1.0,0.0
+2019,55881,FLORIDA,Brad Stewart Jr.,4240594,Brad Stewart Jr.,0.95,100.0,1.0,0.0
+2019,26454,FLORIDA,David Reese II,-1009670,David Reese II,0.95,100.0,1.0,0.0
+2019,26454,FLORIDA,David Reese II,4034956,David Reese II,0.95,100.0,1.0,0.0
+2019,55881,FLORIDA,Brad Stewart Jr.,-1009677,Brad Stewart Jr.,0.95,100.0,1.0,0.0
+2019,55881,FLORIDA,Brad Stewart Jr.,4240594,Brad Stewart Jr.,0.95,100.0,1.0,0.0
+2019,62971,GA TECH,William Lay III,-1012453,William Lay III,0.95,100.0,1.0,0.0
+2019,62971,GA TECH,William Lay III,4240504,William Lay III,0.95,100.0,1.0,0.0
+2019,55910,GEORGIA,Richard LeCounte III,-1011520,Richard LeCounte,0.95,100.0,1.0,0.0
+2019,55910,GEORGIA,Richard LeCounte III,4240686,Richard LeCounte,0.95,100.0,1.0,0.0
+2019,55910,GEORGIA,Richard LeCounte III,-1011520,Richard LeCounte,0.95,100.0,1.0,0.0
+2019,55910,GEORGIA,Richard LeCounte III,4240686,Richard LeCounte,0.95,100.0,1.0,0.0
+2019,55910,GEORGIA,Richard LeCounte III,-1011520,Richard LeCounte,0.95,100.0,1.0,0.0
+2019,55910,GEORGIA,Richard LeCounte III,4240686,Richard LeCounte,0.95,100.0,1.0,0.0
+2019,55910,GEORGIA,Richard LeCounte III,-1011520,Richard LeCounte,0.95,100.0,1.0,0.0
+2019,55910,GEORGIA,Richard LeCounte III,4240686,Richard LeCounte,0.95,100.0,1.0,0.0
+2019,75938,HAWAII,Cedric Byrd II,-1012739,Cedric Byrd II,0.95,100.0,1.0,0.0
+2019,75938,HAWAII,Cedric Byrd II,4363639,Cedric Byrd II,0.95,100.0,1.0,0.0
+2019,38662,HAWAII,Fred Holly III,-1012763,Fred Holly III,0.95,100.0,1.0,0.0
+2019,38662,HAWAII,Fred Holly III,4038226,Fred Holly III,0.95,100.0,1.0,0.0
+2019,38662,HAWAII,Fred Holly III,-1012763,Fred Holly III,0.95,100.0,1.0,0.0
+2019,38662,HAWAII,Fred Holly III,4038226,Fred Holly III,0.95,100.0,1.0,0.0
+2019,75938,HAWAII,Cedric Byrd II,-1012739,Cedric Byrd II,0.95,100.0,1.0,0.0
+2019,75938,HAWAII,Cedric Byrd II,4363639,Cedric Byrd II,0.95,100.0,1.0,0.0
+2019,52070,HAWAII,Kana'i Picanco,-1012801,Kana‘i Picanco,0.95,100.0,1.0,0.0
+2019,52070,HAWAII,Kana'i Picanco,4256091,Kana'i Picanco,0.95,100.0,1.0,0.0
+2019,75938,HAWAII,Cedric Byrd II,-1012739,Cedric Byrd II,0.95,100.0,1.0,0.0
+2019,75938,HAWAII,Cedric Byrd II,4363639,Cedric Byrd II,0.95,100.0,1.0,0.0
+2019,38662,HAWAII,Fred Holly III,-1012763,Fred Holly III,0.95,100.0,1.0,0.0
+2019,38662,HAWAII,Fred Holly III,4038226,Fred Holly III,0.95,100.0,1.0,0.0
+2019,52070,HAWAII,Kana'i Picanco,-1012801,Kana‘i Picanco,0.95,100.0,1.0,0.0
+2019,52070,HAWAII,Kana'i Picanco,4256091,Kana'i Picanco,0.95,100.0,1.0,0.0
+2019,75938,HAWAII,Cedric Byrd II,-1012739,Cedric Byrd II,0.95,100.0,1.0,0.0
+2019,75938,HAWAII,Cedric Byrd II,4363639,Cedric Byrd II,0.95,100.0,1.0,0.0
+2019,52070,HAWAII,Kana'i Picanco,-1012801,Kana‘i Picanco,0.95,100.0,1.0,0.0
+2019,52070,HAWAII,Kana'i Picanco,4256091,Kana'i Picanco,0.95,100.0,1.0,0.0
+2019,52070,HAWAII,Kana'i Picanco,-1012801,Kana‘i Picanco,0.95,100.0,1.0,0.0
+2019,52070,HAWAII,Kana'i Picanco,4256091,Kana'i Picanco,0.95,100.0,1.0,0.0
+2019,75938,HAWAII,Cedric Byrd II,-1012739,Cedric Byrd II,0.95,100.0,1.0,0.0
+2019,75938,HAWAII,Cedric Byrd II,4363639,Cedric Byrd II,0.95,100.0,1.0,0.0
+2019,43100,NWESTERN,Travis Whillock,-1026101,Travis Whillock,0.95,100.0,1.0,0.0
+2019,43100,NWESTERN,Travis Whillock,4035637,Travis Whillock,0.95,100.0,1.0,0.0
+2019,56782,NWESTERN,Samdup Miller,-1026073,Samdup Miller,0.95,100.0,1.0,0.0
+2019,56782,NWESTERN,Samdup Miller,4242290,Samdup Miller,0.95,100.0,1.0,0.0
+2019,98108,NWESTERN,Wayne Dennis Jr.,-1026021,"Wayne Dennis, Jr.",0.95,100.0,1.0,0.0
+2019,98108,NWESTERN,Wayne Dennis Jr.,4427063,Wayne Dennis Jr.,0.95,100.0,1.0,0.0
+2019,43100,NWESTERN,Travis Whillock,-1026101,Travis Whillock,0.95,100.0,1.0,0.0
+2019,43100,NWESTERN,Travis Whillock,4035637,Travis Whillock,0.95,100.0,1.0,0.0
+2019,43100,NWESTERN,Travis Whillock,-1026101,Travis Whillock,0.95,100.0,1.0,0.0
+2019,43100,NWESTERN,Travis Whillock,4035637,Travis Whillock,0.95,100.0,1.0,0.0
+2019,56782,NWESTERN,Samdup Miller,-1026073,Samdup Miller,0.95,100.0,1.0,0.0
+2019,56782,NWESTERN,Samdup Miller,4242290,Samdup Miller,0.95,100.0,1.0,0.0
+2019,97908,NWESTERN,Michael Jansey Jr.,-1026049,"Michael Jansey, Jr.",0.95,100.0,1.0,0.0
+2019,97908,NWESTERN,Michael Jansey Jr.,4427589,Michael Jansey Jr.,0.95,100.0,1.0,0.0
+2019,43100,NWESTERN,Travis Whillock,-1026101,Travis Whillock,0.95,100.0,1.0,0.0
+2019,43100,NWESTERN,Travis Whillock,4035637,Travis Whillock,0.95,100.0,1.0,0.0
+2019,56782,NWESTERN,Samdup Miller,-1026073,Samdup Miller,0.95,100.0,1.0,0.0
+2019,56782,NWESTERN,Samdup Miller,4242290,Samdup Miller,0.95,100.0,1.0,0.0
+2019,97908,NWESTERN,Michael Jansey Jr.,-1026049,"Michael Jansey, Jr.",0.95,100.0,1.0,0.0
+2019,97908,NWESTERN,Michael Jansey Jr.,4427589,Michael Jansey Jr.,0.95,100.0,1.0,0.0
+2019,43100,NWESTERN,Travis Whillock,-1026101,Travis Whillock,0.95,100.0,1.0,0.0
+2019,43100,NWESTERN,Travis Whillock,4035637,Travis Whillock,0.95,100.0,1.0,0.0
+2019,56782,NWESTERN,Samdup Miller,-1026073,Samdup Miller,0.95,100.0,1.0,0.0
+2019,56782,NWESTERN,Samdup Miller,4242290,Samdup Miller,0.95,100.0,1.0,0.0
+2019,97908,NWESTERN,Michael Jansey Jr.,-1026049,"Michael Jansey, Jr.",0.95,100.0,1.0,0.0
+2019,97908,NWESTERN,Michael Jansey Jr.,4427589,Michael Jansey Jr.,0.95,100.0,1.0,0.0
+2019,83680,INDIANA,Stevie Scott III,-1013835,Stevie Scott III,0.95,100.0,1.0,0.0
+2019,83680,INDIANA,Stevie Scott III,4371953,Stevie Scott III,0.95,100.0,1.0,0.0
+2019,83680,INDIANA,Stevie Scott III,-1013835,Stevie Scott III,0.95,100.0,1.0,0.0
+2019,83680,INDIANA,Stevie Scott III,4371953,Stevie Scott III,0.95,100.0,1.0,0.0
+2019,83680,INDIANA,Stevie Scott III,-1013835,Stevie Scott III,0.95,100.0,1.0,0.0
+2019,83680,INDIANA,Stevie Scott III,4371953,Stevie Scott III,0.95,100.0,1.0,0.0
+2019,60719,NOTRE DAME,Jordan Genmark Heath,-1026269,Jordan Genmark Heath,0.95,100.0,1.0,0.0
+2019,60719,NOTRE DAME,Jordan Genmark Heath,4258590,Jordan Genmark Heath,0.95,100.0,1.0,0.0
+2019,60719,NOTRE DAME,Jordan Genmark Heath,-1026269,Jordan Genmark Heath,0.95,100.0,1.0,0.0
+2019,60719,NOTRE DAME,Jordan Genmark Heath,4258590,Jordan Genmark Heath,0.95,100.0,1.0,0.0
+2019,60719,NOTRE DAME,Jordan Genmark Heath,-1026269,Jordan Genmark Heath,0.95,100.0,1.0,0.0
+2019,60719,NOTRE DAME,Jordan Genmark Heath,4258590,Jordan Genmark Heath,0.95,100.0,1.0,0.0
+2019,60719,NOTRE DAME,Jordan Genmark Heath,-1026269,Jordan Genmark Heath,0.95,100.0,1.0,0.0
+2019,60719,NOTRE DAME,Jordan Genmark Heath,4258590,Jordan Genmark Heath,0.95,100.0,1.0,0.0
+2019,61362,KENTUCKY,Clevan Thomas Jr.,-1016044,Clevan Thomas Jr.,0.95,100.0,1.0,0.0
+2019,61362,KENTUCKY,Clevan Thomas Jr.,4240785,Clevan Thomas,0.95,100.0,1.0,0.0
+2019,84245,KENTUCKY,Allen Dailey Jr.,-1015972,Allen Dailey Jr.,0.95,100.0,1.0,0.0
+2019,84245,KENTUCKY,Allen Dailey Jr.,4362605,Allen Dailey Jr.,0.95,100.0,1.0,0.0
+2019,61362,KENTUCKY,Clevan Thomas Jr.,-1016044,Clevan Thomas Jr.,0.95,100.0,1.0,0.0
+2019,61362,KENTUCKY,Clevan Thomas Jr.,4240785,Clevan Thomas,0.95,100.0,1.0,0.0
+2019,61362,KENTUCKY,Clevan Thomas Jr.,-1016044,Clevan Thomas Jr.,0.95,100.0,1.0,0.0
+2019,61362,KENTUCKY,Clevan Thomas Jr.,4240785,Clevan Thomas,0.95,100.0,1.0,0.0
+2019,84245,KENTUCKY,Allen Dailey Jr.,-1015972,Allen Dailey Jr.,0.95,100.0,1.0,0.0
+2019,84245,KENTUCKY,Allen Dailey Jr.,4362605,Allen Dailey Jr.,0.95,100.0,1.0,0.0
+2019,84245,KENTUCKY,Allen Dailey Jr.,-1015972,Allen Dailey Jr.,0.95,100.0,1.0,0.0
+2019,84245,KENTUCKY,Allen Dailey Jr.,4362605,Allen Dailey Jr.,0.95,100.0,1.0,0.0
+2019,84245,KENTUCKY,Allen Dailey Jr.,-1015972,Allen Dailey Jr.,0.95,100.0,1.0,0.0
+2019,84245,KENTUCKY,Allen Dailey Jr.,4362605,Allen Dailey Jr.,0.95,100.0,1.0,0.0
+2019,61392,LOUISVILLE,Keion Wakefield,-1017974,Keion Wakefield,0.95,100.0,1.0,0.0
+2019,61392,LOUISVILLE,Keion Wakefield,4036025,Keion Wakefield,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,-1017954,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,4036027,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,43550,LOUISVILLE,Marlon Character,-1017898,Marlon Character,0.95,100.0,1.0,0.0
+2019,43550,LOUISVILLE,Marlon Character,4047456,Marlon Character,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,-1017954,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,4036027,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,61392,LOUISVILLE,Keion Wakefield,-1017974,Keion Wakefield,0.95,100.0,1.0,0.0
+2019,61392,LOUISVILLE,Keion Wakefield,4036025,Keion Wakefield,0.95,100.0,1.0,0.0
+2019,43550,LOUISVILLE,Marlon Character,-1017898,Marlon Character,0.95,100.0,1.0,0.0
+2019,43550,LOUISVILLE,Marlon Character,4047456,Marlon Character,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,-1017954,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,4036027,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,43550,LOUISVILLE,Marlon Character,-1017898,Marlon Character,0.95,100.0,1.0,0.0
+2019,43550,LOUISVILLE,Marlon Character,4047456,Marlon Character,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,-1017954,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,4036027,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,43550,LOUISVILLE,Marlon Character,-1017898,Marlon Character,0.95,100.0,1.0,0.0
+2019,43550,LOUISVILLE,Marlon Character,4047456,Marlon Character,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,-1017954,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,4036027,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,43550,LOUISVILLE,Marlon Character,-1017898,Marlon Character,0.95,100.0,1.0,0.0
+2019,43550,LOUISVILLE,Marlon Character,4047456,Marlon Character,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,-1017954,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,57939,LOUISVILLE,Tabarius Peterson,4036027,Tabarius Peterson,0.95,100.0,1.0,0.0
+2019,59819,LSU,Ed Ingram,-1016379,Ed Ingram,0.95,100.0,1.0,0.0
+2019,59819,LSU,Ed Ingram,4242227,Ed Ingram,0.95,100.0,1.0,0.0
+2019,40782,BOSTON COL,Kobay White,4035319,Kobay White,0.95,100.0,1.0,0.0
+2019,40782,BOSTON COL,Kobay White,4035347,Kobay White,0.95,100.0,1.0,0.0
+2019,33901,BOSTON COL,Elijah Robinson,-1005254,Elijah Robinson,0.95,100.0,1.0,0.0
+2019,33901,BOSTON COL,Elijah Robinson,3672830,Elijah Robinson,0.95,100.0,1.0,0.0
+2019,40782,BOSTON COL,Kobay White,4035319,Kobay White,0.95,100.0,1.0,0.0
+2019,40782,BOSTON COL,Kobay White,4035347,Kobay White,0.95,100.0,1.0,0.0
+2019,57753,BOSTON COL,Paul Theobald,-1005268,"Paul Theobald, Jr.",0.95,100.0,1.0,0.0
+2019,57753,BOSTON COL,Paul Theobald,4239942,Paul Theobald Jr.,0.95,100.0,1.0,0.0
+2019,40782,BOSTON COL,Kobay White,4035319,Kobay White,0.95,100.0,1.0,0.0
+2019,40782,BOSTON COL,Kobay White,4035347,Kobay White,0.95,100.0,1.0,0.0
+2019,33901,BOSTON COL,Elijah Robinson,-1005254,Elijah Robinson,0.95,100.0,1.0,0.0
+2019,33901,BOSTON COL,Elijah Robinson,3672830,Elijah Robinson,0.95,100.0,1.0,0.0
+2019,40782,BOSTON COL,Kobay White,4035319,Kobay White,0.95,100.0,1.0,0.0
+2019,40782,BOSTON COL,Kobay White,4035347,Kobay White,0.95,100.0,1.0,0.0
+2019,57753,BOSTON COL,Paul Theobald,-1005268,"Paul Theobald, Jr.",0.95,100.0,1.0,0.0
+2019,57753,BOSTON COL,Paul Theobald,4239942,Paul Theobald Jr.,0.95,100.0,1.0,0.0
+2019,57753,BOSTON COL,Paul Theobald,-1005268,"Paul Theobald, Jr.",0.95,100.0,1.0,0.0
+2019,57753,BOSTON COL,Paul Theobald,4239942,Paul Theobald Jr.,0.95,100.0,1.0,0.0
+2019,57753,BOSTON COL,Paul Theobald,-1005268,"Paul Theobald, Jr.",0.95,100.0,1.0,0.0
+2019,57753,BOSTON COL,Paul Theobald,4239942,Paul Theobald Jr.,0.95,100.0,1.0,0.0
+2019,84284,MARYLAND,Dontay Demus Jr.,-1018625,Dontay Demus Jr.,0.95,100.0,1.0,0.0
+2019,84284,MARYLAND,Dontay Demus Jr.,4372039,Dontay Demus Jr.,0.95,100.0,1.0,0.0
+2019,57289,MARYLAND,Anthony McFarland Jr.,-1018668,Anthony McFarland Jr.,0.95,100.0,1.0,0.0
+2019,57289,MARYLAND,Anthony McFarland Jr.,4241941,Anthony McFarland Jr.,0.95,100.0,1.0,0.0
+2019,57289,MARYLAND,Anthony McFarland Jr.,-1018668,Anthony McFarland Jr.,0.95,100.0,1.0,0.0
+2019,57289,MARYLAND,Anthony McFarland Jr.,4241941,Anthony McFarland Jr.,0.95,100.0,1.0,0.0
+2019,129513,MARYLAND,Sean Greeley,4569492,Sean Greeley,0.95,100.0,1.0,0.0
+2019,129513,MARYLAND,Sean Greeley,4587176,Sean Greeley,0.95,100.0,1.0,0.0
+2019,84284,MARYLAND,Dontay Demus Jr.,-1018625,Dontay Demus Jr.,0.95,100.0,1.0,0.0
+2019,84284,MARYLAND,Dontay Demus Jr.,4372039,Dontay Demus Jr.,0.95,100.0,1.0,0.0
+2019,57289,MARYLAND,Anthony McFarland Jr.,-1018668,Anthony McFarland Jr.,0.95,100.0,1.0,0.0
+2019,57289,MARYLAND,Anthony McFarland Jr.,4241941,Anthony McFarland Jr.,0.95,100.0,1.0,0.0
+2019,84284,MARYLAND,Dontay Demus Jr.,-1018625,Dontay Demus Jr.,0.95,100.0,1.0,0.0
+2019,84284,MARYLAND,Dontay Demus Jr.,4372039,Dontay Demus Jr.,0.95,100.0,1.0,0.0
+2019,129513,MARYLAND,Sean Greeley,4569492,Sean Greeley,0.95,100.0,1.0,0.0
+2019,129513,MARYLAND,Sean Greeley,4587176,Sean Greeley,0.95,100.0,1.0,0.0
+2019,84284,MARYLAND,Dontay Demus Jr.,-1018625,Dontay Demus Jr.,0.95,100.0,1.0,0.0
+2019,84284,MARYLAND,Dontay Demus Jr.,4372039,Dontay Demus Jr.,0.95,100.0,1.0,0.0
+2019,129513,MARYLAND,Sean Greeley,4569492,Sean Greeley,0.95,100.0,1.0,0.0
+2019,129513,MARYLAND,Sean Greeley,4587176,Sean Greeley,0.95,100.0,1.0,0.0
+2019,42637,MICH STATE,Brandon Bouyer-Randle,-1020589,Brandon Bouyer-Randle,0.95,100.0,1.0,0.0
+2019,42637,MICH STATE,Brandon Bouyer-Randle,4046723,Brandon Bouyer-Randle,0.95,100.0,1.0,0.0
+2019,42637,MICH STATE,Brandon Bouyer-Randle,-1020589,Brandon Bouyer-Randle,0.95,100.0,1.0,0.0
+2019,42637,MICH STATE,Brandon Bouyer-Randle,4046723,Brandon Bouyer-Randle,0.95,100.0,1.0,0.0
+2019,42637,MICH STATE,Brandon Bouyer-Randle,-1020589,Brandon Bouyer-Randle,0.95,100.0,1.0,0.0
+2019,42637,MICH STATE,Brandon Bouyer-Randle,4046723,Brandon Bouyer-Randle,0.95,100.0,1.0,0.0
+2019,42637,MICH STATE,Brandon Bouyer-Randle,-1020589,Brandon Bouyer-Randle,0.95,100.0,1.0,0.0
+2019,42637,MICH STATE,Brandon Bouyer-Randle,4046723,Brandon Bouyer-Randle,0.95,100.0,1.0,0.0
+2019,82343,MISSOURI,Daniel Parker Jr.,-1022301,"Daniel Parker, Jr.",0.95,100.0,1.0,0.0
+2019,82343,MISSOURI,Daniel Parker Jr.,4362763,Daniel Parker,0.95,100.0,1.0,0.0
+2019,82343,MISSOURI,Daniel Parker Jr.,-1022301,"Daniel Parker, Jr.",0.95,100.0,1.0,0.0
+2019,82343,MISSOURI,Daniel Parker Jr.,4362763,Daniel Parker,0.95,100.0,1.0,0.0
+2019,57993,MISSOURI,Aubrey Miller Jr.,-1022292,"Aubrey Miller, Jr.",0.95,100.0,1.0,0.0
+2019,57993,MISSOURI,Aubrey Miller Jr.,4241208,Aubrey Miller Jr.,0.95,100.0,1.0,0.0
+2019,57993,MISSOURI,Aubrey Miller Jr.,-1022292,"Aubrey Miller, Jr.",0.95,100.0,1.0,0.0
+2019,57993,MISSOURI,Aubrey Miller Jr.,4241208,Aubrey Miller Jr.,0.95,100.0,1.0,0.0
+2019,57993,MISSOURI,Aubrey Miller Jr.,-1022292,"Aubrey Miller, Jr.",0.95,100.0,1.0,0.0
+2019,57993,MISSOURI,Aubrey Miller Jr.,4241208,Aubrey Miller Jr.,0.95,100.0,1.0,0.0
+2019,36113,OLE MISS,Willie Hibbler,-1021564,Willie Hibbler,0.95,100.0,1.0,0.0
+2019,36113,OLE MISS,Willie Hibbler,3930084,Willie Hibbler,0.95,100.0,1.0,0.0
+2019,57986,OLE MISS,Momo Sanogo,-1021610,MoMo Sanogo,0.95,100.0,1.0,0.0
+2019,57986,OLE MISS,Momo Sanogo,4259915,Momo Sanogo,0.95,100.0,1.0,0.0
+2019,36113,OLE MISS,Willie Hibbler,-1021564,Willie Hibbler,0.95,100.0,1.0,0.0
+2019,36113,OLE MISS,Willie Hibbler,3930084,Willie Hibbler,0.95,100.0,1.0,0.0
+2019,57986,OLE MISS,Momo Sanogo,-1021610,MoMo Sanogo,0.95,100.0,1.0,0.0
+2019,57986,OLE MISS,Momo Sanogo,4259915,Momo Sanogo,0.95,100.0,1.0,0.0
+2019,36113,OLE MISS,Willie Hibbler,-1021564,Willie Hibbler,0.95,100.0,1.0,0.0
+2019,36113,OLE MISS,Willie Hibbler,3930084,Willie Hibbler,0.95,100.0,1.0,0.0
+2019,57986,OLE MISS,Momo Sanogo,-1021610,MoMo Sanogo,0.95,100.0,1.0,0.0
+2019,57986,OLE MISS,Momo Sanogo,4259915,Momo Sanogo,0.95,100.0,1.0,0.0
+2019,36113,OLE MISS,Willie Hibbler,-1021564,Willie Hibbler,0.95,100.0,1.0,0.0
+2019,36113,OLE MISS,Willie Hibbler,3930084,Willie Hibbler,0.95,100.0,1.0,0.0
+2019,57986,OLE MISS,Momo Sanogo,-1021610,MoMo Sanogo,0.95,100.0,1.0,0.0
+2019,57986,OLE MISS,Momo Sanogo,4259915,Momo Sanogo,0.95,100.0,1.0,0.0
+2019,42328,DUKE,Mark Birmingham,4036048,Mark Birmingham,0.95,100.0,1.0,0.0
+2019,42328,DUKE,Mark Birmingham,4584580,Mark Birmingham,0.95,100.0,1.0,0.0
+2019,44110,DUKE,Xander Gagnon,4036039,Xander Gagnon,0.95,100.0,1.0,0.0
+2019,44110,DUKE,Xander Gagnon,4590013,Xander Gagnon,0.95,100.0,1.0,0.0
+2019,42328,DUKE,Mark Birmingham,4036048,Mark Birmingham,0.95,100.0,1.0,0.0
+2019,42328,DUKE,Mark Birmingham,4584580,Mark Birmingham,0.95,100.0,1.0,0.0
+2019,44110,DUKE,Xander Gagnon,4036039,Xander Gagnon,0.95,100.0,1.0,0.0
+2019,44110,DUKE,Xander Gagnon,4590013,Xander Gagnon,0.95,100.0,1.0,0.0
+2019,44110,DUKE,Xander Gagnon,4036039,Xander Gagnon,0.95,100.0,1.0,0.0
+2019,44110,DUKE,Xander Gagnon,4590013,Xander Gagnon,0.95,100.0,1.0,0.0
+2019,44110,DUKE,Xander Gagnon,4036039,Xander Gagnon,0.95,100.0,1.0,0.0
+2019,44110,DUKE,Xander Gagnon,4590013,Xander Gagnon,0.95,100.0,1.0,0.0
+2019,57192,E CAROLINA,Darius Pinnix Jr.,-1008955,"Darius Pinnix, Jr.",0.95,100.0,1.0,0.0
+2019,57192,E CAROLINA,Darius Pinnix Jr.,4239405,Darius Pinnix Jr.,0.95,100.0,1.0,0.0
+2019,57192,E CAROLINA,Darius Pinnix Jr.,-1008955,"Darius Pinnix, Jr.",0.95,100.0,1.0,0.0
+2019,57192,E CAROLINA,Darius Pinnix Jr.,4239405,Darius Pinnix Jr.,0.95,100.0,1.0,0.0
+2019,57192,E CAROLINA,Darius Pinnix Jr.,-1008955,"Darius Pinnix, Jr.",0.95,100.0,1.0,0.0
+2019,57192,E CAROLINA,Darius Pinnix Jr.,4239405,Darius Pinnix Jr.,0.95,100.0,1.0,0.0
+2019,77725,NC STATE,Ricky Person Jr.,-1025022,"Ricky Person, Jr.",0.95,100.0,1.0,0.0
+2019,77725,NC STATE,Ricky Person Jr.,4361655,Ricky Person Jr.,0.95,100.0,1.0,0.0
+2019,77725,NC STATE,Ricky Person Jr.,-1025022,"Ricky Person, Jr.",0.95,100.0,1.0,0.0
+2019,77725,NC STATE,Ricky Person Jr.,4361655,Ricky Person Jr.,0.95,100.0,1.0,0.0
+2019,60485,NC STATE,Matthew McKay,-1025007,Matthew McKay,0.95,100.0,1.0,0.0
+2019,60485,NC STATE,Matthew McKay,4240096,Matthew McKay,0.95,100.0,1.0,0.0
+2019,77128,NC STATE,Calvin Hart Jr.,-1024984,"Calvin Hart, Jr.",0.95,100.0,1.0,0.0
+2019,77128,NC STATE,Calvin Hart Jr.,4361663,Calvin Hart Jr.,0.95,100.0,1.0,0.0
+2019,60485,NC STATE,Matthew McKay,-1025007,Matthew McKay,0.95,100.0,1.0,0.0
+2019,60485,NC STATE,Matthew McKay,4240096,Matthew McKay,0.95,100.0,1.0,0.0
+2019,77725,NC STATE,Ricky Person Jr.,-1025022,"Ricky Person, Jr.",0.95,100.0,1.0,0.0
+2019,77725,NC STATE,Ricky Person Jr.,4361655,Ricky Person Jr.,0.95,100.0,1.0,0.0
+2019,60485,NC STATE,Matthew McKay,-1025007,Matthew McKay,0.95,100.0,1.0,0.0
+2019,60485,NC STATE,Matthew McKay,4240096,Matthew McKay,0.95,100.0,1.0,0.0
+2019,77128,NC STATE,Calvin Hart Jr.,-1024984,"Calvin Hart, Jr.",0.95,100.0,1.0,0.0
+2019,77128,NC STATE,Calvin Hart Jr.,4361663,Calvin Hart Jr.,0.95,100.0,1.0,0.0
+2019,77128,NC STATE,Calvin Hart Jr.,-1024984,"Calvin Hart, Jr.",0.95,100.0,1.0,0.0
+2019,77128,NC STATE,Calvin Hart Jr.,4361663,Calvin Hart Jr.,0.95,100.0,1.0,0.0
+2019,77128,NC STATE,Calvin Hart Jr.,-1024984,"Calvin Hart, Jr.",0.95,100.0,1.0,0.0
+2019,77128,NC STATE,Calvin Hart Jr.,4361663,Calvin Hart Jr.,0.95,100.0,1.0,0.0
+2019,83326,NEBRASKA,Cam Taylor-Britt,-1023254,Cam Taylor-Britt,0.95,100.0,1.0,0.0
+2019,83326,NEBRASKA,Cam Taylor-Britt,4361196,Cam Taylor-Britt,0.95,100.0,1.0,0.0
+2019,29381,NEBRASKA,Jeramiah Stovall,-1023251,Jeramiah Stovall,0.95,100.0,1.0,0.0
+2019,29381,NEBRASKA,Jeramiah Stovall,4034863,Jeramiah Stovall,0.95,100.0,1.0,0.0
+2019,29381,NEBRASKA,Jeramiah Stovall,-1023251,Jeramiah Stovall,0.95,100.0,1.0,0.0
+2019,29381,NEBRASKA,Jeramiah Stovall,4034863,Jeramiah Stovall,0.95,100.0,1.0,0.0
+2019,83326,NEBRASKA,Cam Taylor-Britt,-1023254,Cam Taylor-Britt,0.95,100.0,1.0,0.0
+2019,83326,NEBRASKA,Cam Taylor-Britt,4361196,Cam Taylor-Britt,0.95,100.0,1.0,0.0
+2019,83326,NEBRASKA,Cam Taylor-Britt,-1023254,Cam Taylor-Britt,0.95,100.0,1.0,0.0
+2019,83326,NEBRASKA,Cam Taylor-Britt,4361196,Cam Taylor-Britt,0.95,100.0,1.0,0.0
+2019,29381,NEBRASKA,Jeramiah Stovall,-1023251,Jeramiah Stovall,0.95,100.0,1.0,0.0
+2019,29381,NEBRASKA,Jeramiah Stovall,4034863,Jeramiah Stovall,0.95,100.0,1.0,0.0
+2019,83326,NEBRASKA,Cam Taylor-Britt,-1023254,Cam Taylor-Britt,0.95,100.0,1.0,0.0
+2019,83326,NEBRASKA,Cam Taylor-Britt,4361196,Cam Taylor-Britt,0.95,100.0,1.0,0.0
+2019,84023,NEW MEXICO,Jeffrey Jones Jr.,-1023961,"Jeffrey Jones, Jr.",0.95,100.0,1.0,0.0
+2019,84023,NEW MEXICO,Jeffrey Jones Jr.,4374077,Jeffrey Jones Jr.,0.95,100.0,1.0,0.0
+2019,83334,NEW MEXICO,De'John Rogers,-1023989,De'John Rogers,0.95,100.0,1.0,0.0
+2019,83334,NEW MEXICO,De'John Rogers,4363921,De'John Rogers,0.95,100.0,1.0,0.0
+2019,84023,NEW MEXICO,Jeffrey Jones Jr.,-1023961,"Jeffrey Jones, Jr.",0.95,100.0,1.0,0.0
+2019,84023,NEW MEXICO,Jeffrey Jones Jr.,4374077,Jeffrey Jones Jr.,0.95,100.0,1.0,0.0
+2019,83334,NEW MEXICO,De'John Rogers,-1023989,De'John Rogers,0.95,100.0,1.0,0.0
+2019,83334,NEW MEXICO,De'John Rogers,4363921,De'John Rogers,0.95,100.0,1.0,0.0
+2019,83334,NEW MEXICO,De'John Rogers,-1023989,De'John Rogers,0.95,100.0,1.0,0.0
+2019,83334,NEW MEXICO,De'John Rogers,4363921,De'John Rogers,0.95,100.0,1.0,0.0
+2019,83334,NEW MEXICO,De'John Rogers,-1023989,De'John Rogers,0.95,100.0,1.0,0.0
+2019,83334,NEW MEXICO,De'John Rogers,4363921,De'John Rogers,0.95,100.0,1.0,0.0
+2019,56201,SYRACUSE,Kyle Strickland,-1033190,Kyle Strickland,0.95,100.0,1.0,0.0
+2019,56201,SYRACUSE,Kyle Strickland,4071779,Kyle Strickland,0.95,100.0,1.0,0.0
+2019,56201,SYRACUSE,Kyle Strickland,-1033190,Kyle Strickland,0.95,100.0,1.0,0.0
+2019,56201,SYRACUSE,Kyle Strickland,4071779,Kyle Strickland,0.95,100.0,1.0,0.0
+2019,56201,SYRACUSE,Kyle Strickland,-1033190,Kyle Strickland,0.95,100.0,1.0,0.0
+2019,56201,SYRACUSE,Kyle Strickland,4071779,Kyle Strickland,0.95,100.0,1.0,0.0
+2019,100273,BOWL GREEN,Tyrone Broden,-1005445,Tyrone Broden,0.95,100.0,1.0,0.0
+2019,100273,BOWL GREEN,Tyrone Broden,4429313,Tyrone Broden,0.95,100.0,1.0,0.0
+2019,55834,BOWL GREEN,Melvin Jackson III,-1005474,Melvin Jackson III,0.95,100.0,1.0,0.0
+2019,55834,BOWL GREEN,Melvin Jackson III,4260358,Melvin Jackson III,0.95,100.0,1.0,0.0
+2019,76941,BOWL GREEN,Karl Brooks,4373423,Karl Brooks,0.95,100.0,1.0,0.0
+2019,76941,BOWL GREEN,Karl Brooks,4390189,Karl Brooks,0.95,100.0,1.0,0.0
+2019,100273,BOWL GREEN,Tyrone Broden,-1005445,Tyrone Broden,0.95,100.0,1.0,0.0
+2019,100273,BOWL GREEN,Tyrone Broden,4429313,Tyrone Broden,0.95,100.0,1.0,0.0
+2019,55834,BOWL GREEN,Melvin Jackson III,-1005474,Melvin Jackson III,0.95,100.0,1.0,0.0
+2019,55834,BOWL GREEN,Melvin Jackson III,4260358,Melvin Jackson III,0.95,100.0,1.0,0.0
+2019,76941,BOWL GREEN,Karl Brooks,4373423,Karl Brooks,0.95,100.0,1.0,0.0
+2019,76941,BOWL GREEN,Karl Brooks,4390189,Karl Brooks,0.95,100.0,1.0,0.0
+2019,55834,BOWL GREEN,Melvin Jackson III,-1005474,Melvin Jackson III,0.95,100.0,1.0,0.0
+2019,55834,BOWL GREEN,Melvin Jackson III,4260358,Melvin Jackson III,0.95,100.0,1.0,0.0
+2019,76941,BOWL GREEN,Karl Brooks,4373423,Karl Brooks,0.95,100.0,1.0,0.0
+2019,76941,BOWL GREEN,Karl Brooks,4390189,Karl Brooks,0.95,100.0,1.0,0.0
+2019,55834,BOWL GREEN,Melvin Jackson III,-1005474,Melvin Jackson III,0.95,100.0,1.0,0.0
+2019,55834,BOWL GREEN,Melvin Jackson III,4260358,Melvin Jackson III,0.95,100.0,1.0,0.0
+2019,76941,BOWL GREEN,Karl Brooks,4373423,Karl Brooks,0.95,100.0,1.0,0.0
+2019,76941,BOWL GREEN,Karl Brooks,4390189,Karl Brooks,0.95,100.0,1.0,0.0
+2019,49501,MIAMI OH,Emmanuel Rugamba,-1019957,Emmanuel Rugamba,0.95,100.0,1.0,0.0
+2019,49501,MIAMI OH,Emmanuel Rugamba,4036144,Emmanuel Rugamba,0.95,100.0,1.0,0.0
+2019,62497,MIAMI OH,Lonnie Phelps,4430314,Lonnie Phelps,0.95,100.0,1.0,0.0
+2019,62497,MIAMI OH,Lonnie Phelps,4584456,Lonnie Phelps,0.95,100.0,1.0,0.0
+2019,49501,MIAMI OH,Emmanuel Rugamba,-1019957,Emmanuel Rugamba,0.95,100.0,1.0,0.0
+2019,49501,MIAMI OH,Emmanuel Rugamba,4036144,Emmanuel Rugamba,0.95,100.0,1.0,0.0
+2019,62497,MIAMI OH,Lonnie Phelps,4430314,Lonnie Phelps,0.95,100.0,1.0,0.0
+2019,62497,MIAMI OH,Lonnie Phelps,4584456,Lonnie Phelps,0.95,100.0,1.0,0.0
+2019,97696,MIAMI OH,Deland McCullough II,4427944,Deland McCullough II,0.95,100.0,1.0,0.0
+2019,97696,MIAMI OH,Deland McCullough II,4584459,Deland McCullough,0.95,100.0,1.0,0.0
+2019,49501,MIAMI OH,Emmanuel Rugamba,-1019957,Emmanuel Rugamba,0.95,100.0,1.0,0.0
+2019,49501,MIAMI OH,Emmanuel Rugamba,4036144,Emmanuel Rugamba,0.95,100.0,1.0,0.0
+2019,62497,MIAMI OH,Lonnie Phelps,4430314,Lonnie Phelps,0.95,100.0,1.0,0.0
+2019,62497,MIAMI OH,Lonnie Phelps,4584456,Lonnie Phelps,0.95,100.0,1.0,0.0
+2019,97696,MIAMI OH,Deland McCullough II,4427944,Deland McCullough II,0.95,100.0,1.0,0.0
+2019,97696,MIAMI OH,Deland McCullough II,4584459,Deland McCullough,0.95,100.0,1.0,0.0
+2019,49501,MIAMI OH,Emmanuel Rugamba,-1019957,Emmanuel Rugamba,0.95,100.0,1.0,0.0
+2019,49501,MIAMI OH,Emmanuel Rugamba,4036144,Emmanuel Rugamba,0.95,100.0,1.0,0.0
+2019,62497,MIAMI OH,Lonnie Phelps,4430314,Lonnie Phelps,0.95,100.0,1.0,0.0
+2019,62497,MIAMI OH,Lonnie Phelps,4584456,Lonnie Phelps,0.95,100.0,1.0,0.0
+2019,97696,MIAMI OH,Deland McCullough II,4427944,Deland McCullough II,0.95,100.0,1.0,0.0
+2019,97696,MIAMI OH,Deland McCullough II,4584459,Deland McCullough,0.95,100.0,1.0,0.0
+2019,83734,OHIO STATE,Master Teague III,-1027022,Master Teague III,0.95,100.0,1.0,0.0
+2019,83734,OHIO STATE,Master Teague III,4361354,Master Teague III,0.95,100.0,1.0,0.0
+2019,83734,OHIO STATE,Master Teague III,-1027022,Master Teague III,0.95,100.0,1.0,0.0
+2019,83734,OHIO STATE,Master Teague III,4361354,Master Teague III,0.95,100.0,1.0,0.0
+2019,83734,OHIO STATE,Master Teague III,-1027022,Master Teague III,0.95,100.0,1.0,0.0
+2019,83734,OHIO STATE,Master Teague III,4361354,Master Teague III,0.95,100.0,1.0,0.0
+2019,55674,OHIO STATE,Jeff Okudah,-1027003,Jeff Okudah,0.95,100.0,1.0,0.0
+2019,55674,OHIO STATE,Jeff Okudah,4241984,Jeff Okudah,0.95,100.0,1.0,0.0
+2019,55674,OHIO STATE,Jeff Okudah,-1027003,Jeff Okudah,0.95,100.0,1.0,0.0
+2019,55674,OHIO STATE,Jeff Okudah,4241984,Jeff Okudah,0.95,100.0,1.0,0.0
+2019,55674,OHIO STATE,Jeff Okudah,-1027003,Jeff Okudah,0.95,100.0,1.0,0.0
+2019,55674,OHIO STATE,Jeff Okudah,4241984,Jeff Okudah,0.95,100.0,1.0,0.0
+2019,77801,OHIO,O'Shaan Allison,-1026556,O'Shaan Allison,0.95,100.0,1.0,0.0
+2019,77801,OHIO,O'Shaan Allison,4362313,O'Shaan Allison,0.95,100.0,1.0,0.0
+2019,77801,OHIO,O'Shaan Allison,-1026556,O'Shaan Allison,0.95,100.0,1.0,0.0
+2019,77801,OHIO,O'Shaan Allison,4362313,O'Shaan Allison,0.95,100.0,1.0,0.0
+2019,43381,OHIO,Dylan Conner,4039095,Dylan Conner,0.95,100.0,1.0,0.0
+2019,43381,OHIO,Dylan Conner,4393274,Dylan Conner,0.95,100.0,1.0,0.0
+2019,77801,OHIO,O'Shaan Allison,-1026556,O'Shaan Allison,0.95,100.0,1.0,0.0
+2019,77801,OHIO,O'Shaan Allison,4362313,O'Shaan Allison,0.95,100.0,1.0,0.0
+2019,43381,OHIO,Dylan Conner,4039095,Dylan Conner,0.95,100.0,1.0,0.0
+2019,43381,OHIO,Dylan Conner,4393274,Dylan Conner,0.95,100.0,1.0,0.0
+2019,43381,OHIO,Dylan Conner,4039095,Dylan Conner,0.95,100.0,1.0,0.0
+2019,43381,OHIO,Dylan Conner,4393274,Dylan Conner,0.95,100.0,1.0,0.0
+2019,43381,OHIO,Dylan Conner,4039095,Dylan Conner,0.95,100.0,1.0,0.0
+2019,43381,OHIO,Dylan Conner,4393274,Dylan Conner,0.95,100.0,1.0,0.0
+2019,40346,OKLA STATE,LD Brown,-1027661,LD Brown,0.95,100.0,1.0,0.0
+2019,40346,OKLA STATE,LD Brown,4038438,LD Brown,0.95,100.0,1.0,0.0
+2019,40346,OKLA STATE,LD Brown,-1027661,LD Brown,0.95,100.0,1.0,0.0
+2019,40346,OKLA STATE,LD Brown,4038438,LD Brown,0.95,100.0,1.0,0.0
+2019,56141,OKLA STATE,Tre Sterling,-1027740,Tre Sterling,0.95,100.0,1.0,0.0
+2019,56141,OKLA STATE,Tre Sterling,4241412,Tre Sterling,0.95,100.0,1.0,0.0
+2019,77843,OKLA STATE,Kolby Harvell-Peel,-1027688,Kolby Harvell-Peel,0.95,100.0,1.0,0.0
+2019,77843,OKLA STATE,Kolby Harvell-Peel,4361838,Kolby Harvell-Peel,0.95,100.0,1.0,0.0
+2019,40346,OKLA STATE,LD Brown,-1027661,LD Brown,0.95,100.0,1.0,0.0
+2019,40346,OKLA STATE,LD Brown,4038438,LD Brown,0.95,100.0,1.0,0.0
+2019,56141,OKLA STATE,Tre Sterling,-1027740,Tre Sterling,0.95,100.0,1.0,0.0
+2019,56141,OKLA STATE,Tre Sterling,4241412,Tre Sterling,0.95,100.0,1.0,0.0
+2019,77843,OKLA STATE,Kolby Harvell-Peel,-1027688,Kolby Harvell-Peel,0.95,100.0,1.0,0.0
+2019,77843,OKLA STATE,Kolby Harvell-Peel,4361838,Kolby Harvell-Peel,0.95,100.0,1.0,0.0
+2019,56141,OKLA STATE,Tre Sterling,-1027740,Tre Sterling,0.95,100.0,1.0,0.0
+2019,56141,OKLA STATE,Tre Sterling,4241412,Tre Sterling,0.95,100.0,1.0,0.0
+2019,77843,OKLA STATE,Kolby Harvell-Peel,-1027688,Kolby Harvell-Peel,0.95,100.0,1.0,0.0
+2019,77843,OKLA STATE,Kolby Harvell-Peel,4361838,Kolby Harvell-Peel,0.95,100.0,1.0,0.0
+2019,56141,OKLA STATE,Tre Sterling,-1027740,Tre Sterling,0.95,100.0,1.0,0.0
+2019,56141,OKLA STATE,Tre Sterling,4241412,Tre Sterling,0.95,100.0,1.0,0.0
+2019,77843,OKLA STATE,Kolby Harvell-Peel,-1027688,Kolby Harvell-Peel,0.95,100.0,1.0,0.0
+2019,77843,OKLA STATE,Kolby Harvell-Peel,4361838,Kolby Harvell-Peel,0.95,100.0,1.0,0.0
+2019,78056,TULSA,JuanCarlos Santana,-1037142,JuanCarlos Santana,0.95,100.0,1.0,0.0
+2019,78056,TULSA,JuanCarlos Santana,4244617,JuanCarlos Santana,0.95,100.0,1.0,0.0
+2019,36151,TULSA,Cristian Williams,3917015,Cristian Williams,0.95,100.0,1.0,0.0
+2019,36151,TULSA,Cristian Williams,4577075,Cristian Williams,0.95,100.0,1.0,0.0
+2019,78056,TULSA,JuanCarlos Santana,-1037142,JuanCarlos Santana,0.95,100.0,1.0,0.0
+2019,78056,TULSA,JuanCarlos Santana,4244617,JuanCarlos Santana,0.95,100.0,1.0,0.0
+2019,36151,TULSA,Cristian Williams,3917015,Cristian Williams,0.95,100.0,1.0,0.0
+2019,36151,TULSA,Cristian Williams,4577075,Cristian Williams,0.95,100.0,1.0,0.0
+2019,36151,TULSA,Cristian Williams,3917015,Cristian Williams,0.95,100.0,1.0,0.0
+2019,36151,TULSA,Cristian Williams,4577075,Cristian Williams,0.95,100.0,1.0,0.0
+2019,36151,TULSA,Cristian Williams,3917015,Cristian Williams,0.95,100.0,1.0,0.0
+2019,36151,TULSA,Cristian Williams,4577075,Cristian Williams,0.95,100.0,1.0,0.0
+2019,52133,OREGON ST,Calvin Tyler Jr.,-1028676,"Calvin Tyler, Jr.",0.95,100.0,1.0,0.0
+2019,52133,OREGON ST,Calvin Tyler Jr.,4255990,Calvin Tyler Jr.,0.95,100.0,1.0,0.0
+2019,52133,OREGON ST,Calvin Tyler Jr.,-1028676,"Calvin Tyler, Jr.",0.95,100.0,1.0,0.0
+2019,52133,OREGON ST,Calvin Tyler Jr.,4255990,Calvin Tyler Jr.,0.95,100.0,1.0,0.0
+2019,52134,OREGON ST,Jeffrey Manning Jr.,-1028636,"Jeffrey Manning, Jr.",0.95,100.0,1.0,0.0
+2019,52134,OREGON ST,Jeffrey Manning Jr.,4255993,Jeffrey Manning Jr.,0.95,100.0,1.0,0.0
+2019,52133,OREGON ST,Calvin Tyler Jr.,-1028676,"Calvin Tyler, Jr.",0.95,100.0,1.0,0.0
+2019,52133,OREGON ST,Calvin Tyler Jr.,4255990,Calvin Tyler Jr.,0.95,100.0,1.0,0.0
+2019,52134,OREGON ST,Jeffrey Manning Jr.,-1028636,"Jeffrey Manning, Jr.",0.95,100.0,1.0,0.0
+2019,52134,OREGON ST,Jeffrey Manning Jr.,4255993,Jeffrey Manning Jr.,0.95,100.0,1.0,0.0
+2019,52134,OREGON ST,Jeffrey Manning Jr.,-1028636,"Jeffrey Manning, Jr.",0.95,100.0,1.0,0.0
+2019,52134,OREGON ST,Jeffrey Manning Jr.,4255993,Jeffrey Manning Jr.,0.95,100.0,1.0,0.0
+2019,52134,OREGON ST,Jeffrey Manning Jr.,-1028636,"Jeffrey Manning, Jr.",0.95,100.0,1.0,0.0
+2019,52134,OREGON ST,Jeffrey Manning Jr.,4255993,Jeffrey Manning Jr.,0.95,100.0,1.0,0.0
+2019,26506,TEMPLE,Zack Mesday,-1033823,Zack Mesday,0.95,100.0,1.0,0.0
+2019,26506,TEMPLE,Zack Mesday,3138750,Zack Mesday,0.95,100.0,1.0,0.0
+2019,36042,TEMPLE,Deandre Kelly,-1033807,DeAndre Kelly,0.95,100.0,1.0,0.0
+2019,36042,TEMPLE,Deandre Kelly,3923408,DeAndre Kelly,0.95,100.0,1.0,0.0
+2019,26506,TEMPLE,Zack Mesday,-1033823,Zack Mesday,0.95,100.0,1.0,0.0
+2019,26506,TEMPLE,Zack Mesday,3138750,Zack Mesday,0.95,100.0,1.0,0.0
+2019,26506,TEMPLE,Zack Mesday,-1033823,Zack Mesday,0.95,100.0,1.0,0.0
+2019,26506,TEMPLE,Zack Mesday,3138750,Zack Mesday,0.95,100.0,1.0,0.0
+2019,36042,TEMPLE,Deandre Kelly,-1033807,DeAndre Kelly,0.95,100.0,1.0,0.0
+2019,36042,TEMPLE,Deandre Kelly,3923408,DeAndre Kelly,0.95,100.0,1.0,0.0
+2019,26506,TEMPLE,Zack Mesday,-1033823,Zack Mesday,0.95,100.0,1.0,0.0
+2019,26506,TEMPLE,Zack Mesday,3138750,Zack Mesday,0.95,100.0,1.0,0.0
+2019,36042,TEMPLE,Deandre Kelly,-1033807,DeAndre Kelly,0.95,100.0,1.0,0.0
+2019,36042,TEMPLE,Deandre Kelly,3923408,DeAndre Kelly,0.95,100.0,1.0,0.0
+2019,43402,PITTSBURGH,Phil Campbell III,-1029282,Phil Campbell III,0.95,100.0,1.0,0.0
+2019,43402,PITTSBURGH,Phil Campbell III,4036052,Phil Campbell III,0.95,100.0,1.0,0.0
+2019,43402,PITTSBURGH,Phil Campbell III,-1029282,Phil Campbell III,0.95,100.0,1.0,0.0
+2019,43402,PITTSBURGH,Phil Campbell III,4036052,Phil Campbell III,0.95,100.0,1.0,0.0
+2019,43402,PITTSBURGH,Phil Campbell III,-1029282,Phil Campbell III,0.95,100.0,1.0,0.0
+2019,43402,PITTSBURGH,Phil Campbell III,4036052,Phil Campbell III,0.95,100.0,1.0,0.0
+2019,43402,PITTSBURGH,Phil Campbell III,-1029282,Phil Campbell III,0.95,100.0,1.0,0.0
+2019,43402,PITTSBURGH,Phil Campbell III,4036052,Phil Campbell III,0.95,100.0,1.0,0.0
+2019,98214,CLEMSON,Joseph Ngata,-1007271,Joseph Ngata,0.95,100.0,1.0,0.0
+2019,98214,CLEMSON,Joseph Ngata,4426426,Joseph Ngata,0.95,100.0,1.0,0.0
+2019,98214,CLEMSON,Joseph Ngata,-1007271,Joseph Ngata,0.95,100.0,1.0,0.0
+2019,98214,CLEMSON,Joseph Ngata,4426426,Joseph Ngata,0.95,100.0,1.0,0.0
+2019,61420,MEMPHIS,Coye' Fairman,-1019195,Coye' Fairman,0.95,100.0,1.0,0.0
+2019,61420,MEMPHIS,Coye' Fairman,4243387,Coye' Fairman,0.95,100.0,1.0,0.0
+2019,61420,MEMPHIS,Coye' Fairman,-1019195,Coye' Fairman,0.95,100.0,1.0,0.0
+2019,61420,MEMPHIS,Coye' Fairman,4243387,Coye' Fairman,0.95,100.0,1.0,0.0
+2019,78051,MEMPHIS,Jeremy Tate Jr,-1019251,Jeremy Tate Jr,0.95,100.0,1.0,0.0
+2019,78051,MEMPHIS,Jeremy Tate Jr,4371758,Jeremy Tate Jr.,0.95,100.0,1.0,0.0
+2019,26701,VANDERBILT,Cam Watkins,-1040661,Cam Watkins,0.95,100.0,1.0,0.0
+2019,26701,VANDERBILT,Cam Watkins,3917618,Cam Watkins,0.95,100.0,1.0,0.0
+2019,83449,VANDERBILT,Tre' Douglas III,-1040596,Tre' Douglas,0.95,100.0,1.0,0.0
+2019,83449,VANDERBILT,Tre' Douglas III,4362790,Tre' Douglas,0.95,100.0,1.0,0.0
+2019,26701,VANDERBILT,Cam Watkins,-1040661,Cam Watkins,0.95,100.0,1.0,0.0
+2019,26701,VANDERBILT,Cam Watkins,3917618,Cam Watkins,0.95,100.0,1.0,0.0
+2019,83449,VANDERBILT,Tre' Douglas III,-1040596,Tre' Douglas,0.95,100.0,1.0,0.0
+2019,83449,VANDERBILT,Tre' Douglas III,4362790,Tre' Douglas,0.95,100.0,1.0,0.0
+2019,26701,VANDERBILT,Cam Watkins,-1040661,Cam Watkins,0.95,100.0,1.0,0.0
+2019,26701,VANDERBILT,Cam Watkins,3917618,Cam Watkins,0.95,100.0,1.0,0.0
+2019,83449,VANDERBILT,Tre' Douglas III,-1040596,Tre' Douglas,0.95,100.0,1.0,0.0
+2019,83449,VANDERBILT,Tre' Douglas III,4362790,Tre' Douglas,0.95,100.0,1.0,0.0
+2019,26701,VANDERBILT,Cam Watkins,-1040661,Cam Watkins,0.95,100.0,1.0,0.0
+2019,26701,VANDERBILT,Cam Watkins,3917618,Cam Watkins,0.95,100.0,1.0,0.0
+2019,83449,VANDERBILT,Tre' Douglas III,-1040596,Tre' Douglas,0.95,100.0,1.0,0.0
+2019,83449,VANDERBILT,Tre' Douglas III,4362790,Tre' Douglas,0.95,100.0,1.0,0.0
+2019,77636,BAYLOR,Gerry Bohanon,4362915,Gerry Bohanon,0.95,100.0,1.0,0.0
+2019,77636,BAYLOR,Gerry Bohanon,4401728,Gerry Bohanon,0.95,100.0,1.0,0.0
+2019,99315,BAYLOR,Niadre Zouzoua,-1004684,Niadré Zouzoua,0.95,100.0,1.0,0.0
+2019,99315,BAYLOR,Niadre Zouzoua,4568999,Niadre Zouzoua,0.95,100.0,1.0,0.0
+2019,77636,BAYLOR,Gerry Bohanon,4362915,Gerry Bohanon,0.95,100.0,1.0,0.0
+2019,77636,BAYLOR,Gerry Bohanon,4401728,Gerry Bohanon,0.95,100.0,1.0,0.0
+2019,77636,BAYLOR,Gerry Bohanon,4362915,Gerry Bohanon,0.95,100.0,1.0,0.0
+2019,77636,BAYLOR,Gerry Bohanon,4401728,Gerry Bohanon,0.95,100.0,1.0,0.0
+2019,76595,BAYLOR,Byron Hanspard Jr.,-1004606,"Byron Hanspard, Jr.",0.95,100.0,1.0,0.0
+2019,76595,BAYLOR,Byron Hanspard Jr.,4373018,Byron Hanspard Jr.,0.95,100.0,1.0,0.0
+2019,99315,BAYLOR,Niadre Zouzoua,-1004684,Niadré Zouzoua,0.95,100.0,1.0,0.0
+2019,99315,BAYLOR,Niadre Zouzoua,4568999,Niadre Zouzoua,0.95,100.0,1.0,0.0
+2019,76595,BAYLOR,Byron Hanspard Jr.,-1004606,"Byron Hanspard, Jr.",0.95,100.0,1.0,0.0
+2019,76595,BAYLOR,Byron Hanspard Jr.,4373018,Byron Hanspard Jr.,0.95,100.0,1.0,0.0
+2019,76595,BAYLOR,Byron Hanspard Jr.,-1004606,"Byron Hanspard, Jr.",0.95,100.0,1.0,0.0
+2019,76595,BAYLOR,Byron Hanspard Jr.,4373018,Byron Hanspard Jr.,0.95,100.0,1.0,0.0
+2019,99315,BAYLOR,Niadre Zouzoua,-1004684,Niadré Zouzoua,0.95,100.0,1.0,0.0
+2019,99315,BAYLOR,Niadre Zouzoua,4568999,Niadre Zouzoua,0.95,100.0,1.0,0.0
+2019,100673,RICE,Tre'shon Devones,-1029912,Tre’shon Devones,0.95,100.0,1.0,0.0
+2019,100673,RICE,Tre'shon Devones,4427067,Tre'Shon Devones,0.95,100.0,1.0,0.0
+2019,49479,RICE,D'Angelo Ellis,-1029916,D' Angelo Ellis,0.95,100.0,1.0,0.0
+2019,49479,RICE,D'Angelo Ellis,4039156,D'Angelo Ellis,0.95,100.0,1.0,0.0
+2019,100673,RICE,Tre'shon Devones,-1029912,Tre’shon Devones,0.95,100.0,1.0,0.0
+2019,100673,RICE,Tre'shon Devones,4427067,Tre'Shon Devones,0.95,100.0,1.0,0.0
+2019,49479,RICE,D'Angelo Ellis,-1029916,D' Angelo Ellis,0.95,100.0,1.0,0.0
+2019,49479,RICE,D'Angelo Ellis,4039156,D'Angelo Ellis,0.95,100.0,1.0,0.0
+2019,100673,RICE,Tre'shon Devones,-1029912,Tre’shon Devones,0.95,100.0,1.0,0.0
+2019,100673,RICE,Tre'shon Devones,4427067,Tre'Shon Devones,0.95,100.0,1.0,0.0
+2019,49479,RICE,D'Angelo Ellis,-1029916,D' Angelo Ellis,0.95,100.0,1.0,0.0
+2019,49479,RICE,D'Angelo Ellis,4039156,D'Angelo Ellis,0.95,100.0,1.0,0.0
+2019,100673,RICE,Tre'shon Devones,-1029912,Tre’shon Devones,0.95,100.0,1.0,0.0
+2019,100673,RICE,Tre'shon Devones,4427067,Tre'Shon Devones,0.95,100.0,1.0,0.0
+2019,83397,TEXAS A&M,Leon O'Neal Jr.,4372521,Leon O'Neal Jr.,0.95,100.0,1.0,0.0
+2019,83397,TEXAS A&M,Leon O'Neal Jr.,4384428,Leon O'Neal Jr.,0.95,100.0,1.0,0.0
+2019,98919,TEXAS A&M,DeMarvin Leal,-1034978,Demarvin Leal,0.95,100.0,1.0,0.0
+2019,98919,TEXAS A&M,DeMarvin Leal,4426359,DeMarvin Leal,0.95,100.0,1.0,0.0
+2019,98990,TEXAS A&M,Andre White,4430715,Andre White Jr.,0.95,100.0,1.0,0.0
+2019,98990,TEXAS A&M,Andre White,4579221,Andre White Jr.,0.95,100.0,1.0,0.0
+2019,83397,TEXAS A&M,Leon O'Neal Jr.,4372521,Leon O'Neal Jr.,0.95,100.0,1.0,0.0
+2019,83397,TEXAS A&M,Leon O'Neal Jr.,4384428,Leon O'Neal Jr.,0.95,100.0,1.0,0.0
+2019,83397,TEXAS A&M,Leon O'Neal Jr.,4372521,Leon O'Neal Jr.,0.95,100.0,1.0,0.0
+2019,83397,TEXAS A&M,Leon O'Neal Jr.,4384428,Leon O'Neal Jr.,0.95,100.0,1.0,0.0
+2019,98919,TEXAS A&M,DeMarvin Leal,-1034978,Demarvin Leal,0.95,100.0,1.0,0.0
+2019,98919,TEXAS A&M,DeMarvin Leal,4426359,DeMarvin Leal,0.95,100.0,1.0,0.0
+2019,98990,TEXAS A&M,Andre White,4430715,Andre White Jr.,0.95,100.0,1.0,0.0
+2019,98990,TEXAS A&M,Andre White,4579221,Andre White Jr.,0.95,100.0,1.0,0.0
+2019,83397,TEXAS A&M,Leon O'Neal Jr.,4372521,Leon O'Neal Jr.,0.95,100.0,1.0,0.0
+2019,83397,TEXAS A&M,Leon O'Neal Jr.,4384428,Leon O'Neal Jr.,0.95,100.0,1.0,0.0
+2019,98919,TEXAS A&M,DeMarvin Leal,-1034978,Demarvin Leal,0.95,100.0,1.0,0.0
+2019,98919,TEXAS A&M,DeMarvin Leal,4426359,DeMarvin Leal,0.95,100.0,1.0,0.0
+2019,98990,TEXAS A&M,Andre White,4430715,Andre White Jr.,0.95,100.0,1.0,0.0
+2019,98990,TEXAS A&M,Andre White,4579221,Andre White Jr.,0.95,100.0,1.0,0.0
+2019,83397,TEXAS A&M,Leon O'Neal Jr.,4372521,Leon O'Neal Jr.,0.95,100.0,1.0,0.0
+2019,83397,TEXAS A&M,Leon O'Neal Jr.,4384428,Leon O'Neal Jr.,0.95,100.0,1.0,0.0
+2019,98919,TEXAS A&M,DeMarvin Leal,-1034978,Demarvin Leal,0.95,100.0,1.0,0.0
+2019,98919,TEXAS A&M,DeMarvin Leal,4426359,DeMarvin Leal,0.95,100.0,1.0,0.0
+2019,98990,TEXAS A&M,Andre White,4430715,Andre White Jr.,0.95,100.0,1.0,0.0
+2019,98990,TEXAS A&M,Andre White,4579221,Andre White Jr.,0.95,100.0,1.0,0.0
+2019,76707,HOUSTON,Gleson Sprewell,4360178,Gleson Sprewell,0.95,100.0,1.0,0.0
+2019,76707,HOUSTON,Gleson Sprewell,4385473,Gleson Sprewell,0.95,100.0,1.0,0.0
+2019,76707,HOUSTON,Gleson Sprewell,4360178,Gleson Sprewell,0.95,100.0,1.0,0.0
+2019,76707,HOUSTON,Gleson Sprewell,4385473,Gleson Sprewell,0.95,100.0,1.0,0.0
+2019,76707,HOUSTON,Gleson Sprewell,4360178,Gleson Sprewell,0.95,100.0,1.0,0.0
+2019,76707,HOUSTON,Gleson Sprewell,4385473,Gleson Sprewell,0.95,100.0,1.0,0.0
+2019,99369,TEXAS,Marcus Tillman Jr.,-1034668,"Marcus Tillman, Jr.",0.95,100.0,1.0,0.0
+2019,99369,TEXAS,Marcus Tillman Jr.,4426477,Marcus Tillman Jr.,0.95,100.0,1.0,0.0
+2019,99369,TEXAS,Marcus Tillman Jr.,-1034668,"Marcus Tillman, Jr.",0.95,100.0,1.0,0.0
+2019,99369,TEXAS,Marcus Tillman Jr.,4426477,Marcus Tillman Jr.,0.95,100.0,1.0,0.0
+2019,99369,TEXAS,Marcus Tillman Jr.,-1034668,"Marcus Tillman, Jr.",0.95,100.0,1.0,0.0
+2019,99369,TEXAS,Marcus Tillman Jr.,4426477,Marcus Tillman Jr.,0.95,100.0,1.0,0.0
+2019,99369,TEXAS,Marcus Tillman Jr.,-1034668,"Marcus Tillman, Jr.",0.95,100.0,1.0,0.0
+2019,99369,TEXAS,Marcus Tillman Jr.,4426477,Marcus Tillman Jr.,0.95,100.0,1.0,0.0
+2019,51661,UTAH,Noah Reneau-Myers,-1039841,Noah Reneau-Myers,0.95,100.0,1.0,0.0
+2019,51661,UTAH,Noah Reneau-Myers,3912615,Noah Reneau-Myers,0.95,100.0,1.0,0.0
+2019,78002,VIRGINIA,Tavares Kelly Jr.,-1040914,Tavares Kelly Jr.,0.95,100.0,1.0,0.0
+2019,78002,VIRGINIA,Tavares Kelly Jr.,4370796,Tavares Kelly Jr.,0.95,100.0,1.0,0.0
+2019,78002,VIRGINIA,Tavares Kelly Jr.,-1040914,Tavares Kelly Jr.,0.95,100.0,1.0,0.0
+2019,78002,VIRGINIA,Tavares Kelly Jr.,4370796,Tavares Kelly Jr.,0.95,100.0,1.0,0.0
+2019,42389,VIRGINIA,Rob Snyder,-1040949,Rob Snyder,0.95,100.0,1.0,0.0
+2019,42389,VIRGINIA,Rob Snyder,4037595,Rob Snyder,0.95,100.0,1.0,0.0
+2019,76658,VIRGINIA,Heskin Smith,-1040947,Heskin Smith,0.95,100.0,1.0,0.0
+2019,76658,VIRGINIA,Heskin Smith,4240848,Heskin Smith,0.95,100.0,1.0,0.0
+2019,98581,VIRGINIA,Olusegun Oluwatimi,-1040934,Olusegun Oluwatimi,0.95,100.0,1.0,0.0
+2019,98581,VIRGINIA,Olusegun Oluwatimi,4370807,Olusegun Oluwatimi,0.95,100.0,1.0,0.0
+2019,78002,VIRGINIA,Tavares Kelly Jr.,-1040914,Tavares Kelly Jr.,0.95,100.0,1.0,0.0
+2019,78002,VIRGINIA,Tavares Kelly Jr.,4370796,Tavares Kelly Jr.,0.95,100.0,1.0,0.0
+2019,42389,VIRGINIA,Rob Snyder,-1040949,Rob Snyder,0.95,100.0,1.0,0.0
+2019,42389,VIRGINIA,Rob Snyder,4037595,Rob Snyder,0.95,100.0,1.0,0.0
+2019,76658,VIRGINIA,Heskin Smith,-1040947,Heskin Smith,0.95,100.0,1.0,0.0
+2019,76658,VIRGINIA,Heskin Smith,4240848,Heskin Smith,0.95,100.0,1.0,0.0
+2019,42389,VIRGINIA,Rob Snyder,-1040949,Rob Snyder,0.95,100.0,1.0,0.0
+2019,42389,VIRGINIA,Rob Snyder,4037595,Rob Snyder,0.95,100.0,1.0,0.0
+2019,76658,VIRGINIA,Heskin Smith,-1040947,Heskin Smith,0.95,100.0,1.0,0.0
+2019,76658,VIRGINIA,Heskin Smith,4240848,Heskin Smith,0.95,100.0,1.0,0.0
+2019,42389,VIRGINIA,Rob Snyder,-1040949,Rob Snyder,0.95,100.0,1.0,0.0
+2019,42389,VIRGINIA,Rob Snyder,4037595,Rob Snyder,0.95,100.0,1.0,0.0
+2019,76658,VIRGINIA,Heskin Smith,-1040947,Heskin Smith,0.95,100.0,1.0,0.0
+2019,76658,VIRGINIA,Heskin Smith,4240848,Heskin Smith,0.95,100.0,1.0,0.0
+2019,84278,MARSHALL,Artie Henry,-1018270,Artie Henry,0.95,100.0,1.0,0.0
+2019,84278,MARSHALL,Artie Henry,4370350,Artie Henry,0.95,100.0,1.0,0.0
+2019,97693,MARSHALL,Eli Neal,-1018303,Eli Neal,0.95,100.0,1.0,0.0
+2019,97693,MARSHALL,Eli Neal,4428098,Eli Neal,0.95,100.0,1.0,0.0
+2019,84278,MARSHALL,Artie Henry,-1018270,Artie Henry,0.95,100.0,1.0,0.0
+2019,84278,MARSHALL,Artie Henry,4370350,Artie Henry,0.95,100.0,1.0,0.0
+2019,97693,MARSHALL,Eli Neal,-1018303,Eli Neal,0.95,100.0,1.0,0.0
+2019,97693,MARSHALL,Eli Neal,4428098,Eli Neal,0.95,100.0,1.0,0.0
+2019,97693,MARSHALL,Eli Neal,-1018303,Eli Neal,0.95,100.0,1.0,0.0
+2019,97693,MARSHALL,Eli Neal,4428098,Eli Neal,0.95,100.0,1.0,0.0
+2019,97693,MARSHALL,Eli Neal,-1018303,Eli Neal,0.95,100.0,1.0,0.0
+2019,97693,MARSHALL,Eli Neal,4428098,Eli Neal,0.95,100.0,1.0,0.0
+2019,40096,DOMINION,Messiah deWeaver,-1028146,Messiah deWeaver,0.95,100.0,1.0,0.0
+2019,40096,DOMINION,Messiah deWeaver,4036510,Messiah deWeaver,0.95,100.0,1.0,0.0
+2019,40096,DOMINION,Messiah deWeaver,-1028146,Messiah deWeaver,0.95,100.0,1.0,0.0
+2019,40096,DOMINION,Messiah deWeaver,4036510,Messiah deWeaver,0.95,100.0,1.0,0.0
+2019,45321,DOMINION,Robert Scott,4052059,Robert Scott,0.95,100.0,1.0,0.0
+2019,45321,DOMINION,Robert Scott,4575616,Robert Scott,0.95,100.0,1.0,0.0
+2019,40096,DOMINION,Messiah deWeaver,-1028146,Messiah deWeaver,0.95,100.0,1.0,0.0
+2019,40096,DOMINION,Messiah deWeaver,4036510,Messiah deWeaver,0.95,100.0,1.0,0.0
+2019,40096,DOMINION,Messiah deWeaver,-1028146,Messiah deWeaver,0.95,100.0,1.0,0.0
+2019,40096,DOMINION,Messiah deWeaver,4036510,Messiah deWeaver,0.95,100.0,1.0,0.0
+2019,45321,DOMINION,Robert Scott,4052059,Robert Scott,0.95,100.0,1.0,0.0
+2019,45321,DOMINION,Robert Scott,4575616,Robert Scott,0.95,100.0,1.0,0.0
+2019,45321,DOMINION,Robert Scott,4052059,Robert Scott,0.95,100.0,1.0,0.0
+2019,45321,DOMINION,Robert Scott,4575616,Robert Scott,0.95,100.0,1.0,0.0
+2019,45321,DOMINION,Robert Scott,4052059,Robert Scott,0.95,100.0,1.0,0.0
+2019,45321,DOMINION,Robert Scott,4575616,Robert Scott,0.95,100.0,1.0,0.0
+2019,42209,COAST CAR,Sam Denmark,-1007507,Sam Denmark,0.95,100.0,1.0,0.0
+2019,42209,COAST CAR,Sam Denmark,4037624,Sam Denmark,0.95,100.0,1.0,0.0
+2019,102873,COAST CAR,Kered Class,-1007498,Kered Class,0.95,100.0,1.0,0.0
+2019,102873,COAST CAR,Kered Class,4361043,Kered Class,0.95,100.0,1.0,0.0
+2019,83035,COAST CAR,Derick Bush,-1007494,Derick Bush,0.95,100.0,1.0,0.0
+2019,83035,COAST CAR,Derick Bush,4361037,Derick Bush,0.95,100.0,1.0,0.0
+2019,42209,COAST CAR,Sam Denmark,-1007507,Sam Denmark,0.95,100.0,1.0,0.0
+2019,42209,COAST CAR,Sam Denmark,4037624,Sam Denmark,0.95,100.0,1.0,0.0
+2019,102873,COAST CAR,Kered Class,-1007498,Kered Class,0.95,100.0,1.0,0.0
+2019,102873,COAST CAR,Kered Class,4361043,Kered Class,0.95,100.0,1.0,0.0
+2019,83035,COAST CAR,Derick Bush,-1007494,Derick Bush,0.95,100.0,1.0,0.0
+2019,83035,COAST CAR,Derick Bush,4361037,Derick Bush,0.95,100.0,1.0,0.0
+2019,102873,COAST CAR,Kered Class,-1007498,Kered Class,0.95,100.0,1.0,0.0
+2019,102873,COAST CAR,Kered Class,4361043,Kered Class,0.95,100.0,1.0,0.0
+2019,83035,COAST CAR,Derick Bush,-1007494,Derick Bush,0.95,100.0,1.0,0.0
+2019,83035,COAST CAR,Derick Bush,4361037,Derick Bush,0.95,100.0,1.0,0.0
+2019,83035,COAST CAR,Derick Bush,-1007494,Derick Bush,0.95,100.0,1.0,0.0
+2019,83035,COAST CAR,Derick Bush,4361037,Derick Bush,0.95,100.0,1.0,0.0
+2019,102873,COAST CAR,Kered Class,-1007498,Kered Class,0.95,100.0,1.0,0.0
+2019,102873,COAST CAR,Kered Class,4361043,Kered Class,0.95,100.0,1.0,0.0
+2019,102925,TEXAS ST,Trevis Graham,-1035348,"Trevis Graham, Jr.",0.95,100.0,1.0,0.0
+2019,102925,TEXAS ST,Trevis Graham,4362669,Trevis Graham,0.95,100.0,1.0,0.0
+2019,84443,TEXAS ST,Jah'Marae Sheread,-1035400,Jah’Marae Sheread,0.95,100.0,1.0,0.0
+2019,84443,TEXAS ST,Jah'Marae Sheread,4362664,Jah'Marae Sheread,0.95,100.0,1.0,0.0
+2019,57428,TEXAS ST,Robert Brown Jr.,-1035331,"Robert Brown, Jr.",0.95,100.0,1.0,0.0
+2019,57428,TEXAS ST,Robert Brown Jr.,4040522,Robert Brown Jr.,0.95,100.0,1.0,0.0
+2019,57428,TEXAS ST,Robert Brown Jr.,-1035331,"Robert Brown, Jr.",0.95,100.0,1.0,0.0
+2019,57428,TEXAS ST,Robert Brown Jr.,4040522,Robert Brown Jr.,0.95,100.0,1.0,0.0
+2019,102849,TEXAS ST,Markeveon Coleman,4040523,Markeveon Coleman,0.95,100.0,1.0,0.0
+2019,102849,TEXAS ST,Markeveon Coleman,4385613,Markeveon Coleman,0.95,100.0,1.0,0.0
+2019,102925,TEXAS ST,Trevis Graham,-1035348,"Trevis Graham, Jr.",0.95,100.0,1.0,0.0
+2019,102925,TEXAS ST,Trevis Graham,4362669,Trevis Graham,0.95,100.0,1.0,0.0
+2019,84443,TEXAS ST,Jah'Marae Sheread,-1035400,Jah’Marae Sheread,0.95,100.0,1.0,0.0
+2019,84443,TEXAS ST,Jah'Marae Sheread,4362664,Jah'Marae Sheread,0.95,100.0,1.0,0.0
+2019,57428,TEXAS ST,Robert Brown Jr.,-1035331,"Robert Brown, Jr.",0.95,100.0,1.0,0.0
+2019,57428,TEXAS ST,Robert Brown Jr.,4040522,Robert Brown Jr.,0.95,100.0,1.0,0.0
+2019,102849,TEXAS ST,Markeveon Coleman,4040523,Markeveon Coleman,0.95,100.0,1.0,0.0
+2019,102849,TEXAS ST,Markeveon Coleman,4385613,Markeveon Coleman,0.95,100.0,1.0,0.0
+2019,102849,TEXAS ST,Markeveon Coleman,4040523,Markeveon Coleman,0.95,100.0,1.0,0.0
+2019,102849,TEXAS ST,Markeveon Coleman,4385613,Markeveon Coleman,0.95,100.0,1.0,0.0
+2019,102849,TEXAS ST,Markeveon Coleman,4040523,Markeveon Coleman,0.95,100.0,1.0,0.0
+2019,102849,TEXAS ST,Markeveon Coleman,4385613,Markeveon Coleman,0.95,100.0,1.0,0.0
+2019,102849,TEXAS ST,Markeveon Coleman,4040523,Markeveon Coleman,0.95,100.0,1.0,0.0
+2019,102849,TEXAS ST,Markeveon Coleman,4385613,Markeveon Coleman,0.95,100.0,1.0,0.0
+2019,83906,UTAH ST,Shaq Bond,-1040208,Shaq Bond,0.95,100.0,1.0,0.0
+2019,83906,UTAH ST,Shaq Bond,4374188,Shaq Bond,0.95,100.0,1.0,0.0
+2019,83906,UTAH ST,Shaq Bond,-1040208,Shaq Bond,0.95,100.0,1.0,0.0
+2019,83906,UTAH ST,Shaq Bond,4374188,Shaq Bond,0.95,100.0,1.0,0.0
+2019,83906,UTAH ST,Shaq Bond,-1040208,Shaq Bond,0.95,100.0,1.0,0.0
+2019,83906,UTAH ST,Shaq Bond,4374188,Shaq Bond,0.95,100.0,1.0,0.0
+2019,83906,UTAH ST,Shaq Bond,-1040208,Shaq Bond,0.95,100.0,1.0,0.0
+2019,83906,UTAH ST,Shaq Bond,4374188,Shaq Bond,0.95,100.0,1.0,0.0
+2019,97400,ALABAMA,John Metchie III,-1000750,John Metchie III,0.95,100.0,1.0,0.0
+2019,97400,ALABAMA,John Metchie III,4567096,John Metchie,0.95,100.0,1.0,0.0
+2019,97400,ALABAMA,John Metchie III,-1000750,John Metchie III,0.95,100.0,1.0,0.0
+2019,97400,ALABAMA,John Metchie III,4567096,John Metchie,0.95,100.0,1.0,0.0
+2019,97400,ALABAMA,John Metchie III,-1000750,John Metchie III,0.95,100.0,1.0,0.0
+2019,97400,ALABAMA,John Metchie III,4567096,John Metchie,0.95,100.0,1.0,0.0
+2019,97400,ALABAMA,John Metchie III,-1000750,John Metchie III,0.95,100.0,1.0,0.0
+2019,97400,ALABAMA,John Metchie III,4567096,John Metchie,0.95,100.0,1.0,0.0
+2019,57142,ARMY,Artice Hobbs IV,-1002878,Artice Hobbs IV,0.95,100.0,1.0,0.0
+2019,57142,ARMY,Artice Hobbs IV,4258463,Artice Hobbs IV,0.95,100.0,1.0,0.0
+2019,57142,ARMY,Artice Hobbs IV,-1002878,Artice Hobbs IV,0.95,100.0,1.0,0.0
+2019,57142,ARMY,Artice Hobbs IV,4258463,Artice Hobbs IV,0.95,100.0,1.0,0.0
+2019,57142,ARMY,Artice Hobbs IV,-1002878,Artice Hobbs IV,0.95,100.0,1.0,0.0
+2019,57142,ARMY,Artice Hobbs IV,4258463,Artice Hobbs IV,0.95,100.0,1.0,0.0
+2019,43257,ARMY,Cam Jones,-1002892,Cam Jones,0.95,100.0,1.0,0.0
+2019,43257,ARMY,Cam Jones,4036945,Cam Jones,0.95,100.0,1.0,0.0
+2019,43257,ARMY,Cam Jones,-1002892,Cam Jones,0.95,100.0,1.0,0.0
+2019,43257,ARMY,Cam Jones,4036945,Cam Jones,0.95,100.0,1.0,0.0
+2019,43257,ARMY,Cam Jones,-1002892,Cam Jones,0.95,100.0,1.0,0.0
+2019,43257,ARMY,Cam Jones,4036945,Cam Jones,0.95,100.0,1.0,0.0
+2019,55757,AIR FORCE,James Jones IV,-1000039,James Jones IV,0.95,100.0,1.0,0.0
+2019,55757,AIR FORCE,James Jones IV,4239963,James Jones IV,0.95,100.0,1.0,0.0
+2019,55759,AIR FORCE,Eric Ward,4261100,Eric Ward,0.95,100.0,1.0,0.0
+2019,55759,AIR FORCE,Eric Ward,4401041,Eric Ward,0.95,100.0,1.0,0.0
+2019,55757,AIR FORCE,James Jones IV,-1000039,James Jones IV,0.95,100.0,1.0,0.0
+2019,55757,AIR FORCE,James Jones IV,4239963,James Jones IV,0.95,100.0,1.0,0.0
+2019,55759,AIR FORCE,Eric Ward,4261100,Eric Ward,0.95,100.0,1.0,0.0
+2019,55759,AIR FORCE,Eric Ward,4401041,Eric Ward,0.95,100.0,1.0,0.0
+2019,55757,AIR FORCE,James Jones IV,-1000039,James Jones IV,0.95,100.0,1.0,0.0
+2019,55757,AIR FORCE,James Jones IV,4239963,James Jones IV,0.95,100.0,1.0,0.0
+2019,55759,AIR FORCE,Eric Ward,4261100,Eric Ward,0.95,100.0,1.0,0.0
+2019,55759,AIR FORCE,Eric Ward,4401041,Eric Ward,0.95,100.0,1.0,0.0
+2019,25442,AKRON,Alvin Davis Jr.,-1000368,"Alvin Davis, Jr.",0.95,100.0,1.0,0.0
+2019,25442,AKRON,Alvin Davis Jr.,4053896,Alvin Davis,0.95,100.0,1.0,0.0
+2019,25442,AKRON,Alvin Davis Jr.,-1000368,"Alvin Davis, Jr.",0.95,100.0,1.0,0.0
+2019,25442,AKRON,Alvin Davis Jr.,4053896,Alvin Davis,0.95,100.0,1.0,0.0
+2019,100315,AKRON,Randy Cochran Jr.,-1000359,"Randy Cochran, Jr.",0.95,100.0,1.0,0.0
+2019,100315,AKRON,Randy Cochran Jr.,4568329,Randy Cochran Jr.,0.95,100.0,1.0,0.0
+2019,25442,AKRON,Alvin Davis Jr.,-1000368,"Alvin Davis, Jr.",0.95,100.0,1.0,0.0
+2019,25442,AKRON,Alvin Davis Jr.,4053896,Alvin Davis,0.95,100.0,1.0,0.0
+2019,100315,AKRON,Randy Cochran Jr.,-1000359,"Randy Cochran, Jr.",0.95,100.0,1.0,0.0
+2019,100315,AKRON,Randy Cochran Jr.,4568329,Randy Cochran Jr.,0.95,100.0,1.0,0.0
+2019,25442,AKRON,Alvin Davis Jr.,-1000368,"Alvin Davis, Jr.",0.95,100.0,1.0,0.0
+2019,25442,AKRON,Alvin Davis Jr.,4053896,Alvin Davis,0.95,100.0,1.0,0.0
+2019,100315,AKRON,Randy Cochran Jr.,-1000359,"Randy Cochran, Jr.",0.95,100.0,1.0,0.0
+2019,100315,AKRON,Randy Cochran Jr.,4568329,Randy Cochran Jr.,0.95,100.0,1.0,0.0
+2019,61123,APP STATE,Corey Sutton,-1001151,Corey Sutton,0.95,100.0,1.0,0.0
+2019,61123,APP STATE,Corey Sutton,4036418,Corey Sutton,0.95,100.0,1.0,0.0
+2019,34788,APP STATE,Akeem Davis-Gaither,3917142,Akeem Davis-Gaither,0.95,100.0,1.0,0.0
+2019,34788,APP STATE,Akeem Davis-Gaither,4283230,Akeem Davis-Gaither,0.95,100.0,1.0,0.0
+2019,61123,APP STATE,Corey Sutton,-1001151,Corey Sutton,0.95,100.0,1.0,0.0
+2019,61123,APP STATE,Corey Sutton,4036418,Corey Sutton,0.95,100.0,1.0,0.0
+2019,34788,APP STATE,Akeem Davis-Gaither,3917142,Akeem Davis-Gaither,0.95,100.0,1.0,0.0
+2019,34788,APP STATE,Akeem Davis-Gaither,4283230,Akeem Davis-Gaither,0.95,100.0,1.0,0.0
+2019,34788,APP STATE,Akeem Davis-Gaither,3917142,Akeem Davis-Gaither,0.95,100.0,1.0,0.0
+2019,34788,APP STATE,Akeem Davis-Gaither,4283230,Akeem Davis-Gaither,0.95,100.0,1.0,0.0
+2019,34788,APP STATE,Akeem Davis-Gaither,3917142,Akeem Davis-Gaither,0.95,100.0,1.0,0.0
+2019,34788,APP STATE,Akeem Davis-Gaither,4283230,Akeem Davis-Gaither,0.95,100.0,1.0,0.0
+2019,61148,ARK STATE,Jonathan Adams Jr.,-1002448,"Jonathan Adams, Jr.",0.95,100.0,1.0,0.0
+2019,61148,ARK STATE,Jonathan Adams Jr.,4241053,Jonathan Adams Jr.,0.95,100.0,1.0,0.0
+2019,61148,ARK STATE,Jonathan Adams Jr.,-1002448,"Jonathan Adams, Jr.",0.95,100.0,1.0,0.0
+2019,61148,ARK STATE,Jonathan Adams Jr.,4241053,Jonathan Adams Jr.,0.95,100.0,1.0,0.0
+2019,57153,BALL ST,Markice Hurt Jr.,-1004277,Markice Hurt Jr.,0.95,100.0,1.0,0.0
+2019,57153,BALL ST,Markice Hurt Jr.,4244733,Markice Hurt Jr.,0.95,100.0,1.0,0.0
+2019,76619,BALL ST,Amechi Uzodinma II,-1004334,Amechi Uzodinma II,0.95,100.0,1.0,0.0
+2019,76619,BALL ST,Amechi Uzodinma II,4361649,Amechi Uzodinma II,0.95,100.0,1.0,0.0
+2019,57153,BALL ST,Markice Hurt Jr.,-1004277,Markice Hurt Jr.,0.95,100.0,1.0,0.0
+2019,57153,BALL ST,Markice Hurt Jr.,4244733,Markice Hurt Jr.,0.95,100.0,1.0,0.0
+2019,76619,BALL ST,Amechi Uzodinma II,-1004334,Amechi Uzodinma II,0.95,100.0,1.0,0.0
+2019,76619,BALL ST,Amechi Uzodinma II,4361649,Amechi Uzodinma II,0.95,100.0,1.0,0.0
+2019,76619,BALL ST,Amechi Uzodinma II,-1004334,Amechi Uzodinma II,0.95,100.0,1.0,0.0
+2019,76619,BALL ST,Amechi Uzodinma II,4361649,Amechi Uzodinma II,0.95,100.0,1.0,0.0
+2019,76619,BALL ST,Amechi Uzodinma II,-1004334,Amechi Uzodinma II,0.95,100.0,1.0,0.0
+2019,76619,BALL ST,Amechi Uzodinma II,4361649,Amechi Uzodinma II,0.95,100.0,1.0,0.0
+2019,50650,BUFFALO,Matt Otwinowski,4040834,Matt Otwinowski,0.95,100.0,1.0,0.0
+2019,50650,BUFFALO,Matt Otwinowski,4385925,Matt Otwinowski,0.95,100.0,1.0,0.0
+2019,55020,BUFFALO,Tim Terry,-1005837,"Tim Terry, Jr.",0.95,100.0,1.0,0.0
+2019,55020,BUFFALO,Tim Terry,4257184,Tim Terry,0.95,100.0,1.0,0.0
+2019,50650,BUFFALO,Matt Otwinowski,4040834,Matt Otwinowski,0.95,100.0,1.0,0.0
+2019,50650,BUFFALO,Matt Otwinowski,4385925,Matt Otwinowski,0.95,100.0,1.0,0.0
+2019,55014,BUFFALO,Wankeith Akin Jr.,-1005748,"Wankeith Akin, Jr.",0.95,100.0,1.0,0.0
+2019,55014,BUFFALO,Wankeith Akin Jr.,4257191,Wankeith Akin Jr.,0.95,100.0,1.0,0.0
+2019,55020,BUFFALO,Tim Terry,-1005837,"Tim Terry, Jr.",0.95,100.0,1.0,0.0
+2019,55020,BUFFALO,Tim Terry,4257184,Tim Terry,0.95,100.0,1.0,0.0
+2019,50650,BUFFALO,Matt Otwinowski,4040834,Matt Otwinowski,0.95,100.0,1.0,0.0
+2019,50650,BUFFALO,Matt Otwinowski,4385925,Matt Otwinowski,0.95,100.0,1.0,0.0
+2019,55014,BUFFALO,Wankeith Akin Jr.,-1005748,"Wankeith Akin, Jr.",0.95,100.0,1.0,0.0
+2019,55014,BUFFALO,Wankeith Akin Jr.,4257191,Wankeith Akin Jr.,0.95,100.0,1.0,0.0
+2019,55020,BUFFALO,Tim Terry,-1005837,"Tim Terry, Jr.",0.95,100.0,1.0,0.0
+2019,55020,BUFFALO,Tim Terry,4257184,Tim Terry,0.95,100.0,1.0,0.0
+2019,50650,BUFFALO,Matt Otwinowski,4040834,Matt Otwinowski,0.95,100.0,1.0,0.0
+2019,50650,BUFFALO,Matt Otwinowski,4385925,Matt Otwinowski,0.95,100.0,1.0,0.0
+2019,55014,BUFFALO,Wankeith Akin Jr.,-1005748,"Wankeith Akin, Jr.",0.95,100.0,1.0,0.0
+2019,55014,BUFFALO,Wankeith Akin Jr.,4257191,Wankeith Akin Jr.,0.95,100.0,1.0,0.0
+2019,55020,BUFFALO,Tim Terry,-1005837,"Tim Terry, Jr.",0.95,100.0,1.0,0.0
+2019,55020,BUFFALO,Tim Terry,4257184,Tim Terry,0.95,100.0,1.0,0.0
+2019,55411,UCF,Marlon Williams,4257599,Marlon Williams,0.95,100.0,1.0,0.0
+2019,55411,UCF,Marlon Williams,4568980,Marlon Williams,0.95,100.0,1.0,0.0
+2019,43412,UCF,Dedrion Bacote-Sweat,-1037755,Dedrion Bacote-Sweat,0.95,100.0,1.0,0.0
+2019,43412,UCF,Dedrion Bacote-Sweat,4042121,Dedrion Bacote-Sweat,0.95,100.0,1.0,0.0
+2019,100952,UCF,Tre'Mon Morris-Brash,-1037833,Tre'mon Morris-Brash,0.95,100.0,1.0,0.0
+2019,100952,UCF,Tre'Mon Morris-Brash,4428058,Tre'Mon Morris-Brash,0.95,100.0,1.0,0.0
+2019,55411,UCF,Marlon Williams,4257599,Marlon Williams,0.95,100.0,1.0,0.0
+2019,55411,UCF,Marlon Williams,4568980,Marlon Williams,0.95,100.0,1.0,0.0
+2019,55411,UCF,Marlon Williams,4257599,Marlon Williams,0.95,100.0,1.0,0.0
+2019,55411,UCF,Marlon Williams,4568980,Marlon Williams,0.95,100.0,1.0,0.0
+2019,43412,UCF,Dedrion Bacote-Sweat,-1037755,Dedrion Bacote-Sweat,0.95,100.0,1.0,0.0
+2019,43412,UCF,Dedrion Bacote-Sweat,4042121,Dedrion Bacote-Sweat,0.95,100.0,1.0,0.0
+2019,100952,UCF,Tre'Mon Morris-Brash,-1037833,Tre'mon Morris-Brash,0.95,100.0,1.0,0.0
+2019,100952,UCF,Tre'Mon Morris-Brash,4428058,Tre'Mon Morris-Brash,0.95,100.0,1.0,0.0
+2019,100952,UCF,Tre'Mon Morris-Brash,-1037833,Tre'mon Morris-Brash,0.95,100.0,1.0,0.0
+2019,100952,UCF,Tre'Mon Morris-Brash,4428058,Tre'Mon Morris-Brash,0.95,100.0,1.0,0.0
+2019,43412,UCF,Dedrion Bacote-Sweat,-1037755,Dedrion Bacote-Sweat,0.95,100.0,1.0,0.0
+2019,43412,UCF,Dedrion Bacote-Sweat,4042121,Dedrion Bacote-Sweat,0.95,100.0,1.0,0.0
+2019,100952,UCF,Tre'Mon Morris-Brash,-1037833,Tre'mon Morris-Brash,0.95,100.0,1.0,0.0
+2019,100952,UCF,Tre'Mon Morris-Brash,4428058,Tre'Mon Morris-Brash,0.95,100.0,1.0,0.0
+2019,84357,CINCINNATI,Blue Smith,-1006955,Blue Smith,0.95,100.0,1.0,0.0
+2019,84357,CINCINNATI,Blue Smith,4361369,Blue Smith,0.95,100.0,1.0,0.0
+2019,84357,CINCINNATI,Blue Smith,-1006955,Blue Smith,0.95,100.0,1.0,0.0
+2019,84357,CINCINNATI,Blue Smith,4361369,Blue Smith,0.95,100.0,1.0,0.0
+2019,25700,CINCINNATI,Cam Jefferies,-1006915,Cam Jefferies,0.95,100.0,1.0,0.0
+2019,25700,CINCINNATI,Cam Jefferies,4035741,Cam Jefferies,0.95,100.0,1.0,0.0
+2019,25700,CINCINNATI,Cam Jefferies,-1006915,Cam Jefferies,0.95,100.0,1.0,0.0
+2019,25700,CINCINNATI,Cam Jefferies,4035741,Cam Jefferies,0.95,100.0,1.0,0.0
+2019,25700,CINCINNATI,Cam Jefferies,-1006915,Cam Jefferies,0.95,100.0,1.0,0.0
+2019,25700,CINCINNATI,Cam Jefferies,4035741,Cam Jefferies,0.95,100.0,1.0,0.0
+2019,61327,IOWA,Brandon Smith,4240577,Brandon Smith,0.95,100.0,1.0,0.0
+2019,61327,IOWA,Brandon Smith,4266233,Brandon Smith,0.95,100.0,1.0,0.0
+2019,46565,IOWA,Nate Stanley,-1014218,Nate Stanley,0.95,100.0,1.0,0.0
+2019,46565,IOWA,Nate Stanley,4036149,Nate Stanley,0.95,100.0,1.0,0.0
+2019,46565,IOWA,Nate Stanley,-1014218,Nate Stanley,0.95,100.0,1.0,0.0
+2019,46565,IOWA,Nate Stanley,4036149,Nate Stanley,0.95,100.0,1.0,0.0
+2019,61327,IOWA,Brandon Smith,4240577,Brandon Smith,0.95,100.0,1.0,0.0
+2019,61327,IOWA,Brandon Smith,4266233,Brandon Smith,0.95,100.0,1.0,0.0
+2019,46565,IOWA,Nate Stanley,-1014218,Nate Stanley,0.95,100.0,1.0,0.0
+2019,46565,IOWA,Nate Stanley,4036149,Nate Stanley,0.95,100.0,1.0,0.0
+2019,78136,KANSAS,Stephon Robinson Jr.,-1014955,Stephon Robinson Jr.,0.95,100.0,1.0,0.0
+2019,78136,KANSAS,Stephon Robinson Jr.,4360329,Stephon Robinson Jr.,0.95,100.0,1.0,0.0
+2019,78136,KANSAS,Stephon Robinson Jr.,-1014955,Stephon Robinson Jr.,0.95,100.0,1.0,0.0
+2019,78136,KANSAS,Stephon Robinson Jr.,4360329,Stephon Robinson Jr.,0.95,100.0,1.0,0.0
+2019,77019,KANSAS,Codey Cole III,-1014885,Codey Cole III,0.95,100.0,1.0,0.0
+2019,77019,KANSAS,Codey Cole III,4360356,Codey Cole III,0.95,100.0,1.0,0.0
+2019,78136,KANSAS,Stephon Robinson Jr.,-1014955,Stephon Robinson Jr.,0.95,100.0,1.0,0.0
+2019,78136,KANSAS,Stephon Robinson Jr.,4360329,Stephon Robinson Jr.,0.95,100.0,1.0,0.0
+2019,77019,KANSAS,Codey Cole III,-1014885,Codey Cole III,0.95,100.0,1.0,0.0
+2019,77019,KANSAS,Codey Cole III,4360356,Codey Cole III,0.95,100.0,1.0,0.0
+2019,77019,KANSAS,Codey Cole III,-1014885,Codey Cole III,0.95,100.0,1.0,0.0
+2019,77019,KANSAS,Codey Cole III,4360356,Codey Cole III,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,-1015226,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,4373062,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,78139,KANSAS ST,Wykeen Gill,-1015258,Wykeen Gill,0.95,100.0,1.0,0.0
+2019,78139,KANSAS ST,Wykeen Gill,4046564,Wykeen Gill,0.95,100.0,1.0,0.0
+2019,60417,KANSAS ST,Skylar Thompson,-1015319,Skylar Thompson,0.95,100.0,1.0,0.0
+2019,60417,KANSAS ST,Skylar Thompson,4036419,Skylar Thompson,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,-1015226,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,4373062,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,78139,KANSAS ST,Wykeen Gill,-1015258,Wykeen Gill,0.95,100.0,1.0,0.0
+2019,78139,KANSAS ST,Wykeen Gill,4046564,Wykeen Gill,0.95,100.0,1.0,0.0
+2019,44037,KANSAS ST,Kyle Ball,-1015219,Kyle Ball,0.95,100.0,1.0,0.0
+2019,44037,KANSAS ST,Kyle Ball,4036406,Kyle Ball,0.95,100.0,1.0,0.0
+2019,55982,KANSAS ST,Walter Neil,-1015296,"Walter Neil, Jr.",0.95,100.0,1.0,0.0
+2019,55982,KANSAS ST,Walter Neil,4046591,Walter Neil Jr.,0.95,100.0,1.0,0.0
+2019,60417,KANSAS ST,Skylar Thompson,-1015319,Skylar Thompson,0.95,100.0,1.0,0.0
+2019,60417,KANSAS ST,Skylar Thompson,4036419,Skylar Thompson,0.95,100.0,1.0,0.0
+2019,78139,KANSAS ST,Wykeen Gill,-1015258,Wykeen Gill,0.95,100.0,1.0,0.0
+2019,78139,KANSAS ST,Wykeen Gill,4046564,Wykeen Gill,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,-1015226,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,4373062,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,60417,KANSAS ST,Skylar Thompson,-1015319,Skylar Thompson,0.95,100.0,1.0,0.0
+2019,60417,KANSAS ST,Skylar Thompson,4036419,Skylar Thompson,0.95,100.0,1.0,0.0
+2019,44037,KANSAS ST,Kyle Ball,-1015219,Kyle Ball,0.95,100.0,1.0,0.0
+2019,44037,KANSAS ST,Kyle Ball,4036406,Kyle Ball,0.95,100.0,1.0,0.0
+2019,55982,KANSAS ST,Walter Neil,-1015296,"Walter Neil, Jr.",0.95,100.0,1.0,0.0
+2019,55982,KANSAS ST,Walter Neil,4046591,Walter Neil Jr.,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,-1015226,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,4373062,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,44037,KANSAS ST,Kyle Ball,-1015219,Kyle Ball,0.95,100.0,1.0,0.0
+2019,44037,KANSAS ST,Kyle Ball,4036406,Kyle Ball,0.95,100.0,1.0,0.0
+2019,55982,KANSAS ST,Walter Neil,-1015296,"Walter Neil, Jr.",0.95,100.0,1.0,0.0
+2019,55982,KANSAS ST,Walter Neil,4046591,Walter Neil Jr.,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,-1015226,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,4373062,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,44037,KANSAS ST,Kyle Ball,-1015219,Kyle Ball,0.95,100.0,1.0,0.0
+2019,44037,KANSAS ST,Kyle Ball,4036406,Kyle Ball,0.95,100.0,1.0,0.0
+2019,55982,KANSAS ST,Walter Neil,-1015296,"Walter Neil, Jr.",0.95,100.0,1.0,0.0
+2019,55982,KANSAS ST,Walter Neil,4046591,Walter Neil Jr.,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,-1015226,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,78138,KANSAS ST,Phillip Brooks,4373062,Phillip Brooks,0.95,100.0,1.0,0.0
+2019,77784,KENT STATE,Jo-El Shaw,-1015706,Jo-El Shaw,0.95,100.0,1.0,0.0
+2019,77784,KENT STATE,Jo-El Shaw,4362359,Jo-El Shaw,0.95,100.0,1.0,0.0
+2019,77784,KENT STATE,Jo-El Shaw,-1015706,Jo-El Shaw,0.95,100.0,1.0,0.0
+2019,77784,KENT STATE,Jo-El Shaw,4362359,Jo-El Shaw,0.95,100.0,1.0,0.0
+2019,43352,KENT STATE,Mandela Lawrence-Burke,-1015678,Mandela Lawrence-Burke,0.95,100.0,1.0,0.0
+2019,43352,KENT STATE,Mandela Lawrence-Burke,4038923,Mandela Lawrence-Burke,0.95,100.0,1.0,0.0
+2019,55613,KENT STATE,Keith Sherald Jr.,-1015707,Keith Sherald Jr.,0.95,100.0,1.0,0.0
+2019,55613,KENT STATE,Keith Sherald Jr.,4244069,Keith Sherald Jr.,0.95,100.0,1.0,0.0
+2019,77784,KENT STATE,Jo-El Shaw,-1015706,Jo-El Shaw,0.95,100.0,1.0,0.0
+2019,77784,KENT STATE,Jo-El Shaw,4362359,Jo-El Shaw,0.95,100.0,1.0,0.0
+2019,43352,KENT STATE,Mandela Lawrence-Burke,-1015678,Mandela Lawrence-Burke,0.95,100.0,1.0,0.0
+2019,43352,KENT STATE,Mandela Lawrence-Burke,4038923,Mandela Lawrence-Burke,0.95,100.0,1.0,0.0
+2019,55613,KENT STATE,Keith Sherald Jr.,-1015707,Keith Sherald Jr.,0.95,100.0,1.0,0.0
+2019,55613,KENT STATE,Keith Sherald Jr.,4244069,Keith Sherald Jr.,0.95,100.0,1.0,0.0
+2019,43352,KENT STATE,Mandela Lawrence-Burke,-1015678,Mandela Lawrence-Burke,0.95,100.0,1.0,0.0
+2019,43352,KENT STATE,Mandela Lawrence-Burke,4038923,Mandela Lawrence-Burke,0.95,100.0,1.0,0.0
+2019,55613,KENT STATE,Keith Sherald Jr.,-1015707,Keith Sherald Jr.,0.95,100.0,1.0,0.0
+2019,55613,KENT STATE,Keith Sherald Jr.,4244069,Keith Sherald Jr.,0.95,100.0,1.0,0.0
+2019,43352,KENT STATE,Mandela Lawrence-Burke,-1015678,Mandela Lawrence-Burke,0.95,100.0,1.0,0.0
+2019,43352,KENT STATE,Mandela Lawrence-Burke,4038923,Mandela Lawrence-Burke,0.95,100.0,1.0,0.0
+2019,55613,KENT STATE,Keith Sherald Jr.,-1015707,Keith Sherald Jr.,0.95,100.0,1.0,0.0
+2019,55613,KENT STATE,Keith Sherald Jr.,4244069,Keith Sherald Jr.,0.95,100.0,1.0,0.0
+2019,76669,MIAMI FL,Al Blades Jr.,-1019542,"Al Blades, Jr.",0.95,100.0,1.0,0.0
+2019,76669,MIAMI FL,Al Blades Jr.,4362500,Al Blades Jr.,0.95,100.0,1.0,0.0
+2019,76671,MIAMI FL,Gurvan Hall Jr.,-1019571,"Gurvan Hall, Jr.",0.95,100.0,1.0,0.0
+2019,76671,MIAMI FL,Gurvan Hall Jr.,4362510,Gurvan Hall Jr.,0.95,100.0,1.0,0.0
+2019,97957,MIAMI FL,Sam Brooks Jr.,-1019546,"Sam Brooks, Jr.",0.95,100.0,1.0,0.0
+2019,97957,MIAMI FL,Sam Brooks Jr.,4568292,Sam Brooks Jr.,0.95,100.0,1.0,0.0
+2019,76669,MIAMI FL,Al Blades Jr.,-1019542,"Al Blades, Jr.",0.95,100.0,1.0,0.0
+2019,76669,MIAMI FL,Al Blades Jr.,4362500,Al Blades Jr.,0.95,100.0,1.0,0.0
+2019,76671,MIAMI FL,Gurvan Hall Jr.,-1019571,"Gurvan Hall, Jr.",0.95,100.0,1.0,0.0
+2019,76671,MIAMI FL,Gurvan Hall Jr.,4362510,Gurvan Hall Jr.,0.95,100.0,1.0,0.0
+2019,97957,MIAMI FL,Sam Brooks Jr.,-1019546,"Sam Brooks, Jr.",0.95,100.0,1.0,0.0
+2019,97957,MIAMI FL,Sam Brooks Jr.,4568292,Sam Brooks Jr.,0.95,100.0,1.0,0.0
+2019,76669,MIAMI FL,Al Blades Jr.,-1019542,"Al Blades, Jr.",0.95,100.0,1.0,0.0
+2019,76669,MIAMI FL,Al Blades Jr.,4362500,Al Blades Jr.,0.95,100.0,1.0,0.0
+2019,76671,MIAMI FL,Gurvan Hall Jr.,-1019571,"Gurvan Hall, Jr.",0.95,100.0,1.0,0.0
+2019,76671,MIAMI FL,Gurvan Hall Jr.,4362510,Gurvan Hall Jr.,0.95,100.0,1.0,0.0
+2019,97957,MIAMI FL,Sam Brooks Jr.,-1019546,"Sam Brooks, Jr.",0.95,100.0,1.0,0.0
+2019,97957,MIAMI FL,Sam Brooks Jr.,4568292,Sam Brooks Jr.,0.95,100.0,1.0,0.0
+2019,76669,MIAMI FL,Al Blades Jr.,-1019542,"Al Blades, Jr.",0.95,100.0,1.0,0.0
+2019,76669,MIAMI FL,Al Blades Jr.,4362500,Al Blades Jr.,0.95,100.0,1.0,0.0
+2019,76671,MIAMI FL,Gurvan Hall Jr.,-1019571,"Gurvan Hall, Jr.",0.95,100.0,1.0,0.0
+2019,76671,MIAMI FL,Gurvan Hall Jr.,4362510,Gurvan Hall Jr.,0.95,100.0,1.0,0.0
+2019,97957,MIAMI FL,Sam Brooks Jr.,-1019546,"Sam Brooks, Jr.",0.95,100.0,1.0,0.0
+2019,97957,MIAMI FL,Sam Brooks Jr.,4568292,Sam Brooks Jr.,0.95,100.0,1.0,0.0
+2019,78672,MIDDLE TN,Gregory Grate Jr,-1020896,Gregory Grate Jr,0.95,100.0,1.0,0.0
+2019,78672,MIDDLE TN,Gregory Grate Jr,4360822,Gregory Grate,0.95,100.0,1.0,0.0
+2019,78672,MIDDLE TN,Gregory Grate Jr,-1020896,Gregory Grate Jr,0.95,100.0,1.0,0.0
+2019,78672,MIDDLE TN,Gregory Grate Jr,4360822,Gregory Grate,0.95,100.0,1.0,0.0
+2019,78672,MIDDLE TN,Gregory Grate Jr,-1020896,Gregory Grate Jr,0.95,100.0,1.0,0.0
+2019,78672,MIDDLE TN,Gregory Grate Jr,4360822,Gregory Grate,0.95,100.0,1.0,0.0
+2019,78672,MIDDLE TN,Gregory Grate Jr,-1020896,Gregory Grate Jr,0.95,100.0,1.0,0.0
+2019,78672,MIDDLE TN,Gregory Grate Jr,4360822,Gregory Grate,0.95,100.0,1.0,0.0
+2019,42836,NAVY,Paul Carothers,4039461,Paul Carothers,0.95,100.0,1.0,0.0
+2019,42836,NAVY,Paul Carothers,4395489,Paul Carothers,0.95,100.0,1.0,0.0
+2019,42836,NAVY,Paul Carothers,4039461,Paul Carothers,0.95,100.0,1.0,0.0
+2019,42836,NAVY,Paul Carothers,4395489,Paul Carothers,0.95,100.0,1.0,0.0
+2019,42836,NAVY,Paul Carothers,4039461,Paul Carothers,0.95,100.0,1.0,0.0
+2019,42836,NAVY,Paul Carothers,4395489,Paul Carothers,0.95,100.0,1.0,0.0
+2019,42836,NAVY,Paul Carothers,4039461,Paul Carothers,0.95,100.0,1.0,0.0
+2019,42836,NAVY,Paul Carothers,4395489,Paul Carothers,0.95,100.0,1.0,0.0
+2019,84556,CHARLOTTE,Damon Weldon,4360530,Damon Weldon,0.95,100.0,1.0,0.0
+2019,84556,CHARLOTTE,Damon Weldon,4570171,Damon Weldon,0.95,100.0,1.0,0.0
+2019,84556,CHARLOTTE,Damon Weldon,4360530,Damon Weldon,0.95,100.0,1.0,0.0
+2019,84556,CHARLOTTE,Damon Weldon,4570171,Damon Weldon,0.95,100.0,1.0,0.0
+2019,84556,CHARLOTTE,Damon Weldon,4360530,Damon Weldon,0.95,100.0,1.0,0.0
+2019,84556,CHARLOTTE,Damon Weldon,4570171,Damon Weldon,0.95,100.0,1.0,0.0
+2019,61387,LA MONROE,Zach Jackson,-1017625,Zach Jackson,0.95,100.0,1.0,0.0
+2019,61387,LA MONROE,Zach Jackson,4258409,Zach Jackson,0.95,100.0,1.0,0.0
+2019,61384,LA MONROE,Perry Carter,-1017591,Perry Carter Jr.,0.95,100.0,1.0,0.0
+2019,61384,LA MONROE,Perry Carter,4258412,Perry Carter,0.95,100.0,1.0,0.0
+2019,61384,LA MONROE,Perry Carter,-1017591,Perry Carter Jr.,0.95,100.0,1.0,0.0
+2019,61384,LA MONROE,Perry Carter,4258412,Perry Carter,0.95,100.0,1.0,0.0
+2019,81280,LA MONROE,KeyShawn Johnson,-1017628,KeyShawn Johnson,0.95,100.0,1.0,0.0
+2019,81280,LA MONROE,KeyShawn Johnson,4365313,Keyshawn Johnson,0.95,100.0,1.0,0.0
+2019,83498,LA MONROE,Barry Howard Jr.,-1017620,Barry Howard Jr.,0.95,100.0,1.0,0.0
+2019,83498,LA MONROE,Barry Howard Jr.,4365310,Barry Howard Jr.,0.95,100.0,1.0,0.0
+2019,61387,LA MONROE,Zach Jackson,-1017625,Zach Jackson,0.95,100.0,1.0,0.0
+2019,61387,LA MONROE,Zach Jackson,4258409,Zach Jackson,0.95,100.0,1.0,0.0
+2019,61384,LA MONROE,Perry Carter,-1017591,Perry Carter Jr.,0.95,100.0,1.0,0.0
+2019,61384,LA MONROE,Perry Carter,4258412,Perry Carter,0.95,100.0,1.0,0.0
+2019,61384,LA MONROE,Perry Carter,-1017591,Perry Carter Jr.,0.95,100.0,1.0,0.0
+2019,61384,LA MONROE,Perry Carter,4258412,Perry Carter,0.95,100.0,1.0,0.0
+2019,81280,LA MONROE,KeyShawn Johnson,-1017628,KeyShawn Johnson,0.95,100.0,1.0,0.0
+2019,81280,LA MONROE,KeyShawn Johnson,4365313,Keyshawn Johnson,0.95,100.0,1.0,0.0
+2019,83498,LA MONROE,Barry Howard Jr.,-1017620,Barry Howard Jr.,0.95,100.0,1.0,0.0
+2019,83498,LA MONROE,Barry Howard Jr.,4365310,Barry Howard Jr.,0.95,100.0,1.0,0.0
+2019,61387,LA MONROE,Zach Jackson,-1017625,Zach Jackson,0.95,100.0,1.0,0.0
+2019,61387,LA MONROE,Zach Jackson,4258409,Zach Jackson,0.95,100.0,1.0,0.0
+2019,81280,LA MONROE,KeyShawn Johnson,-1017628,KeyShawn Johnson,0.95,100.0,1.0,0.0
+2019,81280,LA MONROE,KeyShawn Johnson,4365313,Keyshawn Johnson,0.95,100.0,1.0,0.0
+2019,61384,LA MONROE,Perry Carter,-1017591,Perry Carter Jr.,0.95,100.0,1.0,0.0
+2019,61384,LA MONROE,Perry Carter,4258412,Perry Carter,0.95,100.0,1.0,0.0
+2019,61387,LA MONROE,Zach Jackson,-1017625,Zach Jackson,0.95,100.0,1.0,0.0
+2019,61387,LA MONROE,Zach Jackson,4258409,Zach Jackson,0.95,100.0,1.0,0.0
+2019,81280,LA MONROE,KeyShawn Johnson,-1017628,KeyShawn Johnson,0.95,100.0,1.0,0.0
+2019,81280,LA MONROE,KeyShawn Johnson,4365313,Keyshawn Johnson,0.95,100.0,1.0,0.0
+2019,83498,LA MONROE,Barry Howard Jr.,-1017620,Barry Howard Jr.,0.95,100.0,1.0,0.0
+2019,83498,LA MONROE,Barry Howard Jr.,4365310,Barry Howard Jr.,0.95,100.0,1.0,0.0
+2019,40519,UNLV,Giovanni Fauolo Sr.,-1038497,Giovanni Fauolo Sr.,0.95,100.0,1.0,0.0
+2019,40519,UNLV,Giovanni Fauolo Sr.,4056043,Giovanni Fauolo Sr.,0.95,100.0,1.0,0.0
+2019,40519,UNLV,Giovanni Fauolo Sr.,-1038497,Giovanni Fauolo Sr.,0.95,100.0,1.0,0.0
+2019,40519,UNLV,Giovanni Fauolo Sr.,4056043,Giovanni Fauolo Sr.,0.95,100.0,1.0,0.0
+2019,83067,OREGON,Haki Woods Jr.,-1028347,Haki Woods Jr.,0.95,100.0,1.0,0.0
+2019,83067,OREGON,Haki Woods Jr.,3118474,Haki Woods Jr.,0.95,100.0,1.0,0.0
+2019,83874,OREGON,Steve Stephens IV,-1028329,Steve Stephens IV,0.95,100.0,1.0,0.0
+2019,83874,OREGON,Steve Stephens IV,4360688,Steve Stephens IV,0.95,100.0,1.0,0.0
+2019,83067,OREGON,Haki Woods Jr.,-1028347,Haki Woods Jr.,0.95,100.0,1.0,0.0
+2019,83067,OREGON,Haki Woods Jr.,3118474,Haki Woods Jr.,0.95,100.0,1.0,0.0
+2019,83874,OREGON,Steve Stephens IV,-1028329,Steve Stephens IV,0.95,100.0,1.0,0.0
+2019,83874,OREGON,Steve Stephens IV,4360688,Steve Stephens IV,0.95,100.0,1.0,0.0
+2019,83067,OREGON,Haki Woods Jr.,-1028347,Haki Woods Jr.,0.95,100.0,1.0,0.0
+2019,83067,OREGON,Haki Woods Jr.,3118474,Haki Woods Jr.,0.95,100.0,1.0,0.0
+2019,83874,OREGON,Steve Stephens IV,-1028329,Steve Stephens IV,0.95,100.0,1.0,0.0
+2019,83874,OREGON,Steve Stephens IV,4360688,Steve Stephens IV,0.95,100.0,1.0,0.0
+2019,83067,OREGON,Haki Woods Jr.,-1028347,Haki Woods Jr.,0.95,100.0,1.0,0.0
+2019,83067,OREGON,Haki Woods Jr.,3118474,Haki Woods Jr.,0.95,100.0,1.0,0.0
+2019,83874,OREGON,Steve Stephens IV,-1028329,Steve Stephens IV,0.95,100.0,1.0,0.0
+2019,83874,OREGON,Steve Stephens IV,4360688,Steve Stephens IV,0.95,100.0,1.0,0.0
+2019,57384,PURDUE,Zander Horvath,-1029629,Zander Horvath,0.95,100.0,1.0,0.0
+2019,57384,PURDUE,Zander Horvath,4260406,Zander Horvath,0.95,100.0,1.0,0.0
+2019,57384,PURDUE,Zander Horvath,-1029629,Zander Horvath,0.95,100.0,1.0,0.0
+2019,57384,PURDUE,Zander Horvath,4260406,Zander Horvath,0.95,100.0,1.0,0.0
+2019,57384,PURDUE,Zander Horvath,-1029629,Zander Horvath,0.95,100.0,1.0,0.0
+2019,57384,PURDUE,Zander Horvath,4260406,Zander Horvath,0.95,100.0,1.0,0.0
+2019,57384,PURDUE,Zander Horvath,-1029629,Zander Horvath,0.95,100.0,1.0,0.0
+2019,57384,PURDUE,Zander Horvath,4260406,Zander Horvath,0.95,100.0,1.0,0.0
+2019,57384,PURDUE,Zander Horvath,-1029629,Zander Horvath,0.95,100.0,1.0,0.0
+2019,57384,PURDUE,Zander Horvath,4260406,Zander Horvath,0.95,100.0,1.0,0.0
+2019,61815,SMU,Reggie Roberson Jr.,-1030642,"Reggie Roberson, Jr.",0.95,100.0,1.0,0.0
+2019,61815,SMU,Reggie Roberson Jr.,4241888,Reggie Roberson Jr.,0.95,100.0,1.0,0.0
+2019,47607,SMU,CJ Sanders,-1030650,CJ Sanders,0.95,100.0,1.0,0.0
+2019,47607,SMU,CJ Sanders,3932440,CJ Sanders,0.95,100.0,1.0,0.0
+2019,47607,SMU,CJ Sanders,-1030650,CJ Sanders,0.95,100.0,1.0,0.0
+2019,47607,SMU,CJ Sanders,3932440,CJ Sanders,0.95,100.0,1.0,0.0
+2019,61815,SMU,Reggie Roberson Jr.,-1030642,"Reggie Roberson, Jr.",0.95,100.0,1.0,0.0
+2019,61815,SMU,Reggie Roberson Jr.,4241888,Reggie Roberson Jr.,0.95,100.0,1.0,0.0
+2019,14327,SMU,Robert Hayes Jr.,-1030597,"Robert Hayes, Jr.",0.95,100.0,1.0,0.0
+2019,14327,SMU,Robert Hayes Jr.,4032600,Robert Hayes Jr.,0.95,100.0,1.0,0.0
+2019,76586,SMU,Ar'mani Johnson,-1030603,Ar’mani Johnson,0.95,100.0,1.0,0.0
+2019,76586,SMU,Ar'mani Johnson,4243761,Ar'mani Johnson,0.95,100.0,1.0,0.0
+2019,61815,SMU,Reggie Roberson Jr.,-1030642,"Reggie Roberson, Jr.",0.95,100.0,1.0,0.0
+2019,61815,SMU,Reggie Roberson Jr.,4241888,Reggie Roberson Jr.,0.95,100.0,1.0,0.0
+2019,47607,SMU,CJ Sanders,-1030650,CJ Sanders,0.95,100.0,1.0,0.0
+2019,47607,SMU,CJ Sanders,3932440,CJ Sanders,0.95,100.0,1.0,0.0
+2019,14327,SMU,Robert Hayes Jr.,-1030597,"Robert Hayes, Jr.",0.95,100.0,1.0,0.0
+2019,14327,SMU,Robert Hayes Jr.,4032600,Robert Hayes Jr.,0.95,100.0,1.0,0.0
+2019,47607,SMU,CJ Sanders,-1030650,CJ Sanders,0.95,100.0,1.0,0.0
+2019,47607,SMU,CJ Sanders,3932440,CJ Sanders,0.95,100.0,1.0,0.0
+2019,76586,SMU,Ar'mani Johnson,-1030603,Ar’mani Johnson,0.95,100.0,1.0,0.0
+2019,76586,SMU,Ar'mani Johnson,4243761,Ar'mani Johnson,0.95,100.0,1.0,0.0
+2019,97471,SMU,Roderick Roberson,-1030643,"Roderick Roberson, Jr.",0.95,100.0,1.0,0.0
+2019,97471,SMU,Roderick Roberson,4568580,Roderick Roberson,0.95,100.0,1.0,0.0
+2019,14327,SMU,Robert Hayes Jr.,-1030597,"Robert Hayes, Jr.",0.95,100.0,1.0,0.0
+2019,14327,SMU,Robert Hayes Jr.,4032600,Robert Hayes Jr.,0.95,100.0,1.0,0.0
+2019,76586,SMU,Ar'mani Johnson,-1030603,Ar’mani Johnson,0.95,100.0,1.0,0.0
+2019,76586,SMU,Ar'mani Johnson,4243761,Ar'mani Johnson,0.95,100.0,1.0,0.0
+2019,14327,SMU,Robert Hayes Jr.,-1030597,"Robert Hayes, Jr.",0.95,100.0,1.0,0.0
+2019,14327,SMU,Robert Hayes Jr.,4032600,Robert Hayes Jr.,0.95,100.0,1.0,0.0
+2019,47607,SMU,CJ Sanders,-1030650,CJ Sanders,0.95,100.0,1.0,0.0
+2019,47607,SMU,CJ Sanders,3932440,CJ Sanders,0.95,100.0,1.0,0.0
+2019,76586,SMU,Ar'mani Johnson,-1030603,Ar’mani Johnson,0.95,100.0,1.0,0.0
+2019,76586,SMU,Ar'mani Johnson,4243761,Ar'mani Johnson,0.95,100.0,1.0,0.0
+2019,97471,SMU,Roderick Roberson,-1030643,"Roderick Roberson, Jr.",0.95,100.0,1.0,0.0
+2019,97471,SMU,Roderick Roberson,4568580,Roderick Roberson,0.95,100.0,1.0,0.0
+2019,78109,TCU,Te'Vailance Hunt,-1033443,Te'Vailance Hunt,0.95,100.0,1.0,0.0
+2019,78109,TCU,Te'Vailance Hunt,4362483,Te'Vailance Hunt,0.95,100.0,1.0,0.0
+2019,78109,TCU,Te'Vailance Hunt,-1033443,Te'Vailance Hunt,0.95,100.0,1.0,0.0
+2019,78109,TCU,Te'Vailance Hunt,4362483,Te'Vailance Hunt,0.95,100.0,1.0,0.0
+2019,60549,TCU,Mike Collins,-1033412,Mike Collins,0.95,100.0,1.0,0.0
+2019,60549,TCU,Mike Collins,4034332,Mike Collins,0.95,100.0,1.0,0.0
+2019,98461,TCU,Adam Plant,-1033467,"Adam Plant, Jr.",0.95,100.0,1.0,0.0
+2019,98461,TCU,Adam Plant,4428240,Adam Plant Jr.,0.95,100.0,1.0,0.0
+2019,78109,TCU,Te'Vailance Hunt,-1033443,Te'Vailance Hunt,0.95,100.0,1.0,0.0
+2019,78109,TCU,Te'Vailance Hunt,4362483,Te'Vailance Hunt,0.95,100.0,1.0,0.0
+2019,60549,TCU,Mike Collins,-1033412,Mike Collins,0.95,100.0,1.0,0.0
+2019,60549,TCU,Mike Collins,4034332,Mike Collins,0.95,100.0,1.0,0.0
+2019,60549,TCU,Mike Collins,-1033412,Mike Collins,0.95,100.0,1.0,0.0
+2019,60549,TCU,Mike Collins,4034332,Mike Collins,0.95,100.0,1.0,0.0
+2019,77846,TCU,C.J. Ceasar II,-1033409,C.J. Ceasar II,0.95,100.0,1.0,0.0
+2019,77846,TCU,C.J. Ceasar II,4362476,C.J. Ceasar II,0.95,100.0,1.0,0.0
+2019,77847,TCU,Tre'von Moehrig,-1033461,Trevon Moehrig,0.9206896551724137,96.55172413793103,1.0,0.0
+2019,77847,TCU,Tre'von Moehrig,4362487,Trevon Moehrig,0.9206896551724137,96.55172413793103,1.0,0.0
+2019,98461,TCU,Adam Plant,-1033467,"Adam Plant, Jr.",0.95,100.0,1.0,0.0
+2019,98461,TCU,Adam Plant,4428240,Adam Plant Jr.,0.95,100.0,1.0,0.0
+2019,77846,TCU,C.J. Ceasar II,-1033409,C.J. Ceasar II,0.95,100.0,1.0,0.0
+2019,77846,TCU,C.J. Ceasar II,4362476,C.J. Ceasar II,0.95,100.0,1.0,0.0
+2019,77847,TCU,Tre'von Moehrig,-1033461,Trevon Moehrig,0.9206896551724137,96.55172413793103,1.0,0.0
+2019,77847,TCU,Tre'von Moehrig,4362487,Trevon Moehrig,0.9206896551724137,96.55172413793103,1.0,0.0
+2019,98461,TCU,Adam Plant,-1033467,"Adam Plant, Jr.",0.95,100.0,1.0,0.0
+2019,98461,TCU,Adam Plant,4428240,Adam Plant Jr.,0.95,100.0,1.0,0.0
+2019,77846,TCU,C.J. Ceasar II,-1033409,C.J. Ceasar II,0.95,100.0,1.0,0.0
+2019,77846,TCU,C.J. Ceasar II,4362476,C.J. Ceasar II,0.95,100.0,1.0,0.0
+2019,77847,TCU,Tre'von Moehrig,-1033461,Trevon Moehrig,0.9206896551724137,96.55172413793103,1.0,0.0
+2019,77847,TCU,Tre'von Moehrig,4362487,Trevon Moehrig,0.9206896551724137,96.55172413793103,1.0,0.0
+2019,98461,TCU,Adam Plant,-1033467,"Adam Plant, Jr.",0.95,100.0,1.0,0.0
+2019,98461,TCU,Adam Plant,4428240,Adam Plant Jr.,0.95,100.0,1.0,0.0
+2019,40666,TENNESSEE,Brandon Johnson,-1034191,Brandon Johnson,0.95,100.0,1.0,0.0
+2019,40666,TENNESSEE,Brandon Johnson,4035198,Brandon Johnson,0.95,100.0,1.0,0.0
+2019,83562,TENNESSEE,J.T. Shrout,-1034229,J.T. Shrout,0.95,100.0,1.0,0.0
+2019,83562,TENNESSEE,J.T. Shrout,4369839,J.T. Shrout,0.95,100.0,1.0,0.0
+2019,81406,TENNESSEE,J.J. Peterson,4369848,J.J. Peterson,0.95,100.0,1.0,0.0
+2019,81406,TENNESSEE,J.J. Peterson,4385265,J.J. Peterson,0.95,100.0,1.0,0.0
+2019,83562,TENNESSEE,J.T. Shrout,-1034229,J.T. Shrout,0.95,100.0,1.0,0.0
+2019,83562,TENNESSEE,J.T. Shrout,4369839,J.T. Shrout,0.95,100.0,1.0,0.0
+2019,40666,TENNESSEE,Brandon Johnson,-1034191,Brandon Johnson,0.95,100.0,1.0,0.0
+2019,40666,TENNESSEE,Brandon Johnson,4035198,Brandon Johnson,0.95,100.0,1.0,0.0
+2019,83562,TENNESSEE,J.T. Shrout,-1034229,J.T. Shrout,0.95,100.0,1.0,0.0
+2019,83562,TENNESSEE,J.T. Shrout,4369839,J.T. Shrout,0.95,100.0,1.0,0.0
+2019,40666,TENNESSEE,Brandon Johnson,-1034191,Brandon Johnson,0.95,100.0,1.0,0.0
+2019,40666,TENNESSEE,Brandon Johnson,4035198,Brandon Johnson,0.95,100.0,1.0,0.0
+2019,81406,TENNESSEE,J.J. Peterson,4369848,J.J. Peterson,0.95,100.0,1.0,0.0
+2019,81406,TENNESSEE,J.J. Peterson,4385265,J.J. Peterson,0.95,100.0,1.0,0.0
+2019,81406,TENNESSEE,J.J. Peterson,4369848,J.J. Peterson,0.95,100.0,1.0,0.0
+2019,81406,TENNESSEE,J.J. Peterson,4385265,J.J. Peterson,0.95,100.0,1.0,0.0
+2019,40666,TENNESSEE,Brandon Johnson,-1034191,Brandon Johnson,0.95,100.0,1.0,0.0
+2019,40666,TENNESSEE,Brandon Johnson,4035198,Brandon Johnson,0.95,100.0,1.0,0.0
+2019,81406,TENNESSEE,J.J. Peterson,4369848,J.J. Peterson,0.95,100.0,1.0,0.0
+2019,81406,TENNESSEE,J.J. Peterson,4385265,J.J. Peterson,0.95,100.0,1.0,0.0
+2019,45360,UTSA,Kirk Johnson Jr.,4040680,Kirk Johnson Jr.,0.95,100.0,1.0,0.0
+2019,45360,UTSA,Kirk Johnson Jr.,4270445,Kirk Johnson Jr.,0.95,100.0,1.0,0.0
+2019,60652,UTSA,SaVion Harris,-1039534,SaVion Harris,0.95,100.0,1.0,0.0
+2019,60652,UTSA,SaVion Harris,4259245,SaVion Harris,0.95,100.0,1.0,0.0
+2019,45360,UTSA,Kirk Johnson Jr.,4040680,Kirk Johnson Jr.,0.95,100.0,1.0,0.0
+2019,45360,UTSA,Kirk Johnson Jr.,4270445,Kirk Johnson Jr.,0.95,100.0,1.0,0.0
+2019,60652,UTSA,SaVion Harris,-1039534,SaVion Harris,0.95,100.0,1.0,0.0
+2019,60652,UTSA,SaVion Harris,4259245,SaVion Harris,0.95,100.0,1.0,0.0
+2019,45360,UTSA,Kirk Johnson Jr.,4040680,Kirk Johnson Jr.,0.95,100.0,1.0,0.0
+2019,45360,UTSA,Kirk Johnson Jr.,4270445,Kirk Johnson Jr.,0.95,100.0,1.0,0.0
+2019,60652,UTSA,SaVion Harris,-1039534,SaVion Harris,0.95,100.0,1.0,0.0
+2019,60652,UTSA,SaVion Harris,4259245,SaVion Harris,0.95,100.0,1.0,0.0
+2019,45360,UTSA,Kirk Johnson Jr.,4040680,Kirk Johnson Jr.,0.95,100.0,1.0,0.0
+2019,45360,UTSA,Kirk Johnson Jr.,4270445,Kirk Johnson Jr.,0.95,100.0,1.0,0.0
+2019,60652,UTSA,SaVion Harris,-1039534,SaVion Harris,0.95,100.0,1.0,0.0
+2019,60652,UTSA,SaVion Harris,4259245,SaVion Harris,0.95,100.0,1.0,0.0
+2019,43907,TEXAS TECH,Noah Jones,-1035664,Noah Jones,0.95,100.0,1.0,0.0
+2019,43907,TEXAS TECH,Noah Jones,4043143,Noah Jones,0.95,100.0,1.0,0.0
+2019,56230,TEXAS TECH,John Davis,-1035637,"John Davis, Jr.",0.95,100.0,1.0,0.0
+2019,56230,TEXAS TECH,John Davis,4241833,John Davis,0.95,100.0,1.0,0.0
+2019,56230,TEXAS TECH,John Davis,-1035637,"John Davis, Jr.",0.95,100.0,1.0,0.0
+2019,56230,TEXAS TECH,John Davis,4241833,John Davis,0.95,100.0,1.0,0.0
+2019,43907,TEXAS TECH,Noah Jones,-1035664,Noah Jones,0.95,100.0,1.0,0.0
+2019,43907,TEXAS TECH,Noah Jones,4043143,Noah Jones,0.95,100.0,1.0,0.0
+2019,56230,TEXAS TECH,John Davis,-1035637,"John Davis, Jr.",0.95,100.0,1.0,0.0
+2019,56230,TEXAS TECH,John Davis,4241833,John Davis,0.95,100.0,1.0,0.0
+2019,97804,TOLEDO,Dequan Finn,-1036050,DeQuan Finn,0.95,100.0,1.0,0.0
+2019,97804,TOLEDO,Dequan Finn,4427191,Dequan Finn,0.95,100.0,1.0,0.0
+2019,65771,TOLEDO,Samuel Womack III,-1036114,Samuel Womack,0.95,100.0,1.0,0.0
+2019,65771,TOLEDO,Samuel Womack III,4280416,Samuel Womack,0.95,100.0,1.0,0.0
+2019,76850,TOLEDO,Desjuan Johnson,-1036068,Desjuan Johnson,0.95,100.0,1.0,0.0
+2019,76850,TOLEDO,Desjuan Johnson,4362294,Desjuan Johnson,0.95,100.0,1.0,0.0
+2019,97804,TOLEDO,Dequan Finn,-1036050,DeQuan Finn,0.95,100.0,1.0,0.0
+2019,97804,TOLEDO,Dequan Finn,4427191,Dequan Finn,0.95,100.0,1.0,0.0
+2019,97804,TOLEDO,Dequan Finn,-1036050,DeQuan Finn,0.95,100.0,1.0,0.0
+2019,97804,TOLEDO,Dequan Finn,4427191,Dequan Finn,0.95,100.0,1.0,0.0
+2019,55353,TOLEDO,Zachary Ford,-1036053,Zachary Ford,0.95,100.0,1.0,0.0
+2019,55353,TOLEDO,Zachary Ford,4240235,Zachary Ford,0.95,100.0,1.0,0.0
+2019,65771,TOLEDO,Samuel Womack III,-1036114,Samuel Womack,0.95,100.0,1.0,0.0
+2019,65771,TOLEDO,Samuel Womack III,4280416,Samuel Womack,0.95,100.0,1.0,0.0
+2019,76850,TOLEDO,Desjuan Johnson,-1036068,Desjuan Johnson,0.95,100.0,1.0,0.0
+2019,76850,TOLEDO,Desjuan Johnson,4362294,Desjuan Johnson,0.95,100.0,1.0,0.0
+2019,55353,TOLEDO,Zachary Ford,-1036053,Zachary Ford,0.95,100.0,1.0,0.0
+2019,55353,TOLEDO,Zachary Ford,4240235,Zachary Ford,0.95,100.0,1.0,0.0
+2019,65771,TOLEDO,Samuel Womack III,-1036114,Samuel Womack,0.95,100.0,1.0,0.0
+2019,65771,TOLEDO,Samuel Womack III,4280416,Samuel Womack,0.95,100.0,1.0,0.0
+2019,55353,TOLEDO,Zachary Ford,-1036053,Zachary Ford,0.95,100.0,1.0,0.0
+2019,55353,TOLEDO,Zachary Ford,4240235,Zachary Ford,0.95,100.0,1.0,0.0
+2019,65771,TOLEDO,Samuel Womack III,-1036114,Samuel Womack,0.95,100.0,1.0,0.0
+2019,65771,TOLEDO,Samuel Womack III,4280416,Samuel Womack,0.95,100.0,1.0,0.0
+2019,76850,TOLEDO,Desjuan Johnson,-1036068,Desjuan Johnson,0.95,100.0,1.0,0.0
+2019,76850,TOLEDO,Desjuan Johnson,4362294,Desjuan Johnson,0.95,100.0,1.0,0.0
+2019,61462,TROY,Reggie Todd,-1036434,Reggie Todd,0.95,100.0,1.0,0.0
+2019,61462,TROY,Reggie Todd,4035387,Reggie Todd,0.95,100.0,1.0,0.0
+2019,82174,TROY,John Hines Jr.,-1036383,"John Hines, Jr.",0.95,100.0,1.0,0.0
+2019,82174,TROY,John Hines Jr.,4362727,John Hines Jr.,0.95,100.0,1.0,0.0
+2019,102648,TROY,O'shai Fletcher,-1036369,O'shai Fletcher,0.95,100.0,1.0,0.0
+2019,102648,TROY,O'shai Fletcher,4362719,O'shai Fletcher,0.95,100.0,1.0,0.0
+2019,61462,TROY,Reggie Todd,-1036434,Reggie Todd,0.95,100.0,1.0,0.0
+2019,61462,TROY,Reggie Todd,4035387,Reggie Todd,0.95,100.0,1.0,0.0
+2019,82174,TROY,John Hines Jr.,-1036383,"John Hines, Jr.",0.95,100.0,1.0,0.0
+2019,82174,TROY,John Hines Jr.,4362727,John Hines Jr.,0.95,100.0,1.0,0.0
+2019,82174,TROY,John Hines Jr.,-1036383,"John Hines, Jr.",0.95,100.0,1.0,0.0
+2019,82174,TROY,John Hines Jr.,4362727,John Hines Jr.,0.95,100.0,1.0,0.0
+2019,102648,TROY,O'shai Fletcher,-1036369,O'shai Fletcher,0.95,100.0,1.0,0.0
+2019,102648,TROY,O'shai Fletcher,4362719,O'shai Fletcher,0.95,100.0,1.0,0.0
+2019,82174,TROY,John Hines Jr.,-1036383,"John Hines, Jr.",0.95,100.0,1.0,0.0
+2019,82174,TROY,John Hines Jr.,4362727,John Hines Jr.,0.95,100.0,1.0,0.0
+2019,102648,TROY,O'shai Fletcher,-1036369,O'shai Fletcher,0.95,100.0,1.0,0.0
+2019,102648,TROY,O'shai Fletcher,4362719,O'shai Fletcher,0.95,100.0,1.0,0.0
+2019,82174,TROY,John Hines Jr.,-1036383,"John Hines, Jr.",0.95,100.0,1.0,0.0
+2019,82174,TROY,John Hines Jr.,4362727,John Hines Jr.,0.95,100.0,1.0,0.0
+2019,102648,TROY,O'shai Fletcher,-1036369,O'shai Fletcher,0.95,100.0,1.0,0.0
+2019,102648,TROY,O'shai Fletcher,4362719,O'shai Fletcher,0.95,100.0,1.0,0.0
+2019,60769,TULANE,Quentin Brown,4252358,Quentin Brown,0.95,100.0,1.0,0.0
+2019,60769,TULANE,Quentin Brown,4361798,Quentin Brown,0.95,100.0,1.0,0.0
+2019,60769,TULANE,Quentin Brown,4252358,Quentin Brown,0.95,100.0,1.0,0.0
+2019,60769,TULANE,Quentin Brown,4361798,Quentin Brown,0.95,100.0,1.0,0.0
+2019,60769,TULANE,Quentin Brown,4252358,Quentin Brown,0.95,100.0,1.0,0.0
+2019,60769,TULANE,Quentin Brown,4361798,Quentin Brown,0.95,100.0,1.0,0.0
+2019,60769,TULANE,Quentin Brown,4252358,Quentin Brown,0.95,100.0,1.0,0.0
+2019,60769,TULANE,Quentin Brown,4361798,Quentin Brown,0.95,100.0,1.0,0.0
