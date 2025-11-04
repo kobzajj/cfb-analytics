@@ -2,6 +2,7 @@
   <dictionary name="project">
     <words>
       <w>colmap</w>
+      <w>outdir</w>
     </words>
   </dictionary>
 </component>
