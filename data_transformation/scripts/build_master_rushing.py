@@ -23,7 +23,7 @@ def ensure_master_dir(season: int) -> Path:
     return outdir
 
 def load_cfbd_table(season: int, filename: str) -> pd.DataFrame:
-    p = Path(f"../data/processed/{season}/{filename}")
+    p = Path(f"data/processed/{season}/{filename}")
     if not p.exists():
         raise SystemExit(f"CFBD table not found: {p}")
     return pd.read_csv(p)
@@ -35,21 +35,54 @@ def load_xref_players() -> pd.DataFrame:
     return pd.read_csv(p)[["season","cfbd_player_id","pff_player_id","pff_team_name"]]
 
 PFF_RUSH_COLS = {
-    "rush_attempts": "rush_attempts",
-    "rushing_yards": "rushing_yards",
-    "rushing_tds": "rushing_tds",
-    "yards_before_contact": "yards_before_contact",
-    "yards_after_contact": "yards_after_contact",
-    "broken_tackles": "broken_tackles",
-    "forced_missed_tackles": "forced_missed_tackles",
-    "rpo_carries": "rpo_carries",
-    "read_option_carries": "read_option_carries",
-    "expected_yards": "expected_yards",
+    'player_game_count': 'player_game_count',
+    'attempts': 'attempts',
+    'avoided_tackles': 'avoided_tackles',
+    'breakaway_attempts': 'breakaway_attempts',
+    'breakaway_percent': 'breakaway_percent',
+    'breakaway_yards': 'breakaway_yards',
+    'declined_penalties': 'declined_penalties',
+    'designed_yards': 'designed_yards',
+    'drops': 'drops',
+    'elu_recv_mtf': 'elu_recv_mtf',
+    'elu_rush_mtf': 'elu_rush_mtf',
+    'elu_yco': 'elu_yco',
+    'elusive_rating': 'elusive_rating',
+    'explosive': 'explosive',
+    'first_downs': 'first_downs',
+    'franchise_id': 'franchise_id',
+    'fumbles': 'fumbles',
+    'gap_attempts': 'gap_attempts',
+    'grades_hands_fumble': 'grades_hands_fumble',
+    'grades_offense': 'grades_offense',
+    'grades_offense_penalty': 'grades_offense_penalty',
+    'grades_pass': 'grades_pass',
+    'grades_pass_block': 'grades_pass_block',
+    'grades_pass_route': 'grades_pass_route',
+    'grades_run': 'grades_run',
+    'grades_run_block': 'grades_run_block',
+    'longest': 'longest',
+    'penalties': 'penalties',
+    'rec_yards': 'rec_yards',
+    'receptions': 'receptions',
+    'routes': 'routes',
+    'run_plays': 'run_plays',
+    'scramble_yards': 'scramble_yards',
+    'scrambles': 'scrambles',
+    'targets': 'targets',
+    'total_touches': 'total_touches',
+    'touchdowns': 'touchdowns',
+    'yards': 'yards',
+    'yards_after_contact': 'yards_after_contact',
+    'yco_attempt': 'yco_attempt',
+    'ypa': 'ypa',
+    'yprr': 'yprr',
+    'zone_attempts': 'zone_attempts'
 }
 
 def build_one(season: int):
-    cfbd = load_cfbd_table(season, "rushing_cfbd.csv")
-    pff_raw = load_pff_player_seasons(f"data/vendor/pff/{season}", include_stats=True)
+    cfbd = load_cfbd_table(season, f"players_rushing_{season}.csv")
+    pff_raw = load_pff_player_seasons(f"../data_extraction/data/pff/{season}", season=str(season), include_stats=True, stat_types=["rushing"])
     xref = load_xref_players()
     pff = pff_raw.merge(xref, on=["season","pff_player_id","pff_team_name"], how="left")
 
@@ -59,6 +92,8 @@ def build_one(season: int):
         if col in pff.columns:
             keep.append(col)
     pff_ps = pff[keep].drop_duplicates(["season","cfbd_player_id"])
+
+    cfbd["cfbd_player_id"] = cfbd["player_id"]
 
     m = cfbd.merge(pff_ps, on=["season","cfbd_player_id"], how="left")
 

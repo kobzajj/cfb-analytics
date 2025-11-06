@@ -23,7 +23,7 @@ def ensure_master_dir(season: int) -> Path:
     return outdir
 
 def load_cfbd_table(season: int, filename: str) -> pd.DataFrame:
-    p = Path(f"../data/processed/{season}/{filename}")
+    p = Path(f"data/processed/{season}/{filename}")
     if not p.exists():
         raise SystemExit(f"CFBD table not found: {p}")
     return pd.read_csv(p)
@@ -35,25 +35,52 @@ def load_xref_players() -> pd.DataFrame:
     return pd.read_csv(p)[["season","cfbd_player_id","pff_player_id","pff_team_name"]]
 
 PFF_RECV_COLS = {
-    "targets": "targets",
-    "receptions": "receptions",
-    "receiving_yards": "receiving_yards",
-    "receiving_tds": "receiving_tds",
-    "drops": "drops",
-    "air_yards": "air_yards",
-    "yac": "yac",
-    "routes": "routes",
-    "slot_targets": "slot_targets",
-    "wide_targets": "wide_targets",
-    "inline_targets": "inline_targets",
-    "man_targets": "man_targets",
-    "zone_targets": "zone_targets",
-    "separation_avg": "separation_avg",
+    'player_game_count': 'player_game_count',
+    'avg_depth_of_target': 'avg_depth_of_target',
+    'avoided_tackles': 'avoided_tackles',
+    'caught_percent': 'caught_percent',
+    'contested_catch_rate': 'contested_catch_rate',
+    'contested_receptions': 'contested_receptions',
+    'contested_targets': 'contested_targets',
+    'declined_penalties': 'declined_penalties',
+    'drop_rate': 'drop_rate',
+    'drops': 'drops',
+    'first_downs': 'first_downs',
+    'franchise_id': 'franchise_id',
+    'fumbles': 'fumbles',
+    'grades_hands_drop': 'grades_hands_drop',
+    'grades_hands_fumble': 'grades_hands_fumble',
+    'grades_offense': 'grades_offense',
+    'grades_pass_block': 'grades_pass_block',
+    'grades_pass_route': 'grades_pass_route',
+    'inline_rate': 'inline_rate',
+    'inline_snaps': 'inline_snaps',
+    'interceptions': 'interceptions',
+    'longest': 'longest',
+    'pass_block_rate': 'pass_block_rate',
+    'pass_blocks': 'pass_blocks',
+    'pass_plays': 'pass_plays',
+    'penalties': 'penalties',
+    'receptions': 'receptions',
+    'route_rate': 'route_rate',
+    'routes': 'routes',
+    'slot_rate': 'slot_rate',
+    'slot_snaps': 'slot_snaps',
+    'targeted_qb_rating': 'targeted_qb_rating',
+    'targets': 'targets',
+    'touchdowns': 'touchdowns',
+    'wide_rate': 'wide_rate',
+    'wide_snaps': 'wide_snaps',
+    'yards': 'yards',
+    'yards_after_catch': 'yards_after_catch',
+    'yards_after_catch_per_reception': 'yards_after_catch_per_reception',
+    'yards_per_reception': 'yards_per_reception',
+    'yprr': 'yprr'
 }
 
 def build_one(season: int):
-    cfbd = load_cfbd_table(season, "receiving_cfbd.csv")
-    pff_raw = load_pff_player_seasons(f"data/vendor/pff/{season}", include_stats=True)
+    cfbd = load_cfbd_table(season, f"players_receiving_{season}.csv")
+    pff_raw = load_pff_player_seasons(f"../data_extraction/data/pff/{season}", season=str(season), include_stats=True, stat_types=["receiving"])
     xref = load_xref_players()
     pff = pff_raw.merge(xref, on=["season","pff_player_id","pff_team_name"], how="left")
 
@@ -64,12 +91,9 @@ def build_one(season: int):
             keep.append(col)
     pff_ps = pff[keep].drop_duplicates(["season","cfbd_player_id"])
 
-    m = cfbd.merge(pff_ps, on=["season","cfbd_player_id"], how="left")
+    cfbd["cfbd_player_id"] = cfbd["player_id"]
 
-    for c in ["air_yards","yac","drops","routes"]:
-        pc = f"pff_{c}"
-        if pc in m.columns:
-            m[c] = m[pc]
+    m = cfbd.merge(pff_ps, on=["season","cfbd_player_id"], how="left")
 
     # Derived
     base_yards = m["rec_yards"] if "rec_yards" in m.columns else m.get("receiving_yards")
