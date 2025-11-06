@@ -23,7 +23,7 @@ def ensure_master_dir(season: int) -> Path:
     return outdir
 
 def load_cfbd_table(season: int, filename: str) -> pd.DataFrame:
-    p = Path(f"data/processed/{season}/{filename}")
+    p = Path(f"../data/processed/{season}/{filename}")
     if not p.exists():
         raise SystemExit(f"CFBD table not found: {p}")
     return pd.read_csv(p)
@@ -58,10 +58,7 @@ def build_one(season: int):
         col = f"pff_{raw}"
         if col in pff.columns:
             keep.append(col)
-    pff = pff[keep].copy()
-
-    agg = {c: "sum" for c in pff.columns if c.startswith("pff_")}
-    pff_ps = pff.groupby(["season","cfbd_player_id"], dropna=False).agg(agg).reset_index()
+    pff_ps = pff[keep].drop_duplicates(["season","cfbd_player_id"])
 
     m = cfbd.merge(pff_ps, on=["season","cfbd_player_id"], how="left")
 

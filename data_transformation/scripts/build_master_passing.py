@@ -6,11 +6,6 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 
-# TODOS
-# Update directory paths for files that need to be loaded
-# Update PFF passing columns
-# Modify pff_adapter code with an optional parameter to load only relevant PFF files (in this case only passing)
-
 try:
     from cfb_analytics.vendors.pff_adapter import load_pff_player_seasons
 except Exception as e:
@@ -40,22 +35,48 @@ def load_xref_players() -> pd.DataFrame:
     return pd.read_csv(p)[["season","cfbd_player_id","pff_player_id","pff_team_name"]]
 
 PFF_PASS_COLS = {
-    "dropbacks": "dropbacks",
-    "pass_attempts": "pass_attempts",
+    "player_game_count": "player_game_count",
+    "accuracy_percent": "accuracy_percent",
+    "aimed_passes": "aimed_passes",
+    "attempts": "attempts",
+    "avg_depth_of_target": "avg_depth_of_target",
+    "avg_time_to_throw": "avg_time_to_throw",
+    "bats": "bats",
+    "big_time_throws": "big_time_throws",
+    "btt_rate": "btt_rate",
+    "completion_percent": "completion_percent",
     "completions": "completions",
-    "passing_yards": "passing_yards",
-    "passing_tds": "passing_tds",
+    "def_gen_pressures": "def_gen_pressures",
+    "drop_rate": "drop_rate",
+    "dropbacks": "dropbacks",
+    "drops": "drops",
+    "first_downs": "first_downs",
+    "grades_hands_fumble": "grades_hands_fumble",
+    "grades_offense": "grades_offense",
+    "grades_pass": "grades_pass",
+    "grades_run": "grades_run",
+    "hit_as_threw": "hit_as_threw",
     "interceptions": "interceptions",
+    "passing_snaps": "passing_snaps",
+    "penalties": "penalties",
+    "declined_penalties": "declined_penalties",
+    "pressure_to_sack_rate": "pressure_to_sack_rate",
+    "qb_rating": "qb_rating",
+    "sack_percent": "sack_percent",
     "sacks": "sacks",
-    "pressures": "pressures",
-    "air_yards": "air_yards",
-    "yac": "yac",
-    "exp_completion_prob": "exp_completion_prob",
+    "scrambles": "scrambles",
+    "spikes": "spikes",
+    "thrown_aways": "thrown_aways",
+    "touchdowns": "touchdowns",
+    "turnover_worthy_plays": "turnover_worthy_plays",
+    "twp_rate": "twp_rate",
+    "yards": "yards",
+    "ypa": "ypa",
 }
 
 def build_one(season: int):
-    cfbd = load_cfbd_table(season, "passing_cfbd.csv")
-    pff_raw = load_pff_player_seasons(f"data/vendor/pff/{season}", include_stats=True)
+    cfbd = load_cfbd_table(season, f"players_passing_{season}.csv")
+    pff_raw = load_pff_player_seasons(f"../data_extraction/data/pff/{season}", season=str(season), include_stats=True, stat_types=["passing"])
     xref = load_xref_players()
     pff = pff_raw.merge(xref, on=["season","pff_player_id","pff_team_name"], how="left")
 
@@ -65,6 +86,11 @@ def build_one(season: int):
         if col in pff.columns:
             keep.append(col)
     pff_ps = pff[keep].drop_duplicates(["season", "cfbd_player_id"])
+
+    # print(pff_ps.columns.tolist())
+    # print(cfbd.columns.tolist())
+
+    cfbd["cfbd_player_id"] = cfbd["player_id"]
 
     m = cfbd.merge(pff_ps, on=["season", "cfbd_player_id"], how="left")
 

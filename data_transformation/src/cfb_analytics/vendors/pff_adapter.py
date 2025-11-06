@@ -25,12 +25,182 @@ PFF_COLMAP_DEFAULT: Dict[str, str] = {
 }
 
 # Any additional stats you want to carry forward can be listed here and will be prefixed with "pff_"
-PFF_PASSTHRU_STATS: List[str] = [
-    # examples—adjust to your files
-    "dropbacks", "pass_attempts", "completions", "passing_yards", "passing_tds",
-    "interceptions", "sacks", "pressures", "targets", "receptions", "receiving_yards",
-    "receiving_tds", "rush_attempts", "rushing_yards", "rushing_tds",
-]
+PFF_PASSTHRU_STATS: List[str] = ['batted_passes',
+ 'pressures_allowed',
+ 'total_pressures',
+ 'rec_yards',
+ 'contested_receptions',
+ 'true_pass_set_snap_counts_pass_rush',
+ 'routes',
+ 'hits_allowed',
+ 'grades_run_block',
+ 'breakaway_yards',
+ 'yprr',
+ 'true_pass_set_pass_rush_win_rate',
+ 'grades_pass_rush_defense',
+ 'bats',
+ 'declined_penalties',
+ 'forced_fumbles',
+ 'tackles_for_loss',
+ 'slot_snaps',
+ 'route_rate',
+ 'dropped_ints',
+ 'snap_counts_dl_a_gap',
+ 'true_pass_set_pass_rush_percent',
+ 'drops',
+ 'explosive',
+ 'fumbles',
+ 'snap_counts_coverage',
+ 'grades_tackle',
+ 'avg_time_to_throw',
+ 'pass_block_percent',
+ 'pass_rush_wins',
+ 'tackles',
+ 'team_name',
+ 'hurries',
+ 'first_downs',
+ 'snap_counts_pass_rush',
+ 'player_id',
+ 'touchdowns',
+ 'qb_rating',
+ 'stops',
+ 'stop_percent',
+ 'true_pass_set_hurries',
+ 'grades_offense_penalty',
+ 'snap_counts_lt',
+ 'grades_hands_fumble',
+ 'yards_after_contact',
+ 'yco_attempt',
+ 'scrambles',
+ 'sacks_allowed',
+ 'aimed_passes',
+ 'position',
+ 'designed_yards',
+ 'grades_run',
+ 'true_pass_set_hits',
+ 'interceptions',
+ 'snap_counts_pass_play',
+ 'zone_attempts',
+ 'safeties',
+ 'hurries_allowed',
+ 'snap_counts_corner',
+ 'true_pass_set_pass_rush_wins',
+ 'targets',
+ 'sacks',
+ 'player_game_count',
+ 'elu_rush_mtf',
+ 'missed_tackle_rate',
+ 'hits',
+ 'franchise_id',
+ 'snap_counts_run_block',
+ 'grades_run_defense',
+ 'snap_counts_lg',
+ 'snap_counts_dl_b_gap',
+ 'true_pass_set_grades_pass_rush_defense',
+ 'non_spike_pass_block_percentage',
+ 'true_pass_set_total_pressures',
+ 'pass_rush_opp',
+ 'snap_counts_defense',
+ 'coverage_percent',
+ 'grades_coverage_defense',
+ 'turnover_worthy_plays',
+ 'block_percent',
+ 'elu_yco',
+ 'gap_attempts',
+ 'avoided_tackles',
+ 'snap_counts_block',
+ 'snap_counts_run',
+ 'grades_offense',
+ 'avg_depth_of_target',
+ 'breakaway_percent',
+ 'snap_counts_run_defense',
+ 'prp',
+ 'catch_rate',
+ 'fumble_recoveries',
+ 'run_plays',
+ 'forced_incompletion_rate',
+ 'assists',
+ 'grades_defense_penalty',
+ 'snap_counts_te',
+ 'scramble_yards',
+ 'wide_rate',
+ 'passing_snaps',
+ 'yards_after_catch_per_reception',
+ 'missed_tackles',
+ 'grades_defense',
+ 'grades_pass_block',
+ 'interception_touchdowns',
+ 'pass_block_rate',
+ 'big_time_throws',
+ 'true_pass_set_snap_counts_pass_play',
+ 'total_touches',
+ 'true_pass_set_sacks',
+ 'breakaway_attempts',
+ 'grades_hands_drop',
+ 'slot_rate',
+ 'snap_counts_offense',
+ 'true_pass_set_pass_rush_opp',
+ 'true_pass_set_batted_passes',
+ 'btt_rate',
+ 'attempts',
+ 'thrown_aways',
+ 'def_gen_pressures',
+ 'accuracy_percent',
+ 'snap_counts_rg',
+ 'pass_break_ups',
+ 'forced_incompletes',
+ 'run_stop_opp',
+ 'pass_plays',
+ 'pass_blocks',
+ 'coverage_snaps_per_target',
+ 'penalties',
+ 'snap_counts_pass_block',
+ 'snap_counts_ce',
+ 'contested_catch_rate',
+ 'elu_recv_mtf',
+ 'yards_per_reception',
+ 'drop_rate',
+ 'dropbacks',
+ 'fumble_recovery_touchdowns',
+ 'ypa',
+ 'non_spike_pass_block',
+ 'player',
+ 'pass_rush_percent',
+ 'pbe',
+ 'hit_as_threw',
+ 'avg_depth_of_tackle',
+ 'snap_counts_dl_over_t',
+ 'completions',
+ 'snap_counts_rt',
+ 'yards_per_coverage_snap',
+ 'snap_counts_box',
+ 'snap_counts_dl_outside_t',
+ 'yards',
+ 'qb_rating_against',
+ 'inline_rate',
+ 'snap_counts_offball',
+ 'snap_counts_fs',
+ 'receptions',
+ 'caught_percent',
+ 'inline_snaps',
+ 'completion_percent',
+ 'snap_counts_slot',
+ 'contested_targets',
+ 'twp_rate',
+ 'snap_counts_dl',
+ 'true_pass_set_prp',
+ 'targeted_qb_rating',
+ 'pass_rush_win_rate',
+ 'coverage_snaps_per_reception',
+ 'yards_after_catch',
+ 'longest',
+ 'sack_percent',
+ 'wide_snaps',
+ 'grades_pass_route',
+ 'elusive_rating',
+ 'pressure_to_sack_rate',
+ 'grades_pass',
+ 'spikes']
 
 def _norm_cols(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
@@ -50,7 +220,8 @@ def load_pff_player_seasons(
     season: str,
     colmap: Optional[Dict[str, str]] = None,
     passthru_stats: Optional[List[str]] = None,
-    include_stats: bool = False
+    include_stats: bool = False,
+    stat_types: Optional[List[str]] = None
 ) -> pd.DataFrame:
     """
     Load one or many PFF player-season CSV files and return a standardized DataFrame.
@@ -60,8 +231,11 @@ def load_pff_player_seasons(
 
     Args:
         path_or_glob: directory or glob to CSV files (e.g., 'data/vendor/pff/2021/*.csv')
+        season: the season of data to load
         colmap: dictionary translating input column names from PFF files to output column names
         passthru_stats: optional list of columns to pass through from PFF files to crosswalk output
+        include_stats: boolean that indicates whether to include pass through stats in output
+        stat_types: specifies which (if any) PFF stat type to filter the dataset down to (for type-specific analysis)
     """
     colmap = colmap or PFF_COLMAP_DEFAULT
 
@@ -78,25 +252,47 @@ def load_pff_player_seasons(
 
     frames: List[pd.DataFrame] = []
     for f in files:
+
+        print(f)
         df = pd.read_csv(f)
+
         df["season"] = season
+
         df = _norm_cols(df)
         print(df.shape)
-        df = _rename_apply_map(df, colmap)
+        df_processed = _rename_apply_map(df, colmap)
         print(df.shape)
 
         # Pass-through stats (optional)
         if include_stats and passthru_stats:
             for c in passthru_stats:
                 if c in df.columns:
-                    df[f"pff_{c}"] = df[c]
+                    df_processed[f"pff_{c}"] = df[c]
 
-        frames.append(df)
+        if "passing" in str(f):
+            df_processed["pff_file_source"] = "passing"
+        elif "rushing" in str(f):
+            df_processed["pff_file_source"] = "rushing"
+        elif "receiving" in str(f):
+            df_processed["pff_file_source"] = "receiving"
+        elif "blocking" in str(f):
+            df_processed["pff_file_source"] = "blocking"
+        else:
+            df_processed["pff_file_source"] = "defense"
+
+        print(df_processed.head(10))
+        print(df_processed[df_processed["player_name"] == "Joe Burrow"])
+        frames.append(df_processed)
 
     if not frames:
         return pd.DataFrame(columns=list(colmap.keys()))
 
     out = pd.concat(frames, ignore_index=True)
+
+    if stat_types:
+        out = out[out["pff_file_source"].isin(stat_types)]
+
+    print(out[out["player_name"] == "Joe Burrow"])
 
     # Light normalization
     out["season"] = pd.to_numeric(out["season"], errors="coerce").astype("Int64")
